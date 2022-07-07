@@ -4,7 +4,7 @@
     <div class="aside-logo flex-column-auto" id="kt_aside_logo">
         <!--begin::Logo-->
         <a href="<?= base_url(); ?>">
-            <img alt="Logo" src="<?= base_url('assets/media/logos/logo-1-dark.svg'); ?>" class="h-25px logo" />
+            <img alt="Logo" src="assets/media/logos/logo-1-dark.svg" class="h-25px logo" />
         </a>
         <!--end::Logo-->
         <!--begin::Aside toggler-->
@@ -54,7 +54,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="<?= base_url('ecommerce'); ?>">
+                            <a class="menu-link" href="<?= base_url('dashboards/ecommerce'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -62,7 +62,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="<?= base_url('projects'); ?>">
+                            <a class="menu-link" href="<?= base_url('dashboard/projects'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -70,7 +70,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="<?= base_url('online-courses'); ?>">
+                            <a class="menu-link" href="<?= base_url('dashboard/online-courses'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -78,7 +78,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="<?= base_url('marketing'); ?>">
+                            <a class="menu-link" href="<?= base_url('dashboard/marketing'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -86,7 +86,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="<?= base_url('bidding'); ?>">
+                            <a class="menu-link" href="<?= base_url('dashboard/bidding'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -95,7 +95,7 @@
                         </div>
                         <div class="menu-inner flex-column collapse" id="kt_aside_menu_collapse">
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('logistics'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/logistics'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -103,7 +103,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('delivery'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/delivery'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -111,7 +111,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('website-analytics'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/website-analytics'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -119,7 +119,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('finance-performances'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/finance-performance'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -127,7 +127,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('store-analytics'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/store-analytics'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -135,7 +135,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('social'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/social'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -143,7 +143,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('crypto'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/crypto'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -151,7 +151,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('school'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/school'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -159,7 +159,7 @@
                                 </a>
                             </div>
                             <div class="menu-item">
-                                <a class="menu-link" href="<?= base_url('podcast'); ?>">
+                                <a class="menu-link" href="<?= base_url('dashboard/podcast'); ?>">
                                     <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
                                     </span>
@@ -224,7 +224,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('overview'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/user-profile/overview'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -232,7 +232,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('projects'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/user-profile/projects'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -240,7 +240,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('campaigns'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/user-profile/campaigns'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -248,7 +248,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('documents'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/user-profile/documents'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -256,7 +256,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('followers'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/user-profile/followers'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -264,7 +264,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('activity'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/user-profile/activity'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -283,7 +283,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('projects'); ?>">
+                                    <a class="menu-link" href="<?= base_url('pages/blog/home'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -291,7 +291,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/blog/post.html">
+                                    <a class="menu-link" href="<?= base_url('pages/blog/post'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -310,7 +310,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/pricing/pricing-1.html">
+                                    <a class="menu-link" href="<?= base_url('pages/pricing/pricing-1'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -318,7 +318,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/pricing/pricing-2.html">
+                                    <a class="menu-link" href="<?= base_url('pages/pricing/pricing-2'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -337,7 +337,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/careers/list.html">
+                                    <a class="menu-link" href="<?= base_url('pages/careers/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -345,7 +345,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/careers/apply.html">
+                                    <a class="menu-link" href="<?= base_url('pages/careers/apply'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -364,7 +364,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/faq/classic.html">
+                                    <a class="menu-link" href="<?= base_url('pages/faq/classic'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -372,7 +372,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/pages/faq/extended.html">
+                                    <a class="menu-link" href="<?= base_url('pages/faq/extended'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -382,7 +382,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/pages/about.html">
+                            <a class="menu-link" href="<?= base_url('pages/about'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -390,7 +390,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/pages/contact.html">
+                            <a class="menu-link" href="<?= base_url('pages/contact'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -398,7 +398,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/pages/team.html">
+                            <a class="menu-link" href="<?= base_url('pages/team'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -406,7 +406,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/pages/licenses.html">
+                            <a class="menu-link" href="<?= base_url('pages/licenses'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -414,7 +414,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/pages/sitemap.html">
+                            <a class="menu-link" href="<?= base_url('pages/sitemap'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -440,7 +440,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/overview.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/overview'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -448,7 +448,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/settings.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/settings'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -456,7 +456,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/security.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/security'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -464,7 +464,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/billing.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/billing'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -472,7 +472,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/statements.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/statements'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -480,7 +480,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/referrals.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/refferals'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -488,7 +488,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/api-keys.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/api-keys'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -496,7 +496,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/account/logs.html">
+                            <a class="menu-link" href="<?= base_url('pages/account/logs'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -531,7 +531,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/basic/sign-in.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/basic/sign-in'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -539,7 +539,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/basic/sign-up.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/basic/sign-up'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -547,7 +547,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/basic/two-steps.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/basic/two-steps'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -555,7 +555,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/basic/password-reset.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/basic/password-reset'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -563,7 +563,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/basic/new-password.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/basic/new-password'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -582,7 +582,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/aside/sign-in.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/aside/sign-in'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -590,7 +590,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/aside/sign-up.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/aside/sign-up'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -598,7 +598,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/aside/two-steps.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/aside/two-steps'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -606,7 +606,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/aside/password-reset.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/aside/password-reset'); ?>l">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -614,7 +614,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/aside/new-password.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/aside/new-passwords'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -633,7 +633,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/dark/sign-in.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/dark/sign-in'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -641,7 +641,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/dark/sign-up.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/dark/sign-up'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -649,7 +649,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/dark/two-steps.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/dark/two-steps'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -657,7 +657,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/dark/password-reset.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/dark/password-reset'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -665,7 +665,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/layouts/dark/new-password.html">
+                                    <a class="menu-link" href="<?= base_url('authentication/layouts/dark/new-password'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -675,7 +675,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/extended/multi-steps-sign-up.html">
+                            <a class="menu-link" href="<?= base_url('authentication/extended/multi-steps-sign-up'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -683,7 +683,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/extended/two-factor-authentication.html">
+                            <a class="menu-link" href="<?= base_url('authentication/extended/two-factor-auth'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -691,7 +691,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/extended/free-trial-sign-up.html">
+                            <a class="menu-link" href="<?= base_url('authentication/extended/free-trial-sign-up'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -699,7 +699,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/extended/coming-soon.html">
+                            <a class="menu-link" href="<?= base_url('authentication/extended/coming-soon'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -707,7 +707,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/general/welcome.html">
+                            <a class="menu-link" href="<?= base_url('authentication/general/welcome-message'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -715,7 +715,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/general/verify-email.html">
+                            <a class="menu-link" href="<?= base_url('authentication/general/verify-email'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -723,7 +723,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/general/password-confirmation.html">
+                            <a class="menu-link" href="<?= base_url('authentication/general/password-confirmation'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -731,7 +731,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/general/deactivation.html">
+                            <a class="menu-link" href="<?= base_url('authentication/general/deactivation'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -739,7 +739,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/general/error-404.html">
+                            <a class="menu-link" href="<?= base_url('authentication/general/error-404'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -747,7 +747,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/authentication/general/error-500.html">
+                            <a class="menu-link" href="<?= base_url('authentication/general/error-500'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -764,7 +764,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/email/verify-email.html" target="blank">
+                                    <a class="menu-link" href="<?= base_url('authentication/email/verify-email'); ?>" target="blank">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -772,7 +772,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/email/invitation.html" target="blank">
+                                    <a class="menu-link" href="<?= base_url('authentication/email/invitation'); ?>" target="blank">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -780,7 +780,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/email/password-reset.html" target="blank">
+                                    <a class="menu-link" href="<?= base_url('authentication/email/password-reset'); ?>" target="blank">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -788,7 +788,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/authentication/email/password-change.html" target="blank">
+                                    <a class="menu-link" href="<?= base_url('authentication/email/password-change'); ?>" target="blank">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -834,7 +834,7 @@
                                     </span>
                                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/general/invite-friends.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/general/invite-friends'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -842,7 +842,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/general/view-users.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/general/view-users'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -850,7 +850,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/general/select-users.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/general/select-users'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -858,7 +858,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/general/upgrade-plan.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/general/upgrade-plan'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -866,7 +866,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/general/share-earn.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/general/share-earn'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -885,7 +885,7 @@
                                     </span>
                                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/forms/new-target.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/forms/new-target'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -893,7 +893,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/forms/new-card.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/forms/new-card'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -901,7 +901,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/forms/new-address.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/forms/new-address'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -909,7 +909,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/forms/create-api-key.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/forms/create-api-key'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -917,7 +917,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/forms/bidding.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/forms/bidding'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -936,7 +936,7 @@
                                     </span>
                                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/create-app.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/create-app'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -944,7 +944,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/create-campaign.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/create-campaign'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -952,7 +952,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/create-account.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/create-account'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -960,7 +960,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/create-project.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/create-project'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -968,7 +968,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/top-up-wallet.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/top-up-wallet'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -976,7 +976,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/offer-a-deal.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/offer-a-deal'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -984,7 +984,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/two-factor-authentication.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/wizards/two-factor-authentication'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -1003,7 +1003,7 @@
                                     </span>
                                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/search/users.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/search/user'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -1011,7 +1011,7 @@
                                             </a>
                                         </div>
                                         <div class="menu-item">
-                                            <a class="menu-link" href="../../demo1/dist/utilities/modals/search/select-location.html">
+                                            <a class="menu-link" href="<?= base_url('utilities/modals/search/select-location'); ?>">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -1032,7 +1032,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/search/horizontal.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/search/horizontal'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1040,7 +1040,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/search/vertical.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/search/vertical'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1048,7 +1048,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/search/users.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/search/users'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1056,7 +1056,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/search/select-location.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/search/select-location'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1075,7 +1075,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/horizontal.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/horizontal'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1083,7 +1083,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/vertical.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/vertical'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1091,7 +1091,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/two-factor-authentication.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/two-factor-auth'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1099,7 +1099,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/create-app.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/create-app'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1107,7 +1107,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/create-campaign.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/create-campaign'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1115,7 +1115,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/create-account.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/create-account'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1123,7 +1123,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/create-project.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/create-project'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1131,7 +1131,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/modals/wizards/top-up-wallet.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/top-up-wallet'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1139,7 +1139,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/utilities/wizards/offer-a-deal.html">
+                                    <a class="menu-link" href="<?= base_url('utilities/wizards/offer-a-deal'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1169,7 +1169,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/widgets/lists.html">
+                            <a class="menu-link" href="<?= base_url('utilities/widgets/lists'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1177,7 +1177,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/widgets/statistics.html">
+                            <a class="menu-link" href="<?= base_url('utilities/widgets/statics'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1185,7 +1185,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/widgets/charts.html">
+                            <a class="menu-link" href="<?= base_url('utilities/widgets/charts'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1193,7 +1193,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/widgets/mixed.html">
+                            <a class="menu-link" href="<?= base_url('utilities/widgets/mixed'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1201,7 +1201,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/widgets/tables.html">
+                            <a class="menu-link" href="<?= base_url('utilities/widgets/tables'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1209,7 +1209,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/widgets/feeds.html">
+                            <a class="menu-link" href="<?= base_url('utilities/widgets/feeds'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1240,7 +1240,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/list.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/my-project'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1248,7 +1248,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/project.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/view-project'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1256,7 +1256,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/targets.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/targets'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1264,7 +1264,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/budget.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/budget'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1272,7 +1272,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/users.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/users'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1280,7 +1280,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/files.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/files'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1288,7 +1288,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/activity.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/activity'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1296,7 +1296,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/projects/settings.html">
+                            <a class="menu-link" href="<?= base_url('apps/projects/settings'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1333,7 +1333,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/catalog/products.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/catalog/products'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1341,7 +1341,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/catalog/categories.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/catalog/categories'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1349,7 +1349,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/catalog/add-product.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/catalog/add-product'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1357,7 +1357,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/catalog/edit-product.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/catalog/edit-products'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1365,7 +1365,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/catalog/add-category.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/catalog/add-category'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1373,7 +1373,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/catalog/edit-category.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/catalog/edit-category'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1392,7 +1392,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/sales/listing.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/sales/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1400,7 +1400,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/sales/details.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/sales/details'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1408,7 +1408,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/sales/add-order.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/sales/add-order'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1416,7 +1416,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/sales/edit-order.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/sales/edit-order'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1435,7 +1435,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/customers/listing.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/customers/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1443,7 +1443,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/customers/details.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/customers/details'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1462,7 +1462,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/reports/view.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/reports/view'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1470,7 +1470,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/reports/sales.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/reports/sales'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1478,7 +1478,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/reports/returns.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/reports/returns'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1486,7 +1486,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/reports/customer-orders.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/reports/customer-orders'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1494,7 +1494,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/ecommerce/reports/shipping.html">
+                                    <a class="menu-link" href="<?= base_url('apps/ecommerce/reports/shipping'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1504,7 +1504,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/ecommerce/settings.html">
+                            <a class="menu-link" href="<?= base_url('apps/ecommerce/settings'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1530,7 +1530,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/support-center/overview.html">
+                            <a class="menu-link" href="<?= base_url('apps/support-center/tickets/overview'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1547,7 +1547,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/support-center/tickets/list.html">
+                                    <a class="menu-link" href="<?= base_url('apps/support-center/tickets/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1555,7 +1555,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/support-center/tickets/view.html">
+                                    <a class="menu-link" href="<?= base_url('apps/support-center/tickets/view'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1574,7 +1574,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/support-center/tutorials/list.html">
+                                    <a class="menu-link" href="<?= base_url('apps/support-center/tutorials/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1582,7 +1582,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/support-center/tutorials/post.html">
+                                    <a class="menu-link" href="<?= base_url('apps/support-center/tutorials/post'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1592,7 +1592,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/support-center/faq.html">
+                            <a class="menu-link" href="<?= base_url('apps/support-center/tutorials/faq'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1600,7 +1600,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/support-center/licenses.html">
+                            <a class="menu-link" href="<?= base_url('apps/support-center/tutorials/licenses'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1608,7 +1608,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/support-center/contact.html">
+                            <a class="menu-link" href="<?= base_url('apps/support-center/tutorials/contact'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1643,7 +1643,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/user-management/users/list.html">
+                                    <a class="menu-link" href="<?= base_url('apps/user-management/users/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1651,7 +1651,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/user-management/users/view.html">
+                                    <a class="menu-link" href="<?= base_url('apps/user-management/users/view'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1670,7 +1670,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/user-management/roles/list.html">
+                                    <a class="menu-link" href="<?= base_url('apps/user-management/roles/list'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1678,7 +1678,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/user-management/roles/view.html">
+                                    <a class="menu-link" href="<?= base_url('apps/user-management/roles/view'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1688,7 +1688,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/user-management/permissions.html">
+                            <a class="menu-link" href="<?= base_url('apps/user-management/permissions'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1715,7 +1715,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/contacts/getting-started.html">
+                            <a class="menu-link" href="<?= base_url('apps/contacts/getting-started'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1723,7 +1723,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/contacts/add-contact.html">
+                            <a class="menu-link" href="<?= base_url('apps/contacts/add-contact'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1731,7 +1731,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/contacts/edit-contact.html">
+                            <a class="menu-link" href="<?= base_url('apps/contacts/edit-contact'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1739,7 +1739,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/contacts/view-contact.html">
+                            <a class="menu-link" href="<?= base_url('apps/contacts/view-contact'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1766,7 +1766,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/subscriptions/getting-started.html">
+                            <a class="menu-link" href="<?= base_url('apps/subscriptions/getting-started'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1774,7 +1774,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/subscriptions/list.html">
+                            <a class="menu-link" href="<?= base_url('apps/subscriptions/list'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1782,7 +1782,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/subscriptions/add.html">
+                            <a class="menu-link" href="<?= base_url('apps/subscriptions/add'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1790,7 +1790,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/subscriptions/view.html">
+                            <a class="menu-link" href="<?= base_url('apps/subscriptions/view'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1816,7 +1816,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/customers/getting-started.html">
+                            <a class="menu-link" href="<?= base_url('apps/customers/getting-started'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1824,7 +1824,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/customers/list.html">
+                            <a class="menu-link" href="<?= base_url('apps/customers/list'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1832,7 +1832,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/customers/view.html">
+                            <a class="menu-link" href="<?= base_url('apps/customers/view'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1859,7 +1859,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/file-manager/folders.html">
+                            <a class="menu-link" href="<?= base_url('apps/file-manager/folders'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1867,7 +1867,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/file-manager/files.html">
+                            <a class="menu-link" href="<?= base_url('apps/file-manager/files'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1875,7 +1875,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/file-manager/blank.html">
+                            <a class="menu-link" href="<?= base_url('apps/file-manager/blank'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1883,7 +1883,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/file-manager/settings.html">
+                            <a class="menu-link" href="<?= base_url('apps/file-manager/settings'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1918,7 +1918,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion menu-active-bg">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/invoices/view/invoice-1.html">
+                                    <a class="menu-link" href="<?= base_url('apps/invoices/view/invoice-1'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1926,7 +1926,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/invoices/view/invoice-2.html">
+                                    <a class="menu-link" href="<?= base_url('apps/invoices/view/invoice-2'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1934,7 +1934,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="../../demo1/dist/apps/invoices/view/invoice-3.html">
+                                    <a class="menu-link" href="<?= base_url('apps/invoices/view/invoice-3'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -1944,7 +1944,7 @@
                             </div>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/invoices/create.html">
+                            <a class="menu-link" href="<?= base_url('apps/invoices/view/create'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1970,7 +1970,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/inbox/listing.html">
+                            <a class="menu-link" href="<?= base_url('apps/inbox/messages'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1978,7 +1978,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/inbox/compose.html">
+                            <a class="menu-link" href="<?= base_url('apps/inbox/compose'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -1986,7 +1986,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/inbox/reply.html">
+                            <a class="menu-link" href="<?= base_url('apps/inbox/reply'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2013,7 +2013,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/chat/private.html">
+                            <a class="menu-link" href="<?= base_url('apps/chat/private'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2021,7 +2021,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/chat/group.html">
+                            <a class="menu-link" href="<?= base_url('apps/chat/group'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2029,7 +2029,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/apps/chat/drawer.html">
+                            <a class="menu-link" href="<?= base_url('apps/chat/drawer'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2039,7 +2039,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <a class="menu-link" href="../../demo1/dist/apps/calendar.html">
+                    <a class="menu-link" href="<?= base_url('apps/calender'); ?>">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/general/gen014.svg-->
                             <span class="svg-icon svg-icon-2">
@@ -2076,7 +2076,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/toolbars/toolbar-1.html">
+                            <a class="menu-link" href="<?= base_url('layouts/toolbars/toolbar-1'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2084,7 +2084,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/toolbars/toolbar-2.html">
+                            <a class="menu-link" href="<?= base_url('layouts/toolbars/toolbar-2'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2092,7 +2092,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/toolbars/toolbar-3.html">
+                            <a class="menu-link" href="<?= base_url('layouts/toolbars/toolbar-3'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2100,7 +2100,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/toolbars/toolbar-4.html">
+                            <a class="menu-link" href="<?= base_url('layouts/toolbars/toolbar-4'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2108,7 +2108,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/toolbars/toolbar-5.html">
+                            <a class="menu-link" href="<?= base_url('layouts/toolbars/toolbar-5'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2116,7 +2116,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/toolbars/no-toolbar.html">
+                            <a class="menu-link" href="<?= base_url('layouts/toolbars/no-toolbar'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2142,7 +2142,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/aside/light.html">
+                            <a class="menu-link" href="<?= base_url('layouts/aside/light-skin'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2150,7 +2150,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/aside/font-icons.html">
+                            <a class="menu-link" href="<?= base_url('layouts/aside/font-icons'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2158,7 +2158,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/aside/minimized.html">
+                            <a class="menu-link" href="<?= base_url('layouts/aside/minimized'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2166,7 +2166,7 @@
                             </a>
                         </div>
                         <div class="menu-item">
-                            <a class="menu-link" href="../../demo1/dist/layouts/aside/only-header.html">
+                            <a class="menu-link" href="<?= base_url('layouts/aside/only-header'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -2196,7 +2196,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <a class="menu-link" href="../../demo1/dist/documentation/getting-started/changelog.html">
+                    <a class="menu-link" href="<?= base_url('documentation/getting-started/changelog'); ?>">
                         <span class="menu-icon">
                             <!--begin::Svg Icon | path: icons/duotune/coding/cod003.svg-->
                             <span class="svg-icon svg-icon-2">
@@ -2218,7 +2218,7 @@
     <!--end::Aside menu-->
     <!--begin::Footer-->
     <div class="aside-footer flex-column-auto pt-5 pb-7 px-5" id="kt_aside_footer">
-        <a href="../../demo1/dist/documentation/getting-started.html" class="btn btn-custom btn-primary w-100" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click" title="200+ in-house components and 3rd-party plugins">
+        <a href="<?= base_url('documentation/getting-started'); ?>" class="btn btn-custom btn-primary w-100" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click" title="200+ in-house components and 3rd-party plugins">
             <span class="btn-label">Docs &amp; Components</span>
             <!--begin::Svg Icon | path: icons/duotune/general/gen005.svg-->
             <span class="svg-icon btn-icon svg-icon-2">

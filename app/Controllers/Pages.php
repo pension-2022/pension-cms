@@ -7,7 +7,7 @@ class Pages extends BaseController
     public function dashboard()
     {
         $data = [
-            'title' => 'dPensiOn || Admin'
+            'title' => 'dPensiOn || Admin || Dashboard'
         ];
 
 
@@ -16,7 +16,7 @@ class Pages extends BaseController
     public function ecommerce()
     {
         $data = [
-            'title' => 'dPensiOn || Admin'
+            'title' => 'dPensiOn || Admin || ECommerce'
         ];
 
 
