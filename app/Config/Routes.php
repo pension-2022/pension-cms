@@ -17,8 +17,8 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Dashboard');
-$routes->setDefaultMethod('index');
+$routes->setDefaultController('Pages');
+$routes->setDefaultMethod('dashboard');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -31,8 +31,20 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Dashboard::index');
-$routes->get('/ecommerce', 'ECommerce::index');
+$pages = [
+    [
+        'link' => '/',
+        'controller' => 'Pages::dashboard'
+    ],
+    [
+        'link' => '/ecommerce',
+        'controller' => 'Pages::ecommerce'
+    ],
+];
+
+foreach ($pages as $p) {
+    $routes->get($p['link'], $p['controller']);
+};
 
 /*
  * --------------------------------------------------------------------
