@@ -4,14 +4,14 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
-    public function dashboard()
+    public function index()
     {
         $data = [
-            'title' => 'dPensiOn || Admin || Dashboard'
+            'title' => 'dPensiOn || Admin || Home'
         ];
 
 
-        return view('pages/PageDashboard', $data);
+        return view('pages/PageHome', $data);
     }
     public function ecommerce()
     {

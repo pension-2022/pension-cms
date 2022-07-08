@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 $pages = [
     [
         'link' => '/',
-        'controller' => 'Pages::dashboard'
+        'controller' => 'Pages::index'
     ],
     [
         'link' => '/ecommerce',
