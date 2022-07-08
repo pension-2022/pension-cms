@@ -1,5 +1,5 @@
 <?= $this->extend('app/index'); ?>
 
 <?= $this->section('root'); ?>
-<?= $this->include('components/index'); ?>
+<?= $this->include('contents/index'); ?>
 <?= $this->endSection(); ?>

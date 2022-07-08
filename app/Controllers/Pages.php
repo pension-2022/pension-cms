@@ -11,7 +11,7 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/PageHome', $data);
+        return view('pages/index', $data);
     }
     public function ecommerce()
     {
@@ -20,6 +20,6 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/PageECommerce', $data);
+        return view('pages/ecommerce', $data);
     }
 }
