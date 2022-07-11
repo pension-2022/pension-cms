@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
     <!--begin::Page Vendor Stylesheets(used by this page)-->
-    <link href="<?= base_url('assets/plugins/custom/fullcalendar/fullcalendar.bundle.css'); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?= base_url('assets/plugins/custom/datatables/datatables.bundle.css'); ?>" rel="stylesheet" type="text/css" />
+    <?= $this->renderSection('style'); ?>
     <!--end::Page Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
     <link href="<?= base_url('assets/plugins/global/plugins.bundle.css'); ?>" rel="stylesheet" type="text/css" />
@@ -34,7 +33,7 @@
 <!--end::Head-->
 <!--begin::Body-->
 
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+<body id="kt_body" class="<?= $bodyStyle; ?>">
     <!--begin::Main-->
     <!--begin::Root-->
     <?= $this->renderSection('root'); ?>
@@ -64,12 +63,7 @@
     <script src="<?= base_url('assets/plugins/custom/datatables/datatables.bundle.js'); ?>"></script>
     <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
-    <script src="<?= base_url('assets/js/widgets.bundle.js'); ?>"></script>
-    <script src="<?= base_url('assets/js/custom/widgets.js'); ?>"></script>
-    <script src="<?= base_url('assets/js/custom/apps/chat/chat.js'); ?>"></script>
-    <script src="<?= base_url('assets/js/custom/utilities/modals/upgrade-plan.js'); ?>"></script>
-    <script src="<?= base_url('assets/js/custom/utilities/modals/create-app.js'); ?>"></script>
-    <script src="<?= base_url('assets/js/custom/utilities/modals/users-search.js'); ?>"></script>
+    <?= $this->renderSection('script'); ?>
     <!--end::Page Custom Javascript-->
     <!--begin::Other Script2-->
     <?= $this->renderSection('otherScript2'); ?>

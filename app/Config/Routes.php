@@ -45,6 +45,10 @@ $pages = [
         'controller' => 'Pages::ecommerce'
     ],
     // End Dashboards
+    [
+        'link' => '/sign-in',
+        'controller' => 'Auth::sign_in'
+    ]
 ];
 
 foreach ($pages as $p) {
