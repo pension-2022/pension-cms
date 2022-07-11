@@ -44,7 +44,7 @@
                             <!--end::Title-->
                             <!--begin::Link-->
                             <div class="text-gray-400 fw-bold fs-4">New Here?
-                                <a href="../../demo1/dist/authentication/layouts/aside/sign-up.html" class="link-primary fw-bolder">Create an Account</a>
+                                <a href="<?= base_url('/sign-up'); ?>" class="link-primary fw-bolder">Create an Account</a>
                             </div>
                             <!--end::Link-->
                         </div>
@@ -67,7 +67,7 @@
                                 <label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
                                 <!--end::Label-->
                                 <!--begin::Link-->
-                                <a href="../../demo1/dist/authentication/layouts/aside/password-reset.html" class="link-primary fs-6 fw-bolder">Forgot Password ?</a>
+                                <a href="<?= base_url('/forgot-pass'); ?>">Forgot Password ?</a>
                                 <!--end::Link-->
                             </div>
                             <!--end::Wrapper-->

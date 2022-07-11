@@ -45,10 +45,20 @@ $pages = [
         'controller' => 'Pages::ecommerce'
     ],
     // End Dashboards
+
+    // Begin Sign-in
     [
         'link' => '/sign-in',
         'controller' => 'Auth::sign_in'
+    ],
+    // End Sign-in
+
+    // Begin Sign-up
+    [
+        'link' => '/sign-up',
+        'controller' => 'Auth::sign_up'
     ]
+    // End Sig-up
 ];
 
 foreach ($pages as $p) {
