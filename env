@@ -37,11 +37,11 @@ app.baseURL = 'localhost'
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
+ database.default.hostname = localhost
+ database.default.database = dpension_admin
+ database.default.username = postgres
+ database.default.password = postgres
+ database.default.DBDriver = Postgresql
 # database.default.DBPrefix =
 
 # database.tests.hostname = localhost
