@@ -57,8 +57,15 @@ $pages = [
     [
         'link' => '/sign-up',
         'controller' => 'Auth::sign_up'
-    ]
+    ],
     // End Sig-up
+
+    // Begin Reset Password
+    [
+        'link' => '/forgot-pass',
+        'controller' => 'Auth::forgot_pass'
+    ]
+    // End Reset Password
 ];
 
 foreach ($pages as $p) {
