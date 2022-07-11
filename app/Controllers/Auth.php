@@ -31,6 +31,15 @@ class Auth extends \IonAuth\Controllers\Auth
 
         return view('pages/authentication/layouts/aside/reset-password', $data);
     }
+    public function new_pass()
+    {
+        $data = [
+            'title' => 'dPensiOn || Admin || New Password',
+            'bodyStyle' => 'bg-body'
+        ];
+
+        return view('pages/authentication/layouts/aside/new-password', $data);
+    }
     /**
      * If you want to customize the views,
      *  - copy the ion-auth/Views/auth folder to your Views folder,

@@ -64,8 +64,15 @@ $pages = [
     [
         'link' => '/forgot-pass',
         'controller' => 'Auth::forgot_pass'
-    ]
+    ],
     // End Reset Password
+
+    // Begin New Password
+    [
+        'link' => '/new-pass',
+        'controller' => 'Auth::new_pass'
+    ],
+    // End New Password
 ];
 
 foreach ($pages as $p) {
