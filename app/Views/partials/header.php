@@ -1550,11 +1550,11 @@
                                             <div
                                                 class="menu-sub menu-sub-lg-down-accordion menu-sub-lg-dropdown menu-active-bg py-lg-4 w-lg-225px">
                                                 <div class="menu-item">
-                                                    <a class="menu-link py-3" href="<?= base_url('products'); ?>">
+                                                    <a class="menu-link py-3" href="<?= base_url('articles'); ?>">
                                                         <span class="menu-bullet">
                                                             <span class="bullet bullet-dot"></span>
                                                         </span>
-                                                        <span class="menu-title">Products</span>
+                                                        <span class="menu-title">Articles</span>
                                                     </a>
                                                 </div>
                                                 <div class="menu-item">
@@ -1566,19 +1566,19 @@
                                                     </a>
                                                 </div>
                                                 <div class="menu-item">
-                                                    <a class="menu-link py-3" href="<?= base_url('add-products'); ?>">
+                                                    <a class="menu-link py-3" href="<?= base_url('add-article'); ?>">
                                                         <span class="menu-bullet">
                                                             <span class="bullet bullet-dot"></span>
                                                         </span>
-                                                        <span class="menu-title">Add Product</span>
+                                                        <span class="menu-title">Add Article</span>
                                                     </a>
                                                 </div>
                                                 <div class="menu-item">
-                                                    <a class="menu-link py-3" href="<?= base_url('edit-products'); ?>">
+                                                    <a class="menu-link py-3" href="<?= base_url('edit-article'); ?>">
                                                         <span class="menu-bullet">
                                                             <span class="bullet bullet-dot"></span>
                                                         </span>
-                                                        <span class="menu-title">Edit Product</span>
+                                                        <span class="menu-title">Edit Article</span>
                                                     </a>
                                                 </div>
                                                 <div class="menu-item">

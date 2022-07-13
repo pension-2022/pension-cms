@@ -4,11 +4,13 @@ namespace App\Controllers;
 
 class Pages extends BaseController
 {
+    private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
+
     public function index()
     {
         $data = [
             'title' => 'dPensiOn || Admin || Home',
-            'bodyStyle' => 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px'
+            'bodyStyle' => $this->styleHeader
         ];
 
 
@@ -19,7 +21,7 @@ class Pages extends BaseController
     {
         $data = [
             'title' => 'dPensiOn || Admin || Categories',
-            'bodyStyle' => 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px'
+            'bodyStyle' => $this->styleHeader
         ];
 
 
@@ -30,7 +32,7 @@ class Pages extends BaseController
     {
         $data = [
             'title' => 'dPensiOn || Admin || Add Category',
-            'bodyStyle' => 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px'
+            'bodyStyle' => $this->styleHeader
         ];
 
 
@@ -41,10 +43,43 @@ class Pages extends BaseController
     {
         $data = [
             'title' => 'dPensiOn || Admin || Edit Category',
-            'bodyStyle' => 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px'
+            'bodyStyle' => $this->styleHeader
         ];
 
 
         return view('pages/apps/ecommerce/catalog/edit-category', $data);
+    }
+
+    public function articles()
+    {
+        $data = [
+            'title' => 'dPensiOn || Admin || Articles',
+            'bodyStyle' => $this->styleHeader
+        ];
+
+
+        return view('pages/apps/ecommerce/catalog/articles', $data);
+    }
+
+    public function add_article()
+    {
+        $data = [
+            'title' => 'dPensiOn || Admin || Add Article',
+            'bodyStyle' => $this->styleHeader
+        ];
+
+
+        return view('pages/apps/ecommerce/catalog/add-article', $data);
+    }
+
+    public function edit_article()
+    {
+        $data = [
+            'title' => 'dPensiOn || Admin || Edit Article',
+            'bodyStyle' => $this->styleHeader
+        ];
+
+
+        return view('pages/apps/ecommerce/catalog/edit-article', $data);
     }
 }

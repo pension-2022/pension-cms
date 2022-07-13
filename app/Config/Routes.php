@@ -97,6 +97,27 @@ $pages = [
         'controller' => 'pages::edit_category'
     ],
     // End Edit Categories
+    // 
+    // Begin Articles
+    [
+        'link' => '/articles',
+        'controller' => 'pages::articles'
+    ],
+    // End Articles
+    // 
+    // Begin Add Articles
+    [
+        'link' => '/add-article',
+        'controller' => 'pages::add_article'
+    ],
+    // End Add Articles
+    // 
+    // Begin Edit Articles
+    [
+        'link' => '/edit-article',
+        'controller' => 'pages::edit_article'
+    ],
+    // End Edit Articles
 ];
 
 foreach ($pages as $p) {
