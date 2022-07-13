@@ -31,6 +31,9 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// All Pages
+
 $pages = [
     // Begin Home
     [
@@ -38,62 +41,83 @@ $pages = [
         'controller' => 'Pages::index'
     ],
     // End Home
-
+    // 
     // Begin Dashboards
     [
         'link' => '/dashboards/ecommerce',
         'controller' => 'Pages::ecommerce'
     ],
     // End Dashboards
-
+    // 
     // Begin Sign-in
     [
         'link' => '/sign-in',
         'controller' => 'Auth::sign_in'
     ],
     // End Sign-in
-
+    // 
     // Begin Sign-up
     [
         'link' => '/sign-up',
         'controller' => 'Auth::sign_up'
     ],
     // End Sig-up
-
+    // 
     // Begin Reset Password
     [
         'link' => '/forgot-pass',
         'controller' => 'Auth::forgot_pass'
     ],
     // End Reset Password
-
+    // 
     // Begin New Password
     [
         'link' => '/new-pass',
         'controller' => 'Auth::new_pass'
     ],
     // End New Password
+    // 
+    // Begin Categories
+    [
+        'link' => '/categories',
+        'controller' => 'pages::categories'
+    ],
+    // End Categories
+    // 
+    // Begin Add Categories
+    [
+        'link' => '/add-category',
+        'controller' => 'pages::add_category'
+    ],
+    // End Add Categories
+    // 
+    // Begin Edit Categories
+    [
+        'link' => '/edit-category',
+        'controller' => 'pages::edit_category'
+    ],
+    // End Edit Categories
 ];
 
 foreach ($pages as $p) {
     $routes->get($p['link'], $p['controller']);
 };
 
-$routes->group('auth', ['namespace' => 'IonAuth\Controllers'], function ($routes) {
-    $routes->add('login', 'Auth::login');
-    $routes->get('logout', 'Auth::logout');
-    $routes->add('forgot_password', 'Auth::forgot_password');
-    // $routes->get('/', 'Auth::index');
-    // $routes->add('create_user', 'Auth::create_user');
-    // $routes->add('edit_user/(:num)', 'Auth::edit_user/$1');
-    // $routes->add('create_group', 'Auth::create_group');
-    // $routes->get('activate/(:num)', 'Auth::activate/$1');
-    // $routes->get('activate/(:num)/(:hash)', 'Auth::activate/$1/$2');
-    // $routes->add('deactivate/(:num)', 'Auth::deactivate/$1');
-    // $routes->get('reset_password/(:hash)', 'Auth::reset_password/$1');
-    // $routes->post('reset_password/(:hash)', 'Auth::reset_password/$1');
-    // ...
-});
+// $routes->group('auth', ['namespace' => 'IonAuth\Controllers'], function ($routes) {
+//     $routes->add('login', 'Auth::login');
+//     $routes->get('logout', 'Auth::logout');
+//     $routes->add('forgot_password', 'Auth::forgot_password');
+// $routes->get('/', 'Auth::index');
+// $routes->add('create_user', 'Auth::create_user');
+// $routes->add('edit_user/(:num)', 'Auth::edit_user/$1');
+// $routes->add('create_group', 'Auth::create_group');
+// $routes->get('activate/(:num)', 'Auth::activate/$1');
+// $routes->get('activate/(:num)/(:hash)', 'Auth::activate/$1/$2');
+// $routes->add('deactivate/(:num)', 'Auth::deactivate/$1');
+// $routes->get('reset_password/(:hash)', 'Auth::reset_password/$1');
+// $routes->post('reset_password/(:hash)', 'Auth::reset_password/$1');
+// ...
+// });
 
 /*
  * --------------------------------------------------------------------
