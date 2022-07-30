@@ -37,73 +37,92 @@ $routes->setAutoRoute(true);
 $pages = [
     // Begin Home
     [
+        'method' => 'get',
         'link' => '/',
         'controller' => 'Pages::index'
     ],
     // Begin Dashboards
     [
+        'method' => 'get',
         'link' => '/dashboards/ecommerce',
         'controller' => 'Pages::ecommerce'
     ],
     // Begin Sign-in
     [
+        'method' => 'get',
         'link' => '/sign-in',
         'controller' => 'Auth::sign_in'
     ],
     // Begin Sign-up
     [
+        'method' => 'get',
         'link' => '/sign-up',
         'controller' => 'Auth::sign_up'
     ],
     // Begin Reset Password
     [
+        'method' => 'get',
         'link' => '/forgot-pass',
         'controller' => 'Auth::forgot_pass'
     ],
     // Begin New Password
     [
+        'method' => 'get',
         'link' => '/new-pass',
         'controller' => 'Auth::new_pass'
     ],
     // Begin Categories
     [
+        'method' => 'get',
         'link' => '/categories',
         'controller' => 'pages::categories'
     ],
     // Begin Add Categories
     [
+        'method' => 'get',
         'link' => '/add-category',
         'controller' => 'pages::add_category'
     ],
     // Begin Edit Categories
     [
+        'method' => 'get',
         'link' => '/edit-category',
         'controller' => 'pages::edit_category'
     ],
     // Begin Articles
     [
+        'method' => 'get',
         'link' => '/articles',
         'controller' => 'pages::articles'
     ],
     // Begin Add Articles
     [
+        'method' => 'get',
         'link' => '/add-article',
         'controller' => 'pages::add_article'
     ],
     // Begin Edit Articles
     [
+        'method' => 'get',
         'link' => '/edit-article',
         'controller' => 'pages::edit_article'
     ],
     // Begin Users List
     [
+        'method' => 'get',
         'link' => '/users',
         'controller' => 'pages::users_list'
     ],
 ];
 
 foreach ($pages as $p) {
-    $routes->get($p['link'], $p['controller']);
+    if($p['method'] == 'get'){
+        $routes->get($p['link'], $p['controller']);
+    }
+
+    if($p['method'] == 'post'){
+        $routes->post($p['link'], $p['controller']);
+    }
 };
 
 // $routes->group('auth', ['namespace' => 'IonAuth\Controllers'], function ($routes) {
