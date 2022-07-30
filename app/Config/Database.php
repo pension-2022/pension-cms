@@ -33,12 +33,13 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'postgres',
-        'password' => 'postgres',
-        'database' => 'dpension_cms',
-        'DBDriver' => 'postgre',
+        'username' => 'root',
+        'password' => '',
+        'database' => 'pension',
+        'DBDriver' => 'mysqli',
         'DBPrefix' => '',
-        'pConnect' => false,
+        'pconnect' => TRUE,
+        'db_debug' => TRUE,
         'DBDebug'  => (ENVIRONMENT !== 'development'),
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
@@ -47,7 +48,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 5432,
+        'port'     => 3306,
     ];
 
     /**
