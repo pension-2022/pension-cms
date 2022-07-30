@@ -40,7 +40,7 @@ class Database extends Config
         'DBPrefix' => '',
         'pconnect' => TRUE,
         'db_debug' => TRUE,
-        'DBDebug'  => (ENVIRONMENT !== 'development'),
+        'DBDebug'  => (ENVIRONMENT !== 'production'),
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',

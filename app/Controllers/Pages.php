@@ -7,10 +7,9 @@ class Pages extends BaseController
     private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
 
     private $folder = [
-        'dashboard' => 'pages/dashboards/',
+        'dashboard' => 'pages/',
         'categories' => 'pages/categories/',
-        'articles' => 'pages/articles/',
-        'users' => 'pages/users/',
+        'articles' => 'pages/articles/'
     ];
 
     public function index()
@@ -20,7 +19,8 @@ class Pages extends BaseController
             'bodyStyle' => $this->styleHeader
         ];
 
-        return redirect('articles');
+
+        return view($this->folder['dashboard'] . 'index', $data);
     }
 
     public function categories()
@@ -74,6 +74,7 @@ class Pages extends BaseController
             'bodyStyle' => $this->styleHeader
         ];
 
+
         return view($this->folder['articles'] . 'add-article', $data);
     }
 
@@ -86,16 +87,5 @@ class Pages extends BaseController
 
 
         return view($this->folder['articles'] . 'edit-article', $data);
-    }
-
-    public function users_list()
-    {
-        $data = [
-            'title' => 'dPensiOn || Admin || Users List',
-            'bodyStyle' => $this->styleHeader
-        ];
-
-
-        return view($this->folder['users'] . 'users-list', $data);
     }
 }
