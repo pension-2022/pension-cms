@@ -6,6 +6,12 @@ class Pages extends BaseController
 {
     private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
 
+    private $folder = [
+        'dashboard' => 'pages/',
+        'categories' => 'pages/categories/',
+        'articles' => 'pages/articles/'
+    ];
+
     public function index()
     {
         $data = [
@@ -13,8 +19,7 @@ class Pages extends BaseController
             'bodyStyle' => $this->styleHeader
         ];
 
-
-        return view('pages/index', $data);
+        return view($this->folder['dashboard'] . 'index', $data);
     }
 
     public function categories()
@@ -25,7 +30,7 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/apps/ecommerce/catalog/categories', $data);
+        return view($this->folder['categories'] . 'categories', $data);
     }
 
     public function add_category()
@@ -36,7 +41,7 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/apps/ecommerce/catalog/add-category', $data);
+        return view($this->folder['categories'] . 'add-category', $data);
     }
 
     public function edit_category()
@@ -47,7 +52,7 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/apps/ecommerce/catalog/edit-category', $data);
+        return view($this->folder['categories'] . 'edit-category', $data);
     }
 
     public function articles()
@@ -58,7 +63,7 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/apps/ecommerce/catalog/articles', $data);
+        return view($this->folder['articles'] . 'articles', $data);
     }
 
     public function add_article()
@@ -68,8 +73,7 @@ class Pages extends BaseController
             'bodyStyle' => $this->styleHeader
         ];
 
-
-        return view('pages/apps/ecommerce/catalog/add-article', $data);
+        return view($this->folder['articles'] . 'add-article', $data);
     }
 
     public function edit_article()
@@ -80,6 +84,6 @@ class Pages extends BaseController
         ];
 
 
-        return view('pages/apps/ecommerce/catalog/edit-article', $data);
+        return view($this->folder['articles'] . 'edit-article', $data);
     }
 }

@@ -1,16 +1,18 @@
-<?= $this->extend('app/index'); ?>
+<?= $this->extend('layouts/main'); ?>
 
 <?= $this->section('style'); ?>
-<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+<link href="<?= base_url('assets/plugins/custom/datatables/datatables.bundle.css'); ?>" rel="stylesheet"
+    type="text/css" />
 <?= $this->endSection(); ?>
 
 <?= $this->section('root'); ?>
-<?= $this->include('contents/apps/ecommerce/catalog/categories'); ?>
+<?= $this->include('contents/categories/edit-category'); ?>
 <?= $this->endSection(); ?>
 
 <?= $this->section('script'); ?>
 <script src="<?= base_url('assets/plugins/custom/datatables/datatables.bundle.js'); ?>"></script>
-<script src="<?= base_url('assets/js/custom/apps/ecommerce/catalog/categories.js'); ?>"></script>
+<script src="<?= base_url('assets/plugins/custom/formrepeater/formrepeater.bundle.js'); ?>"></script>
+<script src="<?= base_url('assets/js/custom/apps/ecommerce/catalog/save-category.js'); ?>"></script>
 <script src="<?= base_url('assets/js/widgets.bundle.js'); ?>"></script>
 <script src="<?= base_url('assets/js/custom/widgets.js'); ?>"></script>
 <script src="<?= base_url('assets/js/custom/apps/chat/chat.js'); ?>"></script>
