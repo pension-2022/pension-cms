@@ -7,7 +7,7 @@ class Pages extends BaseController
     private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
 
     private $folder = [
-        'dashboard' => 'pages/',
+        'dashboard' => 'pages/dashboards/',
         'categories' => 'pages/categories/',
         'articles' => 'pages/articles/',
         'users' => 'pages/users/',
@@ -20,7 +20,7 @@ class Pages extends BaseController
             'bodyStyle' => $this->styleHeader
         ];
 
-        return view($this->folder['dashboard'] . 'index', $data);
+        return redirect('articles');
     }
 
     public function categories()
