@@ -41,7 +41,7 @@ app.baseURL = 'localhost'
  database.default.database = pension
  database.default.username = root
  database.default.password = 
- database.default.DBDriver = mysqli
+ database.default.DBDriver = MySQLi
 # database.default.DBPrefix =
 
 # database.tests.hostname = localhost
