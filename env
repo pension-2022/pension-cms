@@ -38,10 +38,10 @@ app.baseURL = 'localhost'
 #--------------------------------------------------------------------
 
  database.default.hostname = localhost
- database.default.database = dpension_admin
- database.default.username = postgres
- database.default.password = postgres
- database.default.DBDriver = Postgresql
+ database.default.database = pension
+ database.default.username = root
+ database.default.password = 
+ database.default.DBDriver = mysqli
 # database.default.DBPrefix =
 
 # database.tests.hostname = localhost
