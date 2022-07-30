@@ -40,84 +40,61 @@ $pages = [
         'link' => '/',
         'controller' => 'Pages::index'
     ],
-    // End Home
-    // 
     // Begin Dashboards
     [
         'link' => '/dashboards/ecommerce',
         'controller' => 'Pages::ecommerce'
     ],
-    // End Dashboards
-    // 
     // Begin Sign-in
     [
         'link' => '/sign-in',
         'controller' => 'Auth::sign_in'
     ],
-    // End Sign-in
-    // 
     // Begin Sign-up
     [
         'link' => '/sign-up',
         'controller' => 'Auth::sign_up'
     ],
-    // End Sig-up
-    // 
     // Begin Reset Password
     [
         'link' => '/forgot-pass',
         'controller' => 'Auth::forgot_pass'
     ],
-    // End Reset Password
-    // 
     // Begin New Password
     [
         'link' => '/new-pass',
         'controller' => 'Auth::new_pass'
     ],
-    // End New Password
-    // 
     // Begin Categories
     [
         'link' => '/categories',
         'controller' => 'pages::categories'
     ],
-    // End Categories
-    // 
     // Begin Add Categories
     [
         'link' => '/add-category',
         'controller' => 'pages::add_category'
     ],
-    // End Add Categories
-    // 
     // Begin Edit Categories
     [
         'link' => '/edit-category',
         'controller' => 'pages::edit_category'
     ],
-    // End Edit Categories
-    // 
     // Begin Articles
     [
         'link' => '/articles',
         'controller' => 'pages::articles'
     ],
-    // End Articles
-    // 
     // Begin Add Articles
     [
         'link' => '/add-article',
         'controller' => 'pages::add_article'
     ],
-    // End Add Articles
-    // 
     // Begin Edit Articles
     [
         'link' => '/edit-article',
         'controller' => 'pages::edit_article'
     ],
-    // End Edit Articles
 ];
 
 foreach ($pages as $p) {

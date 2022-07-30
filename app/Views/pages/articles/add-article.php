@@ -1,11 +1,11 @@
-<?= $this->extend('app/index'); ?>
+<?= $this->extend('layouts/main'); ?>
 
 <?= $this->section('style'); ?>
 <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
 <?= $this->endSection(); ?>
 
 <?= $this->section('root'); ?>
-<?= $this->include('contents/apps/ecommerce/catalog/add-article'); ?>
+<?= $this->include('contents/articles/add-article'); ?>
 <?= $this->endSection(); ?>
 
 <?= $this->section('script'); ?>
