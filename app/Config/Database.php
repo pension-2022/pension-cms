@@ -15,6 +15,7 @@ class Database extends Config
      *
      * @var string
      */
+
     public $filesPath = APPPATH . 'Database' . DIRECTORY_SEPARATOR;
 
     /**
@@ -24,6 +25,8 @@ class Database extends Config
      * @var string
      */
     public $defaultGroup = 'default';
+    public $active_group = 'default';
+    public $active_record = TRUE;
 
     /**
      * The default database connection.
@@ -36,11 +39,10 @@ class Database extends Config
         'username' => 'root',
         'password' => '',
         'database' => 'pension',
-        'DBDriver' => 'mysqli',
+        'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
-        'pconnect' => TRUE,
-        'db_debug' => TRUE,
-        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'pConnect' => false,
+        'DBDebug'  => true,
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
@@ -48,7 +50,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 3306
     ];
 
     /**
@@ -85,7 +87,7 @@ class Database extends Config
         // we are currently running an automated test suite, so that
         // we don't overwrite live data on accident.
         if (ENVIRONMENT === 'testing') {
-            $this->defaultGroup = 'tests';
+            $this->defaultGroup = 'default';
         }
     }
 }
