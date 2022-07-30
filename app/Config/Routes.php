@@ -95,6 +95,11 @@ $pages = [
         'link' => '/edit-article',
         'controller' => 'pages::edit_article'
     ],
+    // Begin Users List
+    [
+        'link' => '/users',
+        'controller' => 'pages::users_list'
+    ],
 ];
 
 foreach ($pages as $p) {

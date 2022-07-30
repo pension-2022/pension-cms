@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 class Auth extends \IonAuth\Controllers\Auth
 {
-    protected $viewsFolder = 'pages/authentication/layouts/aside/';
+    protected $viewsFolder = 'pages/authentication/';
 
     public function sign_in()
     {
@@ -43,7 +43,7 @@ class Auth extends \IonAuth\Controllers\Auth
             'bodyStyle' => 'bg-body'
         ];
 
-        return view($this->viewsFolder . 'new-password', $data);
+        return view($this->viewsFolder . 'new-password  ', $data);
     }
     /**
      * If you want to customize the views,

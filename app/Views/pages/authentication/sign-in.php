@@ -1,7 +1,7 @@
-<?= $this->extend('app/index'); ?>
+<?= $this->extend('layouts/main'); ?>
 
 <?= $this->section('root'); ?>
-<?= $this->include('contents/authentication/layouts/aside/sign-in'); ?>
+<?= $this->include('contents/authentication/sign-in'); ?>
 <?= $this->endSection(); ?>
 
 <?= $this->section('script'); ?>

@@ -9,7 +9,8 @@ class Pages extends BaseController
     private $folder = [
         'dashboard' => 'pages/',
         'categories' => 'pages/categories/',
-        'articles' => 'pages/articles/'
+        'articles' => 'pages/articles/',
+        'users' => 'pages/users/',
     ];
 
     public function index()
@@ -85,5 +86,16 @@ class Pages extends BaseController
 
 
         return view($this->folder['articles'] . 'edit-article', $data);
+    }
+
+    public function users_list()
+    {
+        $data = [
+            'title' => 'dPensiOn || Admin || Users List',
+            'bodyStyle' => $this->styleHeader
+        ];
+
+
+        return view($this->folder['users'] . 'users-list', $data);
     }
 }

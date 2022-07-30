@@ -1,7 +1,7 @@
-<?= $this->extend('app/index'); ?>
+<?= $this->extend('layouts/main'); ?>
 
 <?= $this->section('root'); ?>
-<?= $this->include('contents/authentication/layouts/aside/reset-password'); ?>
+<?= $this->include('contents/authentication/reset-password'); ?>
 <?= $this->endSection(); ?>
 
 <?= $this->section('script'); ?>
