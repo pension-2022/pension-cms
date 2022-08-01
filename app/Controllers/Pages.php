@@ -23,13 +23,14 @@ class Pages extends BaseController
 
     public function index()
     {
+        $query = $this->db->query('select i_id as id from t_article')->getResult();
         $data = [
-            'title' => 'dPensiOn || Admin || Home',
-            'bodyStyle' => $this->styleHeader
+            'title' => 'dPensiOn || Admin || Articles',
+            'bodyStyle' => $this->styleHeader,
+            'datarow'=> $query
         ];
 
-
-        return view($this->folder['dashboard'] . 'index', $data);
+            return view($this->folder['articles'] . 'articles', $data);
     }
 
     public function categories()
@@ -70,11 +71,6 @@ class Pages extends BaseController
         
 
         $query = $this->db->query('select i_id as id from t_article')->getResult();
-        // foreach ($query->getResult() as $row) {
-        //     echo $row->title;
-        //     echo $row->name;
-        //     echo $row->body;
-        // }
         $data = [
             'title' => 'dPensiOn || Admin || Articles',
             'bodyStyle' => $this->styleHeader,
