@@ -1,0 +1,661 @@
+CRITICAL - 2022-07-05 03:00:50 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:01:18 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:01:19 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:01:19 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:01:20 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:03:11 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:03:15 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:03:30 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:04:30 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:04:31 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:02 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:03 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:03 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:04 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:04 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:04 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:04 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:05 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:05 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:05 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:05 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:06 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:05:14 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:07:20 --> Invalid file: components/dashboard.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/dash...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/dash...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\PageDashboard.php(4): CodeIgniter\View\View->include('components/dash...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageDashb...', Array, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Dashboard.php(13): view('pages/PageDashb...', Array)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#12 {main}
+CRITICAL - 2022-07-05 03:10:13 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:10:14 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:10:15 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:12:39 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:12:40 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:16:59 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:17:00 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:17:01 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:17:32 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:17:33 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:17:50 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:17:50 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:18:25 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:18:34 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:18:35 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:18:56 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:20:12 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:21:47 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:21:48 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:23 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:23 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:24 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:24 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:24 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:28 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:29 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:29 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:52 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:56 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 03:56:59 --> Call to a member function view() on null
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Dashboard->index()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#5 {main}
+CRITICAL - 2022-07-05 09:07:10 --> Cannot declare class App\Controllers\Dashboard, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-07-05 09:08:01 --> Invalid file: pages/PageECommerce.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/PageEComm...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageEComm...', Array, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\ECommerce.php(14): view('pages/PageEComm...', Array)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\ECommerce->index()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ECommerce))
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#8 {main}
+CRITICAL - 2022-07-05 09:08:07 --> Invalid file: pages/PageECommerce.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/PageEComm...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageEComm...', Array, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\ECommerce.php(14): view('pages/PageEComm...', Array)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\ECommerce->index()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ECommerce))
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#8 {main}
+CRITICAL - 2022-07-05 09:11:02 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 40, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 09:17:02 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 09:19:36 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 09:19:38 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 09:20:36 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 09:24:00 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 09:24:05 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#6 {main}
+CRITICAL - 2022-07-05 22:33:20 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\spark(63): CodeIgniter\CLI\Console->run()
+#6 {main}
+CRITICAL - 2022-07-05 22:33:38 --> Illegal string offset 'index'
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Config\Routes.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', 'C:\\Users\\ASUS T...', 41, Array)
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(713): require('C:\\Users\\ASUS T...')
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\spark(63): CodeIgniter\CLI\Console->run()
+#6 {main}
+CRITICAL - 2022-07-05 22:34:57 --> Invalid file: pages/PageECommerce.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/PageEComm...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageEComm...', Array, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\ECommerce.php(14): view('pages/PageEComm...', Array)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\ECommerce->index()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ECommerce))
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#8 {main}
+CRITICAL - 2022-07-05 22:35:04 --> Invalid file: pages/PageECommerce.php
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/PageEComm...')
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/PageEComm...', Array, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\ECommerce.php(14): view('pages/PageEComm...', Array)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\ECommerce->index()
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ECommerce))
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#8 {main}
