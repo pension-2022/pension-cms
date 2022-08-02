@@ -29,8 +29,16 @@
                             <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-muted">
-                                    <a href="/" class="text-muted text-hover-primary">Home</a>
+                                    <a href="<?= site_url(); ?>" class="text-muted text-hover-primary">Home</a>
                                 </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="breadcrumb-item">
+                                    <span class="bullet bg-gray-300 w-5px h-2px"></span>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="breadcrumb-item text-dark">Categories</li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item">

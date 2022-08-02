@@ -29,7 +29,7 @@
                             <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-muted">
-                                    <a href="/" class="text-muted text-hover-primary">Home</a>
+                                    <a href="<?= site_url(); ?>" class="text-muted text-hover-primary">Home</a>
                                 </li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
@@ -95,7 +95,7 @@
                                         <!--end::Select2-->
                                     </div>
                                     <!--begin::Add product-->
-                                    <a href="<?= base_url('/add-article'); ?>" class="btn btn-primary">Add Article</a>
+                                    <a href="<?= site_url('/add-article'); ?>" class="btn btn-primary">Add Article</a>
                                     <!--end::Add product-->
                                 </div>
                                 <!--end::Card toolbar-->
@@ -109,31 +109,31 @@
                                     <!--begin::Table head-->
                                     <thead>
                                         <!--begin::Table row-->
-                                            <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                                                <th class="w-10px pe-2">
-                                                    <div
-                                                        class="form-check form-check-sm form-check-custom form-check-solid me-3">
-                                                        <input class="form-check-input" type="checkbox" data-kt-check="true"
-                                                            data-kt-check-target="#kt_ecommerce_products_table .form-check-input"
-                                                            value="1" />
-                                                    </div>
-                                                </th>
-                                                <th class="min-w-200px">Title</th>
-                                                <th class="text-end min-w-100px">category</th>
-                                                <th class="text-end min-w-70px">Created add</th>
-                                                <th class="text-end min-w-100px">Price</th>
-                                                <th class="text-end min-w-100px">Rating</th>
-                                                <th class="text-end min-w-100px">Status</th>
-                                                <th class="text-end min-w-70px">Actions</th>
-                                            </tr>
+                                        <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
+                                            <th class="w-10px pe-2">
+                                                <div
+                                                    class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                    <input class="form-check-input" type="checkbox" data-kt-check="true"
+                                                        data-kt-check-target="#kt_ecommerce_products_table .form-check-input"
+                                                        value="1" />
+                                                </div>
+                                            </th>
+                                            <th class="min-w-200px">Title</th>
+                                            <th class="text-end min-w-100px">category</th>
+                                            <th class="text-end min-w-70px">Created add</th>
+                                            <th class="text-end min-w-100px">Price</th>
+                                            <th class="text-end min-w-100px">Rating</th>
+                                            <th class="text-end min-w-100px">Status</th>
+                                            <th class="text-end min-w-70px">Actions</th>
+                                        </tr>
                                         <!--end::Table row-->
                                     </thead>
                                     <!--end::Table head-->
                                     <!--begin::Table body-->
                                     <tbody class="fw-bold text-gray-600">
                                         <!--begin::Table row-->
-                                        
-                                        <?php foreach ($datarow as $datas): ?>
+
+                                        <?php foreach ($datarow as $datas) : ?>
                                         <tr>
                                             <!--begin::Checkbox-->
                                             <td>
@@ -147,15 +147,15 @@
                                             <td>
                                                 <div class="d-flex align-items-xcenter">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-article'); ?>"
+                                                    <a href="<?= site_url('/edit-article'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/1.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/1.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-article'); ?>"
+                                                        <a href="<?= site_url('/edit-article'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder"
                                                             data-kt-ecommerce-product-filter="product_name">Product
                                                             1</a>
@@ -273,7 +273,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-article'); ?>"
+                                                        <a href="<?= site_url('/edit-article'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -288,7 +288,7 @@
                                             </td>
                                             <!--end::Action=-->
                                         </tr>
-                                        
+
                                         <?php endforeach; ?>
                                         <!--end::Table row-->
                                         <!--end::Table row-->

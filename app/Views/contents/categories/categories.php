@@ -29,7 +29,7 @@
                             <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-muted">
-                                    <a href="/" class="text-muted text-hover-primary">Home</a>
+                                    <a href="<?= site_url(); ?>" class="text-muted text-hover-primary">Home</a>
                                 </li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
@@ -83,7 +83,7 @@
                                 <!--begin::Card toolbar-->
                                 <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
                                     <!--begin::Add product-->
-                                    <a href="<?= base_url('/add-category'); ?>" class="btn btn-primary">Add Category</a>
+                                    <a href="<?= site_url('/add-category'); ?>" class="btn btn-primary">Add Category</a>
                                     <!--end::Add product-->
                                 </div>
                                 <!--end::Card toolbar-->
@@ -130,15 +130,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/68.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/68.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Computers</a>
                                                         <!--end::Title-->
@@ -178,7 +178,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -208,15 +208,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/71.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/71.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Watches</a>
                                                         <!--end::Title-->
@@ -256,7 +256,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -286,15 +286,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/58.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/58.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Headphones</a>
                                                         <!--end::Title-->
@@ -335,7 +335,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -365,15 +365,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/52.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/52.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Footwear</a>
                                                         <!--end::Title-->
@@ -413,7 +413,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -443,15 +443,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/76.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/76.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Cameras</a>
                                                         <!--end::Title-->
@@ -491,7 +491,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -521,15 +521,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/207.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/207.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Shirts</a>
                                                         <!--end::Title-->
@@ -569,7 +569,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -599,15 +599,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/50.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/50.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Household</a>
                                                         <!--end::Title-->
@@ -647,7 +647,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -677,15 +677,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/193.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/193.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Toys</a>
                                                         <!--end::Title-->
@@ -725,7 +725,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -755,15 +755,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/169.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/169.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Handbags</a>
                                                         <!--end::Title-->
@@ -803,7 +803,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -833,15 +833,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/177.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/177.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Wines</a>
                                                         <!--end::Title-->
@@ -881,7 +881,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -911,15 +911,15 @@
                                             <td>
                                                 <div class="d-flex">
                                                     <!--begin::Thumbnail-->
-                                                    <a href="<?= base_url('/edit-category'); ?>"
+                                                    <a href="<?= site_url('/edit-category'); ?>"
                                                         class="symbol symbol-50px">
                                                         <span class="symbol-label"
-                                                            style="background-image:url(assets/media//stock/ecommerce/151.gif);"></span>
+                                                            style="background-image:url(<?= base_url(); ?>/assets/media//stock/ecommerce/151.gif);"></span>
                                                     </a>
                                                     <!--end::Thumbnail-->
                                                     <div class="ms-5">
                                                         <!--begin::Title-->
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                             data-kt-ecommerce-category-filter="category_name">Sandals</a>
                                                         <!--end::Title-->
@@ -959,7 +959,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="<?= base_url('/edit-category'); ?>"
+                                                        <a href="<?= site_url('/edit-category'); ?>"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->

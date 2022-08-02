@@ -18,7 +18,7 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <link rel="shortcut icon" href="<?= base_url(); ?>/assets/dpbri.ico" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
@@ -26,8 +26,8 @@
     <?= $this->renderSection('style'); ?>
     <!--end::Page Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(used by all pages)-->
-    <link href="<?= base_url('assets/plugins/global/plugins.bundle.css'); ?>" rel="stylesheet" type="text/css" />
-    <link href="<?= base_url('assets/css/style.bundle.css'); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url('/assets/plugins/global/plugins.bundle.css'); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?= base_url('/assets/css/style.bundle.css'); ?>" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
     <!--begin::Other Script1-->
     <?= $this->renderSection('otherScript1'); ?>
@@ -58,16 +58,12 @@
     <!--end::Scrolltop-->
     <!--begin::Javascript-->
     <script>
-    var hostUrl = "<?= base_url('assets/'); ?>";
+    var hostUrl = "<?= base_url('/assets/'); ?>";
     </script>
     <!--begin::Global Javascript Bundle(used by all pages)-->
     <script src="<?= base_url('assets/plugins/global/plugins.bundle.js'); ?>"></script>
     <script src="<?= base_url('assets/js/scripts.bundle.js'); ?>"></script>
     <!--end::Global Javascript Bundle-->
-    <!--begin::Page Vendors Javascript(used by this page)-->
-    <script src="<?= base_url('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js'); ?>"></script>
-    <script src="<?= base_url('assets/plugins/custom/datatables/datatables.bundle.js'); ?>"></script>
-    <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
     <?= $this->renderSection('script'); ?>
     <!--end::Page Custom Javascript-->

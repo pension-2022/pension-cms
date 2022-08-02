@@ -75,52 +75,52 @@ $pages = [
     [
         'method' => 'get',
         'link' => '/categories',
-        'controller' => 'pages::categories'
+        'controller' => 'Pages::categories'
     ],
     // Begin Add Categories
     [
         'method' => 'get',
         'link' => '/add-category',
-        'controller' => 'pages::add_category'
+        'controller' => 'Pages::add_category'
     ],
     // Begin Edit Categories
     [
         'method' => 'get',
         'link' => '/edit-category',
-        'controller' => 'pages::edit_category'
+        'controller' => 'Pages::edit_category'
     ],
     // Begin Articles
     [
         'method' => 'get',
         'link' => '/articles',
-        'controller' => 'pages::articles'
+        'controller' => 'Pages::articles'
     ],
     // Begin Add Articles
     [
         'method' => 'get',
         'link' => '/add-article',
-        'controller' => 'pages::add_article'
+        'controller' => 'Pages::add_article'
     ],
     // Begin Edit Articles
     [
         'method' => 'get',
         'link' => '/edit-article',
-        'controller' => 'pages::edit_article'
+        'controller' => 'Pages::edit_article'
     ],
     // Begin Users List
     [
         'method' => 'get',
         'link' => '/users',
-        'controller' => 'pages::users_list'
+        'controller' => 'Pages::users_list'
     ],
 ];
 
 foreach ($pages as $p) {
-    if($p['method'] == 'get'){
+    if ($p['method'] == 'get') {
         $routes->get($p['link'], $p['controller']);
     }
 
-    if($p['method'] == 'post'){
+    if ($p['method'] == 'post') {
         $routes->post($p['link'], $p['controller']);
     }
 };

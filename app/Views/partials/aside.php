@@ -5,8 +5,8 @@
     <!--begin::Brand-->
     <div class="aside-logo flex-column-auto" id="kt_aside_logo">
         <!--begin::Logo-->
-        <a href="<?= base_url(); ?>">
-            <img alt="Logo" src="assets/media/logos/logo-1-dark.svg" class="h-25px logo" />
+        <a href="<?= site_url(); ?>">
+            <img alt="Logo" src="<?= base_url(); ?>/assets/media/dpbri-color.svg" class="h-25px logo" />
         </a>
         <!--end::Logo-->
         <!--begin::Aside toggler-->
@@ -59,7 +59,7 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                         <div class="menu-item">
-                            <a class="menu-link active" href="<?= base_url(); ?>">
+                            <a class="menu-link active" href="<?= site_url(); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
@@ -110,7 +110,7 @@
                             </span>
                             <div class="menu-sub menu-sub-accordion">
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('articles'); ?>">
+                                    <a class="menu-link" href="<?= site_url('articles'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -118,7 +118,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('categories'); ?>">
+                                    <a class="menu-link" href="<?= site_url('categories'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -126,7 +126,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('add-article'); ?>">
+                                    <a class="menu-link" href="<?= site_url('add-article'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -134,7 +134,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('edit-article'); ?>">
+                                    <a class="menu-link" href="<?= site_url('edit-article'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -142,7 +142,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('add-category'); ?>">
+                                    <a class="menu-link" href="<?= site_url('add-category'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -150,7 +150,7 @@
                                     </a>
                                 </div>
                                 <div class="menu-item">
-                                    <a class="menu-link" href="<?= base_url('edit-category'); ?>">
+                                    <a class="menu-link" href="<?= site_url('edit-category'); ?>">
                                         <span class="menu-bullet">
                                             <span class="bullet bullet-dot"></span>
                                         </span>
@@ -169,7 +169,7 @@
     <!--end::Aside menu-->
     <!--begin::Footer-->
     <div class="aside-footer flex-column-auto pt-5 pb-7 px-5" id="kt_aside_footer">
-        <a href="<?= base_url('documentation/getting-started'); ?>" class="btn btn-custom btn-primary w-100"
+        <a href="<?= site_url('documentation/getting-started'); ?>" class="btn btn-custom btn-primary w-100"
             data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-dismiss-="click"
             title="200+ in-house components and 3rd-party plugins">
             <span class="btn-label">Docs &amp; Components</span>

@@ -2,14 +2,15 @@
     <!--begin::Authentication - New password -->
     <div class="d-flex flex-column flex-lg-row flex-column-fluid">
         <!--begin::Aside-->
-        <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative" style="background-color: #F2C98A">
+        <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative"
+            style="background-color: #F2C98A">
             <!--begin::Wrapper-->
             <div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
                 <!--begin::Content-->
                 <div class="d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20">
                     <!--begin::Logo-->
-                    <a href="../../demo1/dist/index.html" class="py-9 mb-5">
-                        <img alt="Logo" src="assets/media/logos/logo-2.svg" class="h-60px" />
+                    <a href="<?= site_url(); ?>" class="py-9 mb-5">
+                        <img alt="Logo" src="<?= base_url(); ?>/assets/media/logos/logo-2.svg" class="h-60px" />
                     </a>
                     <!--end::Logo-->
                     <!--begin::Title-->
@@ -23,7 +24,8 @@
                 </div>
                 <!--end::Content-->
                 <!--begin::Illustration-->
-                <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px" style="background-image: url(assets/media/illustrations/sketchy-1/13.png)"></div>
+                <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px"
+                    style="background-image: url(<?= base_url(); ?>/assets/media/illustrations/sketchy-1/13.png)"></div>
                 <!--end::Illustration-->
             </div>
             <!--end::Wrapper-->
@@ -44,7 +46,8 @@
                             <!--end::Title-->
                             <!--begin::Link-->
                             <div class="text-gray-400 fw-bold fs-4">Already have reset your password ?
-                                <a href="../../demo1/dist/authentication/layouts/aside/sign-in.html" class="link-primary fw-bolder">Sign in here</a>
+                                <a href="../../demo1/dist/authentication/layouts/aside/sign-in.html"
+                                    class="link-primary fw-bolder">Sign in here</a>
                             </div>
                             <!--end::Link-->
                         </div>
@@ -58,8 +61,11 @@
                                 <!--end::Label-->
                                 <!--begin::Input wrapper-->
                                 <div class="position-relative mb-3">
-                                    <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="password" autocomplete="off" />
-                                    <span class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2" data-kt-password-meter-control="visibility">
+                                    <input class="form-control form-control-lg form-control-solid" type="password"
+                                        placeholder="" name="password" autocomplete="off" />
+                                    <span
+                                        class="btn btn-sm btn-icon position-absolute translate-middle top-50 end-0 me-n2"
+                                        data-kt-password-meter-control="visibility">
                                         <i class="bi bi-eye-slash fs-2"></i>
                                         <i class="bi bi-eye fs-2 d-none"></i>
                                     </span>
@@ -76,14 +82,16 @@
                             </div>
                             <!--end::Wrapper-->
                             <!--begin::Hint-->
-                            <div class="text-muted">Use 8 or more characters with a mix of letters, numbers &amp; symbols.</div>
+                            <div class="text-muted">Use 8 or more characters with a mix of letters, numbers &amp;
+                                symbols.</div>
                             <!--end::Hint-->
                         </div>
                         <!--end::Input group=-->
                         <!--begin::Input group=-->
                         <div class="fv-row mb-10">
                             <label class="form-label fw-bolder text-dark fs-6">Confirm Password</label>
-                            <input class="form-control form-control-lg form-control-solid" type="password" placeholder="" name="confirm-password" autocomplete="off" />
+                            <input class="form-control form-control-lg form-control-solid" type="password"
+                                placeholder="" name="confirm-password" autocomplete="off" />
                         </div>
                         <!--end::Input group=-->
                         <!--begin::Input group=-->
@@ -97,7 +105,7 @@
                         <!--end::Input group=-->
                         <!--begin::Action-->
                         <div class="text-center">
-                            <button type="button" id="kt_new_password_submit" class="btn btn-lg btn-primary fw-bolder">
+                            <button type="button" class="btn btn-lg btn-primary fw-bolder">
                                 <span class="indicator-label">Submit</span>
                                 <span class="indicator-progress">Please wait...
                                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>

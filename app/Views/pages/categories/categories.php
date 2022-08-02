@@ -1,7 +1,8 @@
 <?= $this->extend('layouts/main'); ?>
 
 <?= $this->section('style'); ?>
-<link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+<link href="<?= base_url(); ?>/assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet"
+    type="text/css" />
 <?= $this->endSection(); ?>
 
 <?= $this->section('root'); ?>

@@ -29,8 +29,16 @@
                             <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-muted">
-                                    <a href="/" class="text-muted text-hover-primary">Home</a>
+                                    <a href="<?= site_url(); ?>" class="text-muted text-hover-primary">Home</a>
                                 </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="breadcrumb-item">
+                                    <span class="bullet bg-gray-300 w-5px h-2px"></span>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="breadcrumb-item text-dark">Categories</li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item">
@@ -150,11 +158,11 @@
                                 <!--end::General options-->
                                 <div class="d-flex justify-content-end">
                                     <!--begin::Button-->
-                                    <a href="categories" id="kt_ecommerce_add_product_cancel"
+                                    <a href="<?= site_url(); ?>/categories" id="kt_ecommerce_add_product_cancel"
                                         class="btn btn-light me-5">Cancel</a>
                                     <!--end::Button-->
                                     <!--begin::Button-->
-                                    <button type="submit" id="kt_ecommerce_add_category_submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary">
                                         <span class="indicator-label">Save Changes</span>
                                         <span class="indicator-progress">Please wait...
                                             <span

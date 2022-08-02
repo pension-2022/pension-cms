@@ -29,7 +29,7 @@
                             <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
                                 <!--begin::Item-->
                                 <li class="breadcrumb-item text-muted">
-                                    <a href="../../demo1/dist/index.html" class="text-muted text-hover-primary">Home</a>
+                                    <a href="<?= site_url(); ?>" class="text-muted text-hover-primary">Home</a>
                                 </li>
                                 <!--end::Item-->
                                 <!--begin::Item-->
@@ -140,17 +140,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-6.jpg" alt="Emma Smith"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-6.jpg"
+                                                                alt="Emma Smith" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Emma Smith</a>
                                                     <span>smith@kpmg.com</span>
                                                 </div>
@@ -192,7 +192,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -222,7 +222,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-danger text-danger">M
                                                         </div>
                                                     </a>
@@ -230,7 +230,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
                                                     <span>melody@altbox.com</span>
                                                 </div>
@@ -274,7 +274,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -304,17 +304,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-1.jpg" alt="Max Smith"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-1.jpg"
+                                                                alt="Max Smith" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
                                                     <span>max@kt.com</span>
                                                 </div>
@@ -356,7 +356,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -386,17 +386,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-5.jpg" alt="Sean Bean"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-5.jpg"
+                                                                alt="Sean Bean" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
                                                     <span>sean@dellito.com</span>
                                                 </div>
@@ -440,7 +440,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -470,17 +470,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-25.jpg" alt="Brian Cox"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-25.jpg"
+                                                                alt="Brian Cox" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
                                                     <span>brian@exchange.com</span>
                                                 </div>
@@ -524,7 +524,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -554,7 +554,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-warning text-warning">C
                                                         </div>
                                                     </a>
@@ -562,7 +562,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Mikaela
                                                         Collins</a>
                                                     <span>mik@pex.com</span>
@@ -605,7 +605,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -635,9 +635,9 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-9.jpg"
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-9.jpg"
                                                                 alt="Francis Mitcham" class="w-100" />
                                                         </div>
                                                     </a>
@@ -645,7 +645,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Francis
                                                         Mitcham</a>
                                                     <span>f.mit@kpmg.com</span>
@@ -688,7 +688,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -718,7 +718,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-danger text-danger">O
                                                         </div>
                                                     </a>
@@ -726,7 +726,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Olivia Wild</a>
                                                     <span>olivia@corpmail.com</span>
                                                 </div>
@@ -768,7 +768,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -798,7 +798,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-primary text-primary">N
                                                         </div>
                                                     </a>
@@ -806,7 +806,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Neil Owen</a>
                                                     <span>owen.neil@gmail.com</span>
                                                 </div>
@@ -850,7 +850,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -880,17 +880,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-23.jpg" alt="Dan Wilson"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-23.jpg"
+                                                                alt="Dan Wilson" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Dan Wilson</a>
                                                     <span>dam@consilting.com</span>
                                                 </div>
@@ -932,7 +932,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -962,7 +962,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-danger text-danger">E
                                                         </div>
                                                     </a>
@@ -970,7 +970,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Emma Bold</a>
                                                     <span>emma@intenso.com</span>
                                                 </div>
@@ -1014,7 +1014,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1044,17 +1044,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-12.jpg" alt="Ana Crown"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-12.jpg"
+                                                                alt="Ana Crown" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Ana Crown</a>
                                                     <span>ana.cf@limtel.com</span>
                                                 </div>
@@ -1098,7 +1098,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1128,14 +1128,14 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-info text-info">A</div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Robert Doe</a>
                                                     <span>robert@benko.com</span>
                                                 </div>
@@ -1177,7 +1177,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1207,17 +1207,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-13.jpg" alt="John Miller"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-13.jpg"
+                                                                alt="John Miller" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">John Miller</a>
                                                     <span>miller@mapple.com</span>
                                                 </div>
@@ -1259,7 +1259,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1289,7 +1289,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-success text-success">L
                                                         </div>
                                                     </a>
@@ -1297,7 +1297,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Lucy Kunic</a>
                                                     <span>lucy.m@fentech.com</span>
                                                 </div>
@@ -1339,7 +1339,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1369,7 +1369,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-danger text-danger">M
                                                         </div>
                                                     </a>
@@ -1377,7 +1377,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Melody Macy</a>
                                                     <span>melody@altbox.com</span>
                                                 </div>
@@ -1421,7 +1421,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1451,17 +1451,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-1.jpg" alt="Max Smith"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-1.jpg"
+                                                                alt="Max Smith" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Max Smith</a>
                                                     <span>max@kt.com</span>
                                                 </div>
@@ -1503,7 +1503,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1533,17 +1533,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-5.jpg" alt="Sean Bean"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-5.jpg"
+                                                                alt="Sean Bean" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Sean Bean</a>
                                                     <span>sean@dellito.com</span>
                                                 </div>
@@ -1587,7 +1587,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1617,17 +1617,17 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-25.jpg" alt="Brian Cox"
-                                                                class="w-100" />
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-25.jpg"
+                                                                alt="Brian Cox" class="w-100" />
                                                         </div>
                                                     </a>
                                                 </div>
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Brian Cox</a>
                                                     <span>brian@exchange.com</span>
                                                 </div>
@@ -1671,7 +1671,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1701,7 +1701,7 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label fs-3 bg-light-warning text-warning">C
                                                         </div>
                                                     </a>
@@ -1709,7 +1709,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Mikaela
                                                         Collins</a>
                                                     <span>mik@pex.com</span>
@@ -1752,7 +1752,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1782,9 +1782,9 @@
                                             <td class="d-flex align-items-center">
                                                 <!--begin:: Avatar -->
                                                 <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html">
+                                                    <a href="<?= site_url(); ?>/users-detail">
                                                         <div class="symbol-label">
-                                                            <img src="assets/media/avatars/300-9.jpg"
+                                                            <img src="<?= base_url(); ?>/assets/media/avatars/300-9.jpg"
                                                                 alt="Francis Mitcham" class="w-100" />
                                                         </div>
                                                     </a>
@@ -1792,7 +1792,7 @@
                                                 <!--end::Avatar-->
                                                 <!--begin::User details-->
                                                 <div class="d-flex flex-column">
-                                                    <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                    <a href="<?= site_url(); ?>/users-detail"
                                                         class="text-gray-800 text-hover-primary mb-1">Francis
                                                         Mitcham</a>
                                                     <span>f.mit@kpmg.com</span>
@@ -1835,7 +1835,7 @@
                                                     data-kt-menu="true">
                                                     <!--begin::Menu item-->
                                                     <div class="menu-item px-3">
-                                                        <a href="../../demo1/dist/apps/user-management/users/view.html"
+                                                        <a href="<?= site_url(); ?>/users-detail"
                                                             class="menu-link px-3">Edit</a>
                                                     </div>
                                                     <!--end::Menu item-->
@@ -1865,34 +1865,7 @@
                 <!--end::Post-->
             </div>
             <!--end::Content-->
-            <!--begin::Footer-->
-            <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
-                <!--begin::Container-->
-                <div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
-                    <!--begin::Copyright-->
-                    <div class="text-dark order-2 order-md-1">
-                        <span class="text-muted fw-bold me-1">2022©</span>
-                        <a href="https://keenthemes.com" target="_blank"
-                            class="text-gray-800 text-hover-primary">Keenthemes</a>
-                    </div>
-                    <!--end::Copyright-->
-                    <!--begin::Menu-->
-                    <ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
-                        <li class="menu-item">
-                            <a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a>
-                        </li>
-                    </ul>
-                    <!--end::Menu-->
-                </div>
-                <!--end::Container-->
-            </div>
-            <!--end::Footer-->
+            <?= $this->include('partials/footer'); ?>
         </div>
         <!--end::Wrapper-->
     </div>

@@ -2,14 +2,15 @@
     <!--begin::Authentication - Password reset -->
     <div class="d-flex flex-column flex-lg-row flex-column-fluid">
         <!--begin::Aside-->
-        <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative" style="background-color: #F2C98A">
+        <div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative"
+            style="background-color: #F2C98A">
             <!--begin::Wrapper-->
             <div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
                 <!--begin::Content-->
                 <div class="d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20">
                     <!--begin::Logo-->
-                    <a href="../../demo1/dist/index.html" class="py-9 mb-5">
-                        <img alt="Logo" src="assets/media/logos/logo-2.svg" class="h-60px" />
+                    <a href="<?= site_url(); ?>" class="py-9 mb-5">
+                        <img alt="Logo" src="<?= base_url(); ?>/assets/media/logos/logo-2.svg" class="h-60px" />
                     </a>
                     <!--end::Logo-->
                     <!--begin::Title-->
@@ -23,7 +24,8 @@
                 </div>
                 <!--end::Content-->
                 <!--begin::Illustration-->
-                <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px" style="background-image: url(assets/media/illustrations/sketchy-1/13.png)"></div>
+                <div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px"
+                    style="background-image: url(<?= base_url(); ?>/assets/media/illustrations/sketchy-1/13.png)"></div>
                 <!--end::Illustration-->
             </div>
             <!--end::Wrapper-->
@@ -50,17 +52,19 @@
                         <!--begin::Input group-->
                         <div class="fv-row mb-10">
                             <label class="form-label fw-bolder text-gray-900 fs-6">Email</label>
-                            <input class="form-control form-control-solid" type="email" placeholder="" name="email" autocomplete="off" />
+                            <input class="form-control form-control-solid" type="email" placeholder="" name="email"
+                                autocomplete="off" />
                         </div>
                         <!--end::Input group-->
                         <!--begin::Actions-->
                         <div class="d-flex flex-wrap justify-content-center pb-lg-0">
-                            <button type="button" id="kt_password_reset_submit" class="btn btn-lg btn-primary fw-bolder me-4">
+                            <button type="button" class="btn btn-lg btn-primary fw-bolder me-4">
                                 <span class="indicator-label">Submit</span>
                                 <span class="indicator-progress">Please wait...
                                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
                             </button>
-                            <a href="../../demo1/dist/authentication/layouts/aside/sign-in.html" class="btn btn-lg btn-light-primary fw-bolder">Cancel</a>
+                            <a href="<?= site_url(); ?>/sign-in"
+                                class="btn btn-lg btn-light-primary fw-bolder">Cancel</a>
                         </div>
                         <!--end::Actions-->
                     </form>
