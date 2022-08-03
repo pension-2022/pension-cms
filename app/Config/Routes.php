@@ -41,12 +41,6 @@ $pages = [
         'link' => '/',
         'controller' => 'Pages::index'
     ],
-    // Begin Dashboards
-    [
-        'method' => 'get',
-        'link' => '/dashboards/ecommerce',
-        'controller' => 'Pages::ecommerce'
-    ],
     // Begin Sign-in
     [
         'method' => 'get',

@@ -9,28 +9,26 @@ class Pages extends BaseController
     private $db;
 
     public function __construct()
-    { 
+    {
         $this->db = \Config\Database::connect();
     }
 
     private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
 
     private $folder = [
-        'dashboard' => 'pages/',
+        'dashboard' => 'pages/dashboards/',
         'categories' => 'pages/categories/',
         'articles' => 'pages/articles/'
     ];
 
     public function index()
     {
-        $query = $this->db->query('select i_id as id from t_article')->getResult();
         $data = [
-            'title' => 'dPensiOn || Admin || Articles',
+            'title' => 'dPensiOn || Admin || Dashboard',
             'bodyStyle' => $this->styleHeader,
-            'datarow'=> $query
         ];
 
-            return view($this->folder['articles'] . 'articles', $data);
+        return view($this->folder['dashboard'] . 'dashboard', $data);
     }
 
     public function categories()
@@ -68,20 +66,20 @@ class Pages extends BaseController
 
     public function articles()
     {
-        
+
 
         $query = $this->db->query('select i_id as id from t_article')->getResult();
         $data = [
             'title' => 'dPensiOn || Admin || Articles',
             'bodyStyle' => $this->styleHeader,
-            'datarow'=> $query
+            'datarow' => $query
         ];
 
-            return view($this->folder['articles'] . 'articles', $data);
-        }
+        return view($this->folder['articles'] . 'articles', $data);
+    }
 
     public function add_article()
-        {
+    {
         $data = [
             'title' => 'dPensiOn || Admin || Add Article',
             'bodyStyle' => $this->styleHeader
