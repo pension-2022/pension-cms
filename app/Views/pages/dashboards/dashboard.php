@@ -14,6 +14,7 @@
 
 <?= $this->section('script'); ?>
 <script src="<?= base_url(); ?>/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+<script src="<?= base_url(); ?>/assets/js/custom/apps/ecommerce/catalog/products.js"></script>
 <script src="<?= base_url(); ?>/assets/plugins/custom/vis-timeline/vis-timeline.bundle.js"></script>
 <script src="<?= base_url(); ?>/assets/js/widgets.bundle.js"></script>
 <script src="<?= base_url(); ?>/assets/js/custom/widgets.js"></script>
