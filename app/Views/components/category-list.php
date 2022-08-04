@@ -95,8 +95,13 @@
                                 data-kt-menu="true">
                                 <!--begin::Menu item-->
                                 <div class="menu-item px-3">
-                                    <a href="<?= current_url(); ?>"
-                                        class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactive' : 'Published'; ?></a>
+                                    <a href="<?= current_url(); ?>" class="menu-link px-3">Edit</a>
+                                </div>
+                                <!--end::Menu item-->
+                                <!--begin::Menu item-->
+                                <div class="menu-item px-3">
+                                    <a href="<?= current_url(); ?>" class="menu-link px-3"
+                                        onclick="confirm('Sure to delete this category')">Delete</a>
                                 </div>
                                 <!--end::Menu item-->
                             </div>

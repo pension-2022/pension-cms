@@ -3,10 +3,19 @@
     <div class="card-header align-items-center py-5 gap-2 gap-md-5">
         <!--begin::Card title-->
         <div class="card-title">
+            <!--begin::Title-->
+            <h3 class="card-title align-items-start flex-column">
+                <span class="card-label fw-bolder text-gray-800">Article Lists</span>
+            </h3>
+            <!--end::Title-->
+        </div>
+        <!--end::Card title-->
+        <!--begin::Card toolbar-->
+        <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
             <!--begin::Search-->
-            <div class="d-flex align-items-center position-relative my-1">
+            <div class="position-relative my-1">
                 <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                <span class="svg-icon svg-icon-1 position-absolute ms-4">
+                <span class="svg-icon svg-icon-2 position-absolute top-50 translate-middle-y ms-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1"
                             transform="rotate(45 17.0365 15.1223)" fill="currentColor" />
@@ -16,15 +25,10 @@
                     </svg>
                 </span>
                 <!--end::Svg Icon-->
-                <input type="text" data-kt-ecommerce-product-filter="search"
-                    class="form-control form-control-sm form-control-solid w-250px ps-14"
-                    placeholder="Search Article" />
+                <input type="text" data-kt-ecommerce-product-filter="search" class="form-control w-150px fs-7 ps-12"
+                    placeholder="Search" />
             </div>
             <!--end::Search-->
-        </div>
-        <!--end::Card title-->
-        <!--begin::Card toolbar-->
-        <div class="card-toolbar flex-row-fluid justify-content-end gap-5">
             <div class="w-100 mw-150px">
                 <!--begin::Select2-->
                 <select class="form-select form-select-sm form-select-solid" data-control="select2"
@@ -72,7 +76,7 @@
             <!--end::Table head-->
             <!--begin::Table body-->
             <tbody class="fw-bold text-gray-600">
-                <?php for ($i = 0; $i < 50; $i++) : ?>
+                <?php for ($i = 0; $i < 80; $i++) : ?>
                 <!--begin::Table row-->
                 <tr>
                     <!--begin::Checkbox-->
