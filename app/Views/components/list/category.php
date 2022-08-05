@@ -30,7 +30,6 @@
                 <!--begin::Status-->
                 <div class="d-flex align-items-center fw-bolder">
                     <!--begin::Label-->
-                    <div class="text-muted fs-7 me-2">Status</div>
                     <!--end::Label-->
                     <!--begin::Select-->
                     <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bolder py-0 ps-3 w-auto"
