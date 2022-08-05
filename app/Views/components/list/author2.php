@@ -5,7 +5,7 @@
         <div class="card-title">
             <!--begin::Title-->
             <h3 class="card-title align-items-start flex-column">
-                <span class="card-label fw-bolder text-gray-800">Article Lists</span>
+                <span class="card-label fw-bolder text-gray-800">Author Lists</span>
             </h3>
             <!--end::Title-->
         </div>
@@ -35,16 +35,14 @@
                     data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-product-filter="status">
                     <option></option>
                     <option value="all">All</option>
-                    <option value="Published">Published</option>
+                    <option value="Activate">Activate</option>
                     <option value="Inactive">Inactive</option>
                 </select>
                 <!--end::Select2-->
             </div>
-            <?php if (current_url() != site_url() . '/') : ?>
             <!--begin::Add product-->
-            <a href="<?= site_url(); ?>/add-article" class="btn btn-sm btn-primary">Add Article</a>
+            <a href="<?= current_url(); ?>" class="btn btn-sm btn-primary">Add Author</a>
             <!--end::Add product-->
-            <?php endif ?>
         </div>
         <!--end::Card toolbar-->
     </div>
@@ -62,10 +60,10 @@
                             data-kt-check-target="#kt_ecommerce_products_table .form-check-input" value="1" />
                         #
                     </th>
-                    <th class="min-w-200px">Title</th>
-                    <th class="text-end min-w-100px">Created</th>
-                    <th class="text-end min-w-70px">Category</th>
-                    <th class="text-end min-w-100px">Author</th>
+                    <th class="min-w-200px">Author</th>
+                    <th class="text-end min-w-100px">Joined</th>
+                    <th class="text-end min-w-70px">Created Article</th>
+                    <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px">Status</th>
                     <th class="text-end min-w-70px <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions
@@ -76,7 +74,10 @@
             <!--end::Table head-->
             <!--begin::Table body-->
             <tbody class="fw-bold text-gray-600">
-                <?php for ($i = 0; $i < 80; $i++) : ?>
+                <?php $nama = [
+                    'Bimo Pramudyo Soekarno', 'Bimo Surono', 'Bing Gondosubroto', 'Bintoro', 'Bismarka ', 'Blue Ribb', 'Bob Yanua', 'Bob Yanua', 'Bobby And', 'Bobby Ima', 'Boedi Sam', 'Boedihard', 'Boediyani', 'Boelio Mu', 'BOENJAMIN', 'Bong Kiu ', 'Bong Tjen', 'Bong Tjen', 'Bonny Bud', 'BOURNIGAU', 'Boy Gemin', 'Brett Hay', 'Bright Ci', 'Bruce Wil', 'Bruce Wil', 'BUDHI SOE', 'Budi Arsi', 'Budi Basu', 'Budi Chri', 'BUDI DHAR'
+                ] ?>
+                <?php for ($i = 0; $i < 30; $i++) : ?>
                 <!--begin::Table row-->
                 <tr>
                     <!--begin::Checkbox-->
@@ -87,10 +88,16 @@
                     <!--begin::Category=-->
                     <td>
                         <div class="d-flex align-items-center w-200px">
+                            <!--begin::Thumbnail-->
+                            <a href="<?= current_url(); ?>" class="symbol symbol-50px">
+                                <span class="symbol-label"
+                                    style="background-image:url(<?= base_url(); ?>/assets/media/avatars/300-<?= $i + 1; ?>.jpg);"></span>
+                            </a>
+                            <!--end::Thumbnail-->
                             <div class="ms-5">
                                 <!--begin::Title-->
                                 <a href="<?= current_url(); ?>" class="text-gray-800 text-hover-primary fs-5 fw-bolder"
-                                    data-kt-ecommerce-product-filter="product_name"><?= ($i % 2 == 0) ? ' MENGENAL LEBIH DEKAT DANA PENSIUN BRI' : 'PENINJAUAN KEMBALI UPAYA HUKUM UNTUK PERKARA YANG SUDAH INKRACHT'; ?></a>
+                                    data-kt-ecommerce-product-filter="product_name"><?= $nama[$i]; ?></a>
                                 <!--end::Title-->
                             </div>
                         </div>
@@ -112,14 +119,13 @@
                     </td>
                     <!--end::Price=-->
                     <!--begin::Rating-->
-                    <td class="text-end pe-0 d-none" data-order="rating-5">
-                    </td>
+                    <td class="text-end pe-0 d-none" data-order="rating-5"></td>
                     <!--end::Rating-->
                     <!--begin::Status=-->
-                    <td class="text-end pe-0" data-order="Published">
+                    <td class="text-end pe-0" data-order="<?= ($i % 2 == 0) ? 'Activate' : 'Inactive'; ?>">
                         <!--begin::Badges-->
                         <div class="badge badge-light-<?= ($i % 2 == 0) ? 'success' : 'danger'; ?>">
-                            <?= ($i % 2 == 0) ? 'Published' : 'Inactive'; ?></div>
+                            <?= ($i % 2 == 0) ? 'Activate' : 'Inactive'; ?></div>
                         <!--end::Badges-->
                     </td>
                     <!--end::Status=-->
@@ -144,7 +150,18 @@
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
                                 <a href="<?= current_url(); ?>"
-                                    class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactive' : 'Published'; ?></a>
+                                    class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactivate' : 'Publish'; ?></a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="<?= current_url(); ?>" class="menu-link px-3">Edit</a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="<?= current_url(); ?>" class="menu-link px-3"
+                                    onclick="confirm('Sure to delete this category')">Delete</a>
                             </div>
                             <!--end::Menu item-->
                         </div>

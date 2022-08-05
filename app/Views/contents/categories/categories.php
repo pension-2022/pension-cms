@@ -19,7 +19,7 @@
                     <!--begin::Container-->
                     <div id="kt_content_container" class="container-xxl">
                         <!--begin::Category-->
-                        <?= $this->include('components/category-list'); ?>
+                        <?= $this->include('components/list/category'); ?>
                         <!--end::Category-->
                     </div>
                     <!--end::Container-->
