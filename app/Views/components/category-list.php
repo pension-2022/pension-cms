@@ -51,7 +51,7 @@
                     <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
                         <th class="px-3 min-w-100px">Category</th>
                         <th class="text-end min-w-100px">Created</th>
-                        <th class="text-end min-w-125px">Article</th>
+                        <th class="text-end min-w-125px">Status</th>
                         <th class="text-end min-w-100px d-none"></th>
                         <th class="text-end min-w-100px d-none"></th>
                         <th class="text-end min-w-50px d-none"></th>
@@ -63,18 +63,13 @@
                 <!--begin::Table body-->
                 <tbody class="fw-bolder text-gray-600">
                     <tr data-kt-table-widget-4="subtable_template" class="d-none"></tr>
-                    <?php for ($i = 0; $i < 50; $i++) : ?>
+                    <?php foreach ($data as $datas) : ?>
                     <tr>
                         <td>
-                            <?= $i + 1; ?>.
-                            <a href="<?= current_url(); ?>"
-                                class="text-gray-800 text-hover-primary"><?= ($i % 2 == 0) ? 'Pensiun' : 'Hukum'; ?></a>
+                            <a class="text-gray-800 text-hover-primary"><?= $datas['n_description'] ?></a>
                         </td>
                         <td class="text-end">4 Aug, 2022</td>
-                        <td class="text-end"><?= ($i + 1) * 3; ?></td>
-                        <td class="text-end d-none"></td>
-                        <td class="text-end d-none"></td>
-                        <td class="text-end d-none"></td>
+                        <td class="text-end"><?= ($datas['c_active'] == 1) ? 'Active' : 'Unactive'; ?></td>
                         <td class="text-end <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">
                             <button type="button" class="d-none" data-kt-table-widget-4="expand_row"></button>
                             <a href="#" class="btn btn-sm btn-light btn-active-light-primary"
@@ -96,14 +91,14 @@
                                 <!--begin::Menu item-->
                                 <div class="menu-item px-3">
                                     <a href="<?= current_url(); ?>"
-                                        class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactive' : 'Published'; ?></a>
+                                        class="menu-link px-3"><?= ($datas['c_active'] == 1) ? 'Unactive' : 'Active'; ?></a>
                                 </div>
                                 <!--end::Menu item-->
                             </div>
                             <!--end::Menu-->
                         </td>
                     </tr>
-                    <?php endfor; ?>
+                    <?php endforeach; ?>
                 </tbody>
                 <!--end::Table body-->
             </table>

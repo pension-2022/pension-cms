@@ -1,0 +1,143 @@
+ERROR - 2022-08-01 02:02:54 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-08-01 02:02:54 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:10 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-08-01 02:03:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:18 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-08-01 02:03:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:36 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:36 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:40 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:40 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:41 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:41 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:41 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:42 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:42 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:42 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:42 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:43 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-01 02:03:55 --> Error connecting to the database: Host 'localhost' is not allowed to connect to this MariaDB server
+CRITICAL - 2022-08-01 02:03:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(73): CodeIgniter\Database\BaseConnection->query('select i_id as ...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}

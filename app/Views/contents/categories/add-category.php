@@ -61,7 +61,7 @@
                     <!--begin::Container-->
                     <div id="kt_content_container" class="container-xxl">
                         <form id="kt_ecommerce_add_category_form" class="form d-flex flex-column flex-lg-row"
-                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/categories.html">
+                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/categories.html"  action="<?= base_url() ?>/categories-save" method="POST">
                             <!--begin::Aside column-->
                             <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                                 <!--begin::Status-->
@@ -84,13 +84,12 @@
                                     <!--begin::Card body-->
                                     <div class="card-body pt-0">
                                         <!--begin::Select2-->
-                                        <select class="form-select mb-2" data-control="select2" data-hide-search="true"
+                                        <select name="status" class="form-select mb-2" data-control="select2" data-hide-search="true"
                                             data-placeholder="Select an option"
                                             id="kt_ecommerce_add_category_status_select">
                                             <option></option>
-                                            <option value="published" selected="selected">Published</option>
-                                            <option value="scheduled">Scheduled</option>
-                                            <option value="unpublished">Unpublished</option>
+                                            <option value=1 selected="selected">Active</option>
+                                            <option value=0 >Unactive</option>
                                         </select>
                                         <!--end::Select2-->
                                         <!--begin::Description-->
@@ -117,7 +116,7 @@
                                     <!--begin::Card header-->
                                     <div class="card-header">
                                         <div class="card-title">
-                                            <h2>General</h2>
+                                            <h2>New Articles Categories</h2>
                                         </div>
                                     </div>
                                     <!--end::Card header-->
@@ -129,26 +128,12 @@
                                             <label class="form-label">Category Name</label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <input type="text" name="category_name" class="form-control mb-2"
+                                            <input type="text" name="desc" class="form-control mb-2"
                                                 placeholder="Category name" value="" />
                                             <!--end::Input-->
                                             <!--begin::Description-->
                                             <div class="text-muted fs-7">A category name is required and recommended to
                                                 be unique.</div>
-                                            <!--end::Description-->
-                                        </div>
-                                        <!--end::Input group-->
-                                        <!--begin::Input group-->
-                                        <div class="mb-10 fv-row">
-                                            <!--begin::Label-->
-                                            <label class="form-label">Description</label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <input type="text" name="category_description" class="form-control mb-2"
-                                                placeholder="Description" value="" />
-                                            <!--end::Input-->
-                                            <!--begin::Description-->
-                                            <div class="text-muted fs-7">Set description for category.</div>
                                             <!--end::Description-->
                                         </div>
                                         <!--end::Input group-->

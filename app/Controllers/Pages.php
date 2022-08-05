@@ -33,11 +33,13 @@ class Pages extends BaseController
 
     public function categories()
     {
+        $sql = "select * from t_category";
+        $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Categories',
-            'bodyStyle' => $this->styleHeader
+            'bodyStyle' => $this->styleHeader,
+            'data' => $query
         ];
-
 
         return view($this->folder['categories'] . 'categories', $data);
     }
@@ -80,9 +82,12 @@ class Pages extends BaseController
 
     public function add_article()
     {
+        $sql = "select * from t_category where c_active = ?";
+        $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Add Article',
-            'bodyStyle' => $this->styleHeader
+            'bodyStyle' => $this->styleHeader,
+            'category' => $query
         ];
 
 
