@@ -27,7 +27,7 @@ class PostController extends BaseController
         
 		$photo = $this->request->getFile('photo');
         $fileName = $photo->getRandomName();
-        $photo->move('uploads/phptos/', $fileName);
+        $photo->move('uploads/photos/', $fileName);
         $input = [
             'i_categoryid' => $this->request->getPost('categoryId'),
             'n_title' => $this->request->getPost('title'),

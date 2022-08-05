@@ -63,10 +63,9 @@
                         #
                     </th>
                     <th class="min-w-200px">Title</th>
-                    <th class="text-end min-w-100px">Created</th>
+                    <th class="text-end min-w-100px">Thumbnail</th>
                     <th class="text-end min-w-70px">Category</th>
                     <th class="text-end min-w-100px">Author</th>
-                    <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px">Status</th>
                     <th class="text-end min-w-70px <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions
                     </th>
@@ -76,21 +75,28 @@
             <!--end::Table head-->
             <!--begin::Table body-->
             <tbody class="fw-bold text-gray-600">
-                <?php for ($i = 0; $i < 80; $i++) : ?>
+                <?php foreach ($datarow as $datas) : ?>
                 <!--begin::Table row-->
                 <tr>
                     <!--begin::Checkbox-->
                     <td>
-                        <span class="fw-bolder"><?= $i + 1; ?></span>
+                        <div class="d-flex align-items-center w-50px">
+                            <div class="">
+                                <!--begin::Title-->
+                                <a href="<?= current_url(); ?>" class="text-gray-800 text-hover-primary fs-5 fw-bolder"
+                                    data-kt-ecommerce-product-filter="product_name"><?= $datas['i_id'] ?></a>
+                                <!--end::Title-->
+                            </div>
+                        </div>
                     </td>
                     <!--end::Checkbox-->
                     <!--begin::Category=-->
                     <td>
-                        <div class="d-flex align-items-center w-200px">
-                            <div class="ms-5">
+                        <div class="d-flex align-items-center w-100px">
+                            <div class="">
                                 <!--begin::Title-->
                                 <a href="<?= current_url(); ?>" class="text-gray-800 text-hover-primary fs-5 fw-bolder"
-                                    data-kt-ecommerce-product-filter="product_name"><?= ($i % 2 == 0) ? ' MENGENAL LEBIH DEKAT DANA PENSIUN BRI' : 'PENINJAUAN KEMBALI UPAYA HUKUM UNTUK PERKARA YANG SUDAH INKRACHT'; ?></a>
+                                    data-kt-ecommerce-product-filter="product_name"><?= $datas['n_title'] ?></a>
                                 <!--end::Title-->
                             </div>
                         </div>
@@ -98,28 +104,29 @@
                     <!--end::Category=-->
                     <!--begin::SKU=-->
                     <td class="text-end pe-0">
-                        <span class="fw-bolder">4 Aug, 2022</span>
+                        <a href="<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>" target="blank">
+                            <img width="150px" class="img-thumbnail" src="<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>">
+                        </a>
                     </td>
                     <!--end::SKU=-->
                     <!--begin::Qty=-->
                     <td class="text-end pe-0" data-order="Pensiun">
-                        <span class="fw-bolder ms-3">Pensiun</span>
+                        <span class="fw-bolder ms-3"><?= $datas['i_categoryid'] ?></span>
                     </td>
                     <!--end::Qty=-->
                     <!--begin::Price=-->
                     <td class="text-end pe-0">
-                        <span class="fw-bolder text-dark">Muhammad Hafid</span>
+                        <span class="fw-bolder text-dark"><?= $datas['i_adminid'] ?></span>
                     </td>
                     <!--end::Price=-->
                     <!--begin::Rating-->
-                    <td class="text-end pe-0 d-none" data-order="rating-5">
-                    </td>
+                    <td class="text-end pe-0 d-none" data-order="rating-5"></td>
                     <!--end::Rating-->
                     <!--begin::Status=-->
                     <td class="text-end pe-0" data-order="Published">
                         <!--begin::Badges-->
-                        <div class="badge badge-light-<?= ($i % 2 == 0) ? 'success' : 'danger'; ?>">
-                            <?= ($i % 2 == 0) ? 'Published' : 'Inactive'; ?></div>
+                        <div class="badge badge-light-<?= ($datas['c_active'] == 1) ? 'success' : 'danger'; ?>">
+                            <?= ($datas['c_active'] == 1) ? 'Published' : 'Inactive'; ?></div>
                         <!--end::Badges-->
                     </td>
                     <!--end::Status=-->
@@ -144,7 +151,18 @@
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
                                 <a href="<?= current_url(); ?>"
-                                    class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactive' : 'Published'; ?></a>
+                                    class="menu-link px-3"><?= ($datas['c_active'] == 1) ? 'Inactivate' : 'Publish'; ?></a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="<?= current_url(); ?>" class="menu-link px-3">Edit</a>
+                            </div>
+                            <!--end::Menu item-->
+                            <!--begin::Menu item-->
+                            <div class="menu-item px-3">
+                                <a href="<?= current_url(); ?>" class="menu-link px-3"
+                                    onclick="confirm('Sure to delete this category')">Delete</a>
                             </div>
                             <!--end::Menu item-->
                         </div>
@@ -153,7 +171,7 @@
                     <!--end::Action=-->
                 </tr>
                 <!--end::Table row-->
-                <?php endfor ?>
+                <?php endforeach ?>
             </tbody>
             <!--end::Table body-->
         </table>

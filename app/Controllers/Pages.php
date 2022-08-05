@@ -15,17 +15,25 @@ class Pages extends BaseController
 
     private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
 
+
     private $folder = [
         'dashboard' => 'pages/dashboards/',
         'categories' => 'pages/categories/',
-        'articles' => 'pages/articles/'
+        'articles' => 'pages/articles/',
+        'authors' => 'pages/authors/'
     ];
 
     public function index()
     {
+        $sql = "select * from t_article where c_active = ?";
+        $query1 = $this->db->query($sql, 1)->getResultArray();
+        $sql = "select * from t_category";
+        $query2 = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Dashboard',
             'bodyStyle' => $this->styleHeader,
+            'data' => $query2,
+            'datarow' => $query1
         ];
 
         return view($this->folder['dashboard'] . 'dashboard', $data);
@@ -69,8 +77,8 @@ class Pages extends BaseController
     public function articles()
     {
 
-
-        $query = $this->db->query('select i_id as id from t_article')->getResult();
+        $sql = "select * from t_article where c_active = ?";
+        $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Articles',
             'bodyStyle' => $this->styleHeader,
@@ -103,5 +111,16 @@ class Pages extends BaseController
 
 
         return view($this->folder['articles'] . 'edit-article', $data);
+    }
+
+    public function author_list()
+    {
+        $data = [
+            'title' => 'dPensiOn || Admin || Author List',
+            'bodyStyle' => $this->styleHeader
+        ];
+
+
+        return view($this->folder['authors'] . 'author-list', $data);
     }
 }

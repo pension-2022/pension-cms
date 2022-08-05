@@ -27,6 +27,23 @@
                         placeholder="Search" />
                 </div>
                 <!--end::Search-->
+                <!--begin::Status-->
+                <div class="d-flex align-items-center fw-bolder">
+                    <!--begin::Label-->
+                    <div class="text-muted fs-7 me-2">Status</div>
+                    <!--end::Label-->
+                    <!--begin::Select-->
+                    <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bolder py-0 ps-3 w-auto"
+                        data-control="select2" data-hide-search="true" data-dropdown-css-class="w-150px"
+                        data-placeholder="Select an option" data-kt-table-widget-4="filter_status">
+                        <option></option>
+                        <option value="Show All" selected="selected">Show All</option>
+                        <option value="Published">Published</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <!--end::Select-->
+                </div>
+                <!--end::Status-->
                 <?php if (current_url() != site_url() . '/') : ?>
                 <!--begin::Add product-->
                 <a href="<?= site_url(); ?>/add-category" class="btn btn-sm btn-primary">Add Category</a>
@@ -52,9 +69,6 @@
                         <th class="px-3 min-w-100px">Category</th>
                         <th class="text-end min-w-100px">Created</th>
                         <th class="text-end min-w-125px">Status</th>
-                        <th class="text-end min-w-100px d-none"></th>
-                        <th class="text-end min-w-100px d-none"></th>
-                        <th class="text-end min-w-50px d-none"></th>
                         <th class="text-end <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions</th>
                     </tr>
                     <!--end::Table row-->

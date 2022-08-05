@@ -57,6 +57,7 @@
                     <?php switch (current_url()) {
                         case site_url() . '/articles':
                         case site_url() . '/categories':
+                        case site_url() . '/authors':
                             echo 'text-dark';
                             break;
 
@@ -75,6 +76,10 @@
                             case site_url() . '/add-category':
                             case site_url() . '/edit-category':
                                 echo 'Category';
+                                break;
+
+                            case site_url() . '/authors':
+                                echo 'Authors';
                                 break;
 
                             default:

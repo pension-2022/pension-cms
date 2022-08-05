@@ -116,8 +116,8 @@ $pages = [
     // Begin Users List
     [
         'method' => 'get',
-        'link' => '/users',
-        'controller' => 'Pages::users_list'
+        'link' => '/authors',
+        'controller' => 'Pages::author_list'
     ],
 ];
 

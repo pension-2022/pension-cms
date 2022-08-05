@@ -23,7 +23,7 @@
                             <!--begin::Col-->
                             <div class="col-xl-12 mb-5 mb-xl-10">
                                 <!--begin::Table Widget 4-->
-                                <?= $this->include('components/list/article'); ?>
+                                <?= $this->include('components/list/author2'); ?>
                                 <!--end::Table Widget 4-->
                             </div>
                             <!--end::Col-->
