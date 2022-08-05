@@ -44,15 +44,15 @@
                         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Dashboard</span>
                     </div>
                 </div>
-                <?= $this->include('components/navigation/dashboard'); ?>
+                <?= $this->include('components/navigation/aside/dashboard'); ?>
                 <div class="menu-item">
                     <div class="menu-content pt-8 pb-2">
                         <span class="menu-section text-muted text-uppercase fs-8 ls-1">Apps</span>
                     </div>
                 </div>
-                <?= $this->include('components/navigation/article'); ?>
-                <?= $this->include('components/navigation/category'); ?>
-                <?= $this->include('components/navigation/author'); ?>
+                <?= $this->include('components/navigation/aside/article'); ?>
+                <?= $this->include('components/navigation/aside/category'); ?>
+                <?= $this->include('components/navigation/aside/author'); ?>
             </div>
         </div>
         <!--end::Menu-->
