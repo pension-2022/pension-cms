@@ -24,18 +24,22 @@ class PostController extends BaseController
     public function save_articles()
     {
 
+        
+		$photo = $this->request->getFile('photo');
+        $fileName = $photo->getRandomName();
+        $photo->move('uploads/phptos/', $fileName);
         $input = [
             'i_categoryid' => $this->request->getPost('categoryId'),
             'n_title' => $this->request->getPost('title'),
             'n_description' => $this->request->getPost('desc'),
-            'n_photo' => $this->request->getPost('photo'),
+            'n_photo' => $fileName,
             'n_video_link' => null,
             'i_adminid' => null,
             'c_active' => 1
         ];
 
         $this->db->table('t_article')->insert($input);
-        return redirect('articles');
+        return redirect()->to(base_url('articles'));
     }
 
     public function save_categories()

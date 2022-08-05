@@ -13,41 +13,7 @@
             <!--begin::Content-->
             <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
                 <!--begin::Toolbar-->
-                <div class="toolbar" id="kt_toolbar">
-                    <!--begin::Container-->
-                    <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
-                        <!--begin::Page title-->
-                        <div data-kt-swapper="true" data-kt-swapper-mode="prepend"
-                            data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}"
-                            class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
-                            <!--begin::Title-->
-                            <h1 class="d-flex text-dark fw-bolder fs-3 align-items-center my-1">Create Article</h1>
-                            <!--end::Title-->
-                            <!--begin::Separator-->
-                            <span class="h-20px border-gray-300 border-start mx-4"></span>
-                            <!--end::Separator-->
-                            <!--begin::Breadcrumb-->
-                            <ul class="breadcrumb breadcrumb-separatorless fw-bold fs-7 my-1">
-                                <!--begin::Item-->
-                                <li class="breadcrumb-item text-muted">
-                                    <a href="<?= site_url(); ?>" class="text-muted text-hover-primary">Home</a>
-                                </li>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <li class="breadcrumb-item">
-                                    <span class="bullet bg-gray-300 w-5px h-2px"></span>
-                                </li>
-                                <!--end::Item-->
-                                <!--begin::Item-->
-                                <li class="breadcrumb-item text-dark">Create Article</li>
-                                <!--end::Item-->
-                            </ul>
-                            <!--end::Breadcrumb-->
-                        </div>
-                        <!--end::Page title-->
-                    </div>
-                    <!--end::Container-->
-                </div>
+                <?= $this->include('components/breadcrumb'); ?>
                 <!--end::Toolbar-->
                 <!--begin::Post-->
                 <div class="post d-flex flex-column-fluid" id="kt_post">
@@ -55,7 +21,8 @@
                     <div id="kt_content_container" class="container-xxl">
                         <!--begin::Form-->
                         <form id="kt_ecommerce_add_product_form" class="form d-flex flex-column flex-lg-row"
-                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/products.html" action="<?= base_url() ?>/article-save" method="POST">
+                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/products.html" action="<?= base_url() ?>/article-save" method="POST"  enctype="multipart/form-data">
+                            <?= csrf_field(); ?>
                             <!--begin::Aside column-->
                             <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                                 <!--begin::Thumbnail settings-->
@@ -86,7 +53,7 @@
                                                 <i class="bi bi-pencil-fill fs-7"></i>
                                                 <!--begin::Inputs-->
                                                 <input type="file" name="photo" accept=".png, .jpg, .jpeg" />
-                                                <input type="hidden" name="photo" />
+                                                <!-- <input type="hidden" name="photo" /> -->
                                                 <!--end::Inputs-->
                                             </label>
                                             <!--end::Label-->
@@ -222,7 +189,7 @@
                                 <!--end::Tab content-->
                                 <div class="d-flex justify-content-end">
                                     <!--begin::Button-->
-                                    <a href="<?= site_url(); ?>/articles" id="kt_ecommerce_add_product_cancel"
+                                    <a href="<?= previous_url(); ?>" id="kt_ecommerce_add_product_cancel"
                                         class="btn btn-light me-5">Cancel</a>
                                     <!--end::Button-->
                                     <!--begin::Button-->

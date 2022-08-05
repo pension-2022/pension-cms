@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-08-04 22:33:31 --> Undefined variable $data
 #0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\components\category-list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\kamar\\...', 66)
 #1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
@@ -57,3 +58,56 @@ CRITICAL - 2022-08-04 22:34:17 --> Undefined variable $data
 #15 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #16 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #17 {main}
+=======
+CRITICAL - 2022-08-04 02:21:22 --> syntax error, unexpected token "endif", expecting end of file
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/brea...', NULL, true)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\contents\articles\articles.php(15): CodeIgniter\View\View->include('components/brea...')
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('contents/articl...', NULL, true)
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\articles\articles.php(9): CodeIgniter\View\View->include('contents/articl...')
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/articles/...', Array, true)
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Pages.php(78): view('pages/articles/...', Array)
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#12 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#13 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#15 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#16 {main}
+>>>>>>> 3db66a8bbf76c23f8d436b36f0d6647bed2de035
+CRITICAL - 2022-08-04 22:40:04 --> Undefined variable $data
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\components\category-list.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\kamar\\...', 66)
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/cate...', NULL, true)
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\contents\dashboards\dashboard.php(102): CodeIgniter\View\View->include('components/cate...')
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('contents/dashbo...', NULL, true)
+#8 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\pages\dashboards\dashboard.php(12): CodeIgniter\View\View->include('contents/dashbo...')
+#9 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#10 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/dashboard...', Array, true)
+#12 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(31): view('pages/dashboard...', Array)
+#13 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->index()
+#14 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#15 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#17 {main}
+CRITICAL - 2022-08-04 22:46:26 --> Call to a member function getRandomName() on null
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->save_articles()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#5 {main}
+CRITICAL - 2022-08-04 22:47:27 --> Call to a member function getRandomName() on null
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->save_articles()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#5 {main}

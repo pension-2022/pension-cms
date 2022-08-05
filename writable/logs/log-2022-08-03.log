@@ -111,6 +111,7 @@ CRITICAL - 2022-08-03 06:19:53 --> Undefined variable $a
 #11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #12 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 {main}
+<<<<<<< HEAD
 CRITICAL - 2022-08-03 14:54:02 --> Call to undefined function CodeIgniter\locale_set_default()
 #0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
 #1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\spark(45): require('C:\\Users\\kamar\\...')
@@ -385,3 +386,20 @@ CRITICAL - 2022-08-03 23:27:10 --> Undefined variable $i
 #16 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #17 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
 #18 {main}
+=======
+CRITICAL - 2022-08-03 18:16:24 --> Call to undefined method CodeIgniter\View\View::endExtend()
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include()
+#1 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('contents/articl...', NULL, true)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Views\pages\articles\articles.php(9): CodeIgniter\View\View->include('contents/articl...')
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\ASUS T...')
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/articles/...', Array, true)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Pages.php(78): view('pages/articles/...', Array)
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->articles()
+#9 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#13 {main}
+>>>>>>> 3db66a8bbf76c23f8d436b36f0d6647bed2de035
