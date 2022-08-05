@@ -35,7 +35,7 @@
                     data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-product-filter="status">
                     <option></option>
                     <option value="all">All</option>
-                    <option value="Activate">Activate</option>
+                    <option value="Activated">Activated</option>
                     <option value="Inactive">Inactive</option>
                 </select>
                 <!--end::Select2-->
@@ -109,23 +109,21 @@
                     </td>
                     <!--end::SKU=-->
                     <!--begin::Qty=-->
-                    <td class="text-end pe-0" data-order="Pensiun">
-                        <span class="fw-bolder ms-3">Pensiun</span>
+                    <td class="text-end pe-0" data-order="<?= ($i + 1) * 3; ?>">
+                        <span class="fw-bolder ms-3"><?= ($i + 1) * 3; ?> Article</span>
                     </td>
                     <!--end::Qty=-->
                     <!--begin::Price=-->
-                    <td class="text-end pe-0">
-                        <span class="fw-bolder text-dark">Muhammad Hafid</span>
-                    </td>
+                    <td class="text-end pe-0 d-none"></td>
                     <!--end::Price=-->
                     <!--begin::Rating-->
                     <td class="text-end pe-0 d-none" data-order="rating-5"></td>
                     <!--end::Rating-->
                     <!--begin::Status=-->
-                    <td class="text-end pe-0" data-order="<?= ($i % 2 == 0) ? 'Activate' : 'Inactive'; ?>">
+                    <td class="text-end pe-0" data-order="<?= ($i % 2 == 0) ? 'Activated' : 'Inactive'; ?>">
                         <!--begin::Badges-->
                         <div class="badge badge-light-<?= ($i % 2 == 0) ? 'success' : 'danger'; ?>">
-                            <?= ($i % 2 == 0) ? 'Activate' : 'Inactive'; ?></div>
+                            <?= ($i % 2 == 0) ? 'Activated' : 'Inactive'; ?></div>
                         <!--end::Badges-->
                     </td>
                     <!--end::Status=-->
@@ -150,7 +148,7 @@
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
                                 <a href="<?= current_url(); ?>"
-                                    class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactivate' : 'Publish'; ?></a>
+                                    class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactivate' : 'Activate'; ?></a>
                             </div>
                             <!--end::Menu item-->
                             <!--begin::Menu item-->

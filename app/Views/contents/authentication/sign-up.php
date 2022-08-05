@@ -141,7 +141,12 @@
                         <!--end::Input group-->
                         <!--begin::Actions-->
                         <div class="text-center">
-                            <button type="button" class="btn btn-lg btn-primary">
+                            <a href="<?= site_url(); ?>">
+                                <button type="button" class="btn btn-lg btn-danger">
+                                    <span class="indicator-label">Go Back</span>
+                                </button>
+                            </a>
+                            <button type="button" class="btn btn-lg btn-primary ms-5">
                                 <span class="indicator-label">Submit</span>
                                 <span class="indicator-progress">Please wait...
                                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
