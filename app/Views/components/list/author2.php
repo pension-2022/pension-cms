@@ -80,12 +80,12 @@
                 <?php for ($i = 0; $i < 30; $i++) : ?>
                 <!--begin::Table row-->
                 <tr>
-                    <!--begin::Checkbox-->
+                    <!--begin::Number-->
                     <td>
                         <span class="fw-bolder"><?= $i + 1; ?></span>
                     </td>
-                    <!--end::Checkbox-->
-                    <!--begin::Category=-->
+                    <!--end::Number-->
+                    <!--begin::Author=-->
                     <td>
                         <div class="d-flex align-items-center w-200px">
                             <!--begin::Thumbnail-->
@@ -102,23 +102,23 @@
                             </div>
                         </div>
                     </td>
-                    <!--end::Category=-->
-                    <!--begin::SKU=-->
+                    <!--end::Author=-->
+                    <!--begin::Joined=-->
                     <td class="text-end pe-0">
                         <span class="fw-bolder">4 Aug, 2022</span>
                     </td>
-                    <!--end::SKU=-->
-                    <!--begin::Qty=-->
+                    <!--end::Joined=-->
+                    <!--begin::Created Article=-->
                     <td class="text-end pe-0" data-order="<?= ($i + 1) * 3; ?>">
                         <span class="fw-bolder ms-3"><?= ($i + 1) * 3; ?> Article</span>
                     </td>
-                    <!--end::Qty=-->
-                    <!--begin::Price=-->
+                    <!--end::Created Article=-->
+                    <!--begin::None=-->
                     <td class="text-end pe-0 d-none"></td>
-                    <!--end::Price=-->
-                    <!--begin::Rating-->
+                    <!--end::None=-->
+                    <!--begin::None-->
                     <td class="text-end pe-0 d-none" data-order="rating-5"></td>
-                    <!--end::Rating-->
+                    <!--end::None-->
                     <!--begin::Status=-->
                     <td class="text-end pe-0" data-order="<?= ($i % 2 == 0) ? 'Activated' : 'Inactive'; ?>">
                         <!--begin::Badges-->

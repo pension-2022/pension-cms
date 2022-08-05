@@ -24,8 +24,8 @@ class PostController extends BaseController
     public function save_articles()
     {
 
-        
-		$photo = $this->request->getFile('photo');
+
+        $photo = $this->request->getFile('photo');
         $fileName = $photo->getRandomName();
         $photo->move('uploads/photos/', $fileName);
         $input = [
@@ -39,7 +39,7 @@ class PostController extends BaseController
         ];
 
         $this->db->table('t_article')->insert($input);
-        return redirect()->to(base_url('articles'));
+        return redirect('articles');
     }
 
     public function save_categories()

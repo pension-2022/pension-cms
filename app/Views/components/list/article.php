@@ -81,13 +81,13 @@
                 <?php $i++ ?>
                 <!--begin::Table row-->
                 <tr>
-                    <!--begin::Checkbox-->
+                    <!--begin::Number-->
                     <td>
                         <input class="form-check-input d-none" type="checkbox" value="1" />
                         <?= $i; ?>
                     </td>
-                    <!--end::Checkbox-->
-                    <!--begin::Category=-->
+                    <!--end::Number-->
+                    <!--begin::Article=-->
                     <td>
                         <div class="d-flex align-items-center w-300px">
                             <!--begin::Thumbnail-->
@@ -104,23 +104,23 @@
                             </div>
                         </div>
                     </td>
-                    <!--end::Category=-->
-                    <!--begin::SKU=-->
+                    <!--end::Article=-->
+                    <!--begin::None=-->
                     <td class="text-end pe-0 d-none"></td>
-                    <!--end::SKU=-->
-                    <!--begin::Qty=-->
+                    <!--end::None=-->
+                    <!--begin::Category=-->
                     <td class="text-end pe-0" data-order="Pensiun">
                         <span class="fw-bolder ms-3"><?= $datas['i_categoryid'] ?></span>
                     </td>
-                    <!--end::Qty=-->
-                    <!--begin::Price=-->
+                    <!--end::Category=-->
+                    <!--begin::Author=-->
                     <td class="text-end pe-0">
                         <span class="fw-bolder text-dark"><?= $datas['i_adminid'] ?></span>
                     </td>
-                    <!--end::Price=-->
-                    <!--begin::Rating-->
+                    <!--end::Author=-->
+                    <!--begin::None-->
                     <td class="text-end pe-0 d-none" data-order="rating-5"></td>
-                    <!--end::Rating-->
+                    <!--end::None-->
                     <!--begin::Status=-->
                     <td class="text-end pe-0" data-order="Published">
                         <!--begin::Badges-->

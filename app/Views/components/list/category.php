@@ -34,6 +34,7 @@
                 <!--begin::Status-->
                 <div class="d-flex align-items-center fw-bolder">
                     <!--begin::Label-->
+                    <div class="text-muted fs-7 me-2">Status</div>
                     <!--end::Label-->
                     <!--begin::Select-->
                     <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bolder py-0 ps-3 w-auto"
@@ -69,7 +70,7 @@
                 <thead>
                     <!--begin::Table row-->
                     <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                        <th class="min-w-100px">Category</th>
+                        <th class="min-w-100px ps-3">Category</th>
                         <th class="text-end min-w-100px">Created</th>
                         <th class="text-end min-w-125px d-none"></th>
                         <th class="text-end min-w-100px d-none"></th>
@@ -83,9 +84,11 @@
                 <!--begin::Table body-->
                 <tbody class="fw-bolder text-gray-600">
                     <tr data-kt-table-widget-4="subtable_template" class="d-none"></tr>
-                    <?php foreach ($data as $datas) : ?>
+                    <?php $i = 0 ?>
+                    <?php foreach ($data as $datas) : $i++ ?>
                     <tr>
                         <td>
+                            <?= $i; ?>.
                             <a class="text-gray-800 text-hover-primary"><?= $datas['n_description'] ?></a>
                         </td>
                         <td class="text-end">4 Aug, 2022</td>

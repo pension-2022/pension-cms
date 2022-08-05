@@ -19,7 +19,8 @@
                     <!--begin::Container-->
                     <div id="kt_content_container" class="container-xxl">
                         <form id="kt_ecommerce_add_category_form" class="form d-flex flex-column flex-lg-row"
-                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/categories.html"  action="<?= base_url() ?>/categories-save" method="POST">
+                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/categories.html"
+                            action="<?= base_url() ?>/categories-save" method="POST">
                             <!--begin::Aside column-->
                             <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                                 <!--begin::Status-->
@@ -42,12 +43,12 @@
                                     <!--begin::Card body-->
                                     <div class="card-body pt-0">
                                         <!--begin::Select2-->
-                                        <select name="status" class="form-select mb-2" data-control="select2" data-hide-search="true"
-                                            data-placeholder="Select an option"
+                                        <select name="status" class="form-select mb-2" data-control="select2"
+                                            data-hide-search="true" data-placeholder="Select an option"
                                             id="kt_ecommerce_add_category_status_select">
                                             <option></option>
                                             <option value=1 selected="selected">Active</option>
-                                            <option value=0 >Unactive</option>
+                                            <option value=0>Inactive</option>
                                         </select>
                                         <!--end::Select2-->
                                         <!--begin::Description-->
