@@ -2,11 +2,16 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\API\ResponseTrait;
+use CodeIgniter\I18n\Time;
+use DateTime;
+
 class PostController extends BaseController
 {
     private $db;
     private $ionAuth;
     private $session; 
+    use ResponseTrait;
 
     public function __construct()
     {
@@ -45,26 +50,37 @@ class PostController extends BaseController
                 'n_description' => $this->request->getPost('desc'),
                 'n_photo' => $fileName,
                 'n_video_link' => null,
+                'd_created_date' => Time::now('Asia/Bangkok', 'en_US'),
                 'i_adminid' => $this->session->get('id_user'),
                 'c_active' => 1
             ];
             $this->db->table('t_article')->insert($input);
         }
-        $photo = $this->request->getFile('photo');
-        $fileName = $photo->getRandomName();
-        $photo->move('/uploads/photos/', $fileName);
-        $input = [
-            'i_categoryid' => $this->request->getPost('categoryId'),
-            'n_title' => $this->request->getPost('title'),
-            'n_description' => $this->request->getPost('desc'),
-            'n_photo' => $fileName,
-            'n_video_link' => null,
-            'i_adminid' => null,
-            'c_active' => 1
+        return redirect('articles');
+    }
+
+    public function delete_article($id){
+        $table =  $this->db->table('t_article');
+        $table->delete(['i_id' => $id]);
+
+        $response = [
+            'success'   => TRUE
         ];
 
-        $this->db->table('t_article')->insert($input);
-        return redirect('articles');
+        return $this->respond($response, 200);
+    }
+
+    public function change_status($id, $status){
+        $table =  $this->db->table('t_article');
+        $table->set('c_active', ($status == 1) ? 0 : 1);
+        $table->where('i_id', $id);
+        $table->update();
+
+        $response = [
+            'success'   => TRUE
+        ];
+
+        return $this->respond($response, 200);
     }
 
     public function save_categories()
@@ -86,6 +102,7 @@ class PostController extends BaseController
         $additional_data = array(
             'first_name' => $this->request->getPost('firstName'),
             'last_name' => $this->request->getPost('lastName'),
+            'created_date' => Time::now('Asia/Bangkok', 'en_US'),
         );
         $group = array(2);
 
@@ -111,5 +128,14 @@ class PostController extends BaseController
         } else {
             return redirect('sign-in');
         }
+    }
+
+    public function logout(){
+        $this->ionAuth->logout();
+        $response = [
+            'success'   => TRUE
+        ];
+
+        return $this->respond($response, 200);
     }
 }

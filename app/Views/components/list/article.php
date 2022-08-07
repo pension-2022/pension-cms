@@ -64,9 +64,12 @@
                     </th>
                     <th class="min-w-200px">Article</th>
                     <th class="text-end min-w-100px">Category</th>
+                    <?php if($priv == 1 || (current_url() == site_url() . '/')) : ?>
                     <th class="text-end min-w-70px">Author</th>
+                    <?php endif ?>
                     <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px d-none"></th>
+                    <th class="text-end min-w-100px">Date</th>
                     <th class="text-end min-w-100px">Status</th>
                     <th class="text-end min-w-70px <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions
                     </th>
@@ -114,14 +117,19 @@
                     </td>
                     <!--end::Category=-->
                     <!--begin::Author=-->
+                    <?php if($priv == 1 || (current_url() == site_url() . '/')) : ?>
                     <td class="text-end pe-0">
                         <span class="fw-bolder text-dark"><?= $datas['author'] ?></span>
                     </td>
+                    <?php endif; ?>
                     <!--end::Author=-->
                     <!--begin::None-->
                     <td class="text-end pe-0 d-none" data-order="rating-5"></td>
                     <!--end::None-->
                     <!--begin::Status=-->
+                    <td class="text-end pe-0">
+                        <span class="fw-bolder text-dark"><?= $datas['tanggal'] ?></span>
+                    </td>
                     <td class="text-end pe-0" data-order="Published">
                         <!--begin::Badges-->
                         <div class="badge badge-light-<?= ($datas['c_active'] == 1) ? 'success' : 'danger'; ?>">
@@ -149,7 +157,7 @@
                             data-kt-menu="true">
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
-                                <a href="<?= current_url(); ?>"
+                                <a onclick="changeStatus(<?= $datas['i_id'] ?>, <?= $datas['c_active'] ?>)"
                                     class="menu-link px-3"><?= ($datas['c_active'] == 1) ? 'Inactivate' : 'Publish'; ?></a>
                             </div>
                             <!--end::Menu item-->
@@ -160,8 +168,8 @@
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
-                                <a href="<?= current_url(); ?>" class="menu-link px-3"
-                                    onclick="confirm('Sure to delete this category')">Delete</a>
+                                <a class="menu-link px-3"
+                                    onclick="deleteConfirmation(<?= $datas['i_id'] ?>)">Delete</a>
                             </div>
                             <!--end::Menu item-->
                         </div>
@@ -176,5 +184,81 @@
         </table>
         <!--end::Table-->
     </div>
+    <script type="text/javascript">
+        function changeStatus(id, status) {
+                var desc = ''
+                if(status == 1){
+                    desc = 'archive'
+                } else {
+                    desc = 'publish'
+                }
+                Swal.fire({
+                title: 'Do you want to '+desc+' data?',
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: 'Yes',
+                denyButtonText: 'No',
+                customClass: {
+                    actions: 'my-actions',
+                    cancelButton: 'order-1 right-gap',
+                    confirmButton: 'order-2',
+                    denyButton: 'order-3',
+                }
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                    $.ajax({
+                            type: 'POST',
+                            url: "<?= base_url() ?>/change-status/" + id + "/" + status,
+                            data: {_token: CSRF_TOKEN},
+                            dataType: 'JSON',
+                            success: function (results) {
+                                if (results.success === true) {
+                                    Swal.fire('Success!', '', 'success')
+                                    window.location.reload();
+                                } else {
+                                    Swal.fire('Failed!', '', 'error')
+                                }
+                            }
+                        });
+                }
+                })
+            }
+    </script>
+    <script type="text/javascript">
+            function deleteConfirmation(id) {
+                Swal.fire({
+                title: 'Do you want to delete data?',
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: 'Yes',
+                denyButtonText: 'No',
+                customClass: {
+                    actions: 'my-actions',
+                    cancelButton: 'order-1 right-gap',
+                    confirmButton: 'order-2',
+                    denyButton: 'order-3',
+                }
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                    $.ajax({
+                            type: 'POST',
+                            url: "<?= base_url() ?>/article-delete/" + id,
+                            data: {_token: CSRF_TOKEN},
+                            dataType: 'JSON',
+                            success: function (results) {
+                                if (results.success === true) {
+                                    Swal.fire('Success!', '', 'success')
+                                    window.location.reload();
+                                } else {
+                                    Swal.fire('Failed!', '', 'error')
+                                }
+                            }
+                        });
+                }
+                })
+            }
+        </script>
     <!--end::Card body-->
 </div>

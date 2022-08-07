@@ -110,6 +110,18 @@ $pages = [
     // Begin Add Articles
     [
         'method' => 'post',
+        'link' => '/article-delete/(:num)',
+        'controller' => 'PostController::delete_article/$1'
+    ],    
+    // Begin Add Articles
+    [
+        'method' => 'post',
+        'link' => '/change-status/(:num)/(:num)',
+        'controller' => 'PostController::change_status/$1/$2'
+    ],
+    // Begin Add Articles
+    [
+        'method' => 'post',
         'link' => '/categories-save',
         'controller' => 'PostController::save_categories'
     ],
@@ -124,6 +136,12 @@ $pages = [
         'method' => 'post',
         'link' => '/sign-in',
         'controller' => 'PostController::login'
+    ],  
+    // Begin Add Articles
+    [
+        'method' => 'post',
+        'link' => '/sign-out',
+        'controller' => 'PostController::logout'
     ],  
     // Begin Users List
     [

@@ -65,7 +65,7 @@
                     <th class="text-end min-w-70px">Created Article</th>
                     <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px d-none"></th>
-                    <th class="text-end min-w-100px">Status</th>
+                    <th class="text-end min-w-100px">Email</th>
                     <th class="text-end min-w-70px <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions
                     </th>
                 </tr>
@@ -74,10 +74,9 @@
             <!--end::Table head-->
             <!--begin::Table body-->
             <tbody class="fw-bold text-gray-600">
-                <?php $nama = [
-                    'Bimo Pramudyo Soekarno', 'Bimo Surono', 'Bing Gondosubroto', 'Bintoro', 'Bismarka ', 'Blue Ribb', 'Bob Yanua', 'Bob Yanua', 'Bobby And', 'Bobby Ima', 'Boedi Sam', 'Boedihard', 'Boediyani', 'Boelio Mu', 'BOENJAMIN', 'Bong Kiu ', 'Bong Tjen', 'Bong Tjen', 'Bonny Bud', 'BOURNIGAU', 'Boy Gemin', 'Brett Hay', 'Bright Ci', 'Bruce Wil', 'Bruce Wil', 'BUDHI SOE', 'Budi Arsi', 'Budi Basu', 'Budi Chri', 'BUDI DHAR'
-                ] ?>
-                <?php for ($i = 0; $i < 30; $i++) : ?>
+                <?php $i = 0 ?>
+                <?php foreach ($author as $user) :  ?>
+                <?php $i++ ?>
                 <!--begin::Table row-->
                 <tr>
                     <!--begin::Number-->
@@ -91,26 +90,26 @@
                             <!--begin::Thumbnail-->
                             <a href="<?= current_url(); ?>" class="symbol symbol-50px">
                                 <span class="symbol-label"
-                                    style="background-image:url(<?= base_url(); ?>/assets/media/avatars/300-<?= $i + 1; ?>.jpg);"></span>
+                                    style="background-image:url(<?= base_url(); ?>/assets/media/avatars/300-<?= $i + 0; ?>.jpg);"></span>
                             </a>
                             <!--end::Thumbnail-->
                             <div class="ms-5">
                                 <!--begin::Title-->
                                 <a href="<?= current_url(); ?>" class="text-gray-800 text-hover-primary fs-5 fw-bolder"
-                                    data-kt-ecommerce-product-filter="product_name"><?= $nama[$i]; ?></a>
+                                    data-kt-ecommerce-product-filter="product_name"><?= $user['fullName'] ?></a>
                                 <!--end::Title-->
                             </div>
                         </div>
                     </td>
-                    <!--end::Author=-->
+                    <!--end::user=-->
                     <!--begin::Joined=-->
                     <td class="text-end pe-0">
-                        <span class="fw-bolder">4 Aug, 2022</span>
+                        <span class="fw-bolder"><?= $user['joined'] ?></span>
                     </td>
                     <!--end::Joined=-->
                     <!--begin::Created Article=-->
-                    <td class="text-end pe-0" data-order="<?= ($i + 1) * 3; ?>">
-                        <span class="fw-bolder ms-3"><?= ($i + 1) * 3; ?> Article</span>
+                    <td class="text-end pe-0" data-order="<?= $user['articles'] ?>">
+                        <span class="fw-bolder ms-3"><?= $user['articles'] ?> Article</span>
                     </td>
                     <!--end::Created Article=-->
                     <!--begin::None=-->
@@ -120,10 +119,11 @@
                     <td class="text-end pe-0 d-none" data-order="rating-5"></td>
                     <!--end::None-->
                     <!--begin::Status=-->
-                    <td class="text-end pe-0" data-order="<?= ($i % 2 == 0) ? 'Activated' : 'Inactive'; ?>">
+                    <td class="text-end pe-0" data-order="<?= $user['email'] ?>">
                         <!--begin::Badges-->
-                        <div class="badge badge-light-<?= ($i % 2 == 0) ? 'success' : 'danger'; ?>">
-                            <?= ($i % 2 == 0) ? 'Activated' : 'Inactive'; ?></div>
+                        <!-- <div class="badge badge-light-<?= ($i % 2 == 0) ? 'success' : 'danger'; ?>">
+                            <?= ($i % 2 == 0) ? 'Activated' : 'Inactive'; ?></div> -->
+                        <span class="fw-bolder"><?= $user['email'] ?></span>
                         <!--end::Badges-->
                     </td>
                     <!--end::Status=-->
@@ -168,7 +168,7 @@
                     <!--end::Action=-->
                 </tr>
                 <!--end::Table row-->
-                <?php endfor ?>
+                <?php endforeach ?>
             </tbody>
             <!--end::Table body-->
         </table>

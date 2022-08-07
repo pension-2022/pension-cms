@@ -8,7 +8,7 @@
         <!--end::Title-->
         <!--begin::Toolbar-->
         <div class="card-toolbar">
-            <a href="<?= site_url(); ?>/sign-up" class="btn btn-sm btn-light">Add
+            <a href="<?= site_url(); ?>/sign-up" class="btn btn-sm btn-light  <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Add
                 Author</a>
         </div>
         <!--end::Toolbar-->
@@ -18,10 +18,9 @@
     <div class="card-body">
         <!--begin::Scroll-->
         <div class="hover-scroll-overlay-y pe-6 me-n6" style="height: 437px">
-            <?php $nama = [
-                'Bimo Pramudyo Soekarno', 'Bimo Surono', 'Bing Gondosubroto', 'Bintoro', 'Bismarka ', 'Blue Ribb', 'Bob Yanua', 'Bob Yanua', 'Bobby And', 'Bobby Ima', 'Boedi Sam', 'Boedihard', 'Boediyani', 'Boelio Mu', 'BOENJAMIN', 'Bong Kiu ', 'Bong Tjen', 'Bong Tjen', 'Bonny Bud', 'BOURNIGAU', 'Boy Gemin', 'Brett Hay', 'Bright Ci', 'Bruce Wil', 'Bruce Wil', 'BUDHI SOE', 'Budi Arsi', 'Budi Basu', 'Budi Chri', 'BUDI DHAR'
-            ] ?>
-            <?php for ($i = 0; $i < 30; $i++) : ?>
+            <?php $i = 0 ?>
+            <?php foreach ($author as $user) :  ?>
+            <?php $i++ ?>
             <!--begin::Item-->
             <div class="rounded border-gray-300 border-1 border-gray-300 border-dashed px-7 py-3 mb-6">
                 <!--begin::Info-->
@@ -34,7 +33,7 @@
                         <!--end::Icon-->
                         <!--begin::Title-->
                         <a href="<?= site_url(); ?>"
-                            class="text-gray-800 text-hover-primary fw-bolder"><?= $nama[$i]; ?></a>
+                            class="text-gray-800 text-hover-primary fw-bolder"><?= $user['fullName'] ?></a>
                         <!--end::Title-->
                     </div>
                     <!--end::Wrapper-->
@@ -44,14 +43,14 @@
                 <div class="d-flex flex-stack">
                     <!--begin::Name-->
                     <span class="text-gray-400 fw-bolder">Created Article:
-                        <span class="text-gray-800 text-hover-primary fw-bolder"><?= ($i + 1) * 3; ?></span>
+                        <span class="text-gray-800 text-hover-primary fw-bolder"><?= $user['articles'] ?></span>
                     </span>
                     <!--end::Name-->
                 </div>
                 <!--end::Customer-->
             </div>
             <!--end::Item-->
-            <?php endfor ?>
+            <?php endforeach ?>
         </div>
         <!--end::Scroll-->
     </div>

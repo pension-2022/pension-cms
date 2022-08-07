@@ -20,32 +20,32 @@
         </div>
         <!--end::Aside mobile toggle-->
         <!--begin::Mobile logo-->
-        <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
+        <!-- <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0">
             <a href="<?= base_url(); ?>" class="d-lg-none">
                 <img alt="Logo" src="<?= base_url(); ?>/assets/media/dpbri-color.svg" class="h-30px" />
             </a>
-        </div>
+        </div> -->
         <!--end::Mobile logo-->
         <!--begin::Wrapper-->
         <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
             <!--begin::Navbar-->
             <div class="d-flex align-items-stretch" id="kt_header_nav">
                 <!--begin::Menu wrapper-->
-                <div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu"
+                <!-- <div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu"
                     data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true"
                     data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="end"
                     data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true"
-                    data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+                    data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}"> -->
                     <!--begin::Menu-->
-                    <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch"
+                    <!-- <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch"
                         id="#kt_header_menu" data-kt-menu="true">
                         <?= $this->include('components/navigation/header/dashboard'); ?>
                         <?= $this->include('components/navigation/header/article'); ?>
                         <?= $this->include('components/navigation/header/category'); ?>
                         <?= $this->include('components/navigation/header/author'); ?>
-                    </div>
+                    </div> -->
                     <!--end::Menu-->
-                </div>
+                <!-- </div> -->
                 <!--end::Menu wrapper-->
             </div>
             <!--end::Navbar-->
@@ -225,9 +225,43 @@
                         <!--end::Menu item-->
                         <!--begin::Menu item-->
                         <div class="menu-item px-5">
-                            <a href="<?= base_url('authentication/flows/basic/sign-in'); ?>" class="menu-link px-5">Sign
+                            <a onclick="signout()" class="menu-link px-5">Sign
                                 Out</a>
                         </div>
+                        <script type="text/javascript">
+                            function signout() {
+                                Swal.fire({
+                                title: 'Are you sure?',
+                                showDenyButton: true,
+                                showCancelButton: false,
+                                confirmButtonText: 'Yes',
+                                denyButtonText: 'No',
+                                customClass: {
+                                    actions: 'my-actions',
+                                    cancelButton: 'order-1 right-gap',
+                                    confirmButton: 'order-2',
+                                    denyButton: 'order-3',
+                                }
+                                }).then((result) => {
+                                if (result.isConfirmed) {
+                                    var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                                    $.ajax({
+                                            type: 'POST',
+                                            url: "<?= base_url() ?>/sign-out",
+                                            data: {_token: CSRF_TOKEN},
+                                            success: function (results) {
+                                                if (results.success === true) {
+                                                    window.location.href = '<?= base_url() ?>/sign-in';
+                                                    // window.location.reload();
+                                                } else {
+                                                    Swal.fire('Failed!', '', 'error')
+                                                }
+                                            }
+                                        });
+                                }
+                                })
+                            }
+                        </script>
                         <!--end::Menu item-->
                         <!--begin::Menu separator-->
                         <div class="separator my-2"></div>
@@ -252,11 +286,11 @@
                 </div>
                 <!--end::User menu-->
                 <!--begin::Header menu toggle-->
-                <div class="d-flex align-items-center d-lg-none ms-2 me-n3" title="Show header menu">
+                <!-- <div class="d-flex align-items-center d-lg-none ms-2 me-n3" title="Show header menu">
                     <div class="btn btn-icon btn-active-light-primary w-30px h-30px w-md-40px h-md-40px"
-                        id="kt_header_menu_mobile_toggle">
+                        id="kt_header_menu_mobile_toggle"> -->
                         <!--begin::Svg Icon | path: icons/duotune/text/txt001.svg-->
-                        <span class="svg-icon svg-icon-1">
+                        <!-- <span class="svg-icon svg-icon-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none">
                                 <path
@@ -266,10 +300,10 @@
                                     d="M21 16H3C2.4 16 2 15.6 2 15V14C2 13.4 2.4 13 3 13H21C21.6 13 22 13.4 22 14V15C22 15.6 21.6 16 21 16ZM14 20V19C14 18.4 13.6 18 13 18H3C2.4 18 2 18.4 2 19V20C2 20.6 2.4 21 3 21H13C13.6 21 14 20.6 14 20Z"
                                     fill="currentColor" />
                             </svg>
-                        </span>
+                        </span> -->
                         <!--end::Svg Icon-->
-                    </div>
-                </div>
+                    <!-- </div>
+                </div> -->
                 <!--end::Header menu toggle-->
             </div>
             <!--end::Toolbar wrapper-->
