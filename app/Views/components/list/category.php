@@ -1,11 +1,15 @@
-<div class="card card-flush h-xl-100">
+<div class="card card-flush">
     <!--begin::Card header-->
-    <div class="card-header pt-7">
-        <!--begin::Title-->
-        <h3 class="card-title align-items-start flex-column">
-            <span class="card-label fw-bolder text-gray-800">Category Lists</span>
-        </h3>
-        <!--end::Title-->
+    <div class="card-header align-items-center py-5 gap-2 gap-md-5">
+        <!--begin::Card title-->
+        <div class="card-title">
+            <!--begin::Title-->
+            <h3 class="card-title align-items-start flex-column">
+                <span class="card-label fw-bolder text-gray-800">Category Lists</span>
+            </h3>
+            <!--end::Title-->
+        </div>
+        <!--end::Card title-->
         <!--begin::Actions-->
         <div class="card-toolbar">
             <!--begin::Filters-->
@@ -30,6 +34,7 @@
                 <!--begin::Status-->
                 <div class="d-flex align-items-center fw-bolder">
                     <!--begin::Label-->
+                    <div class="text-muted fs-7 me-2">Status</div>
                     <!--end::Label-->
                     <!--begin::Select-->
                     <select class="form-select form-select-transparent text-dark fs-7 lh-1 fw-bolder py-0 ps-3 w-auto"
@@ -55,7 +60,7 @@
     </div>
     <!--end::Card header-->
     <!--begin::Card body-->
-    <div class="card-body pt-2">
+    <div class="card-body pt-0">
         <?php if (current_url() == site_url() . '/') : ?>
         <div class="hover-scroll-overlay-y pe-6 me-n6" style="height: 433px">
             <?php endif ?>
@@ -65,9 +70,12 @@
                 <thead>
                     <!--begin::Table row-->
                     <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                        <th class="px-3 min-w-100px">Category</th>
+                        <th class="min-w-100px ps-3">Category</th>
                         <th class="text-end min-w-100px">Created</th>
-                        <th class="text-end min-w-125px">Status</th>
+                        <th class="text-end min-w-125px d-none"></th>
+                        <th class="text-end min-w-100px d-none"></th>
+                        <th class="text-end min-w-100px d-none"></th>
+                        <th class="text-end min-w-50px">Status</th>
                         <th class="text-end <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions</th>
                     </tr>
                     <!--end::Table row-->
@@ -76,13 +84,23 @@
                 <!--begin::Table body-->
                 <tbody class="fw-bolder text-gray-600">
                     <tr data-kt-table-widget-4="subtable_template" class="d-none"></tr>
-                    <?php foreach ($data as $datas) : ?>
+                    <?php $i = 0 ?>
+                    <?php foreach ($data as $datas) : $i++ ?>
                     <tr>
                         <td>
+                            <?= $i; ?>.
                             <a class="text-gray-800 text-hover-primary"><?= $datas['n_description'] ?></a>
                         </td>
                         <td class="text-end">4 Aug, 2022</td>
-                        <td class="text-end"><?= ($datas['c_active'] == 1) ? 'Active' : 'Unactive'; ?></td>
+                        <td class="text-end d-none"></td>
+                        <td class="text-end d-none"></td>
+                        <td class="text-end d-none"></td>
+                        <td class="text-end">
+                            <!--begin::Badges-->
+                            <div class="badge badge-light-<?= ($datas['c_active'] == 1) ? 'success' : 'danger'; ?>">
+                                <?= ($datas['c_active'] == 1) ? 'Published' : 'Inactive'; ?></div>
+                            <!--end::Badges-->
+                        </td>
                         <td class="text-end <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">
                             <button type="button" class="d-none" data-kt-table-widget-4="expand_row"></button>
                             <a href="#" class="btn btn-sm btn-light btn-active-light-primary"

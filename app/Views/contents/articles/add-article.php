@@ -1,4 +1,4 @@
-<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <div class="d-flex flex-column flex-root">
     <!--begin::Page-->
     <div class="page d-flex flex-row flex-column-fluid">
@@ -21,7 +21,8 @@
                     <div id="kt_content_container" class="container-xxl">
                         <!--begin::Form-->
                         <form id="kt_ecommerce_add_product_form" class="form d-flex flex-column flex-lg-row"
-                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/products.html" action="<?= base_url() ?>/article-save" method="POST"  enctype="multipart/form-data">
+                            data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/products.html"
+                            action="<?= base_url() ?>/article-save" method="POST" enctype="multipart/form-data">
                             <?= csrf_field(); ?>
                             <!--begin::Aside column-->
                             <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
@@ -89,15 +90,9 @@
                                     <div class="card-header">
                                         <!--begin::Card title-->
                                         <div class="card-title">
-                                            <h2>Status</h2>
+                                            <h2>Category</h2>
                                         </div>
                                         <!--end::Card title-->
-                                        <!--begin::Card toolbar-->
-                                        <div class="card-toolbar">
-                                            <div class="rounded-circle bg-success w-15px h-15px"
-                                                id="kt_ecommerce_add_product_status"></div>
-                                        </div>
-                                        <!--begin::Card toolbar-->
                                     </div>
                                     <!--end::Card header-->
                                     <!--begin::Card body-->
@@ -108,21 +103,30 @@
                                             id="kt_ecommerce_add_product_status_select" name="categoryId">
                                             <option value=null disabled selected="selected">Select Category</option>
                                             <?php foreach ($category as $datas) : ?>
-                                            <option value=<?= $datas['i_id']; ?> ><?= $datas['n_description']; ?></option>
+                                            <option value=<?= $datas['i_id']; ?>><?= $datas['n_description']; ?>
+                                            </option>
                                             <?php endforeach; ?>
                                         </select>
                                         <!--end::Select2-->
                                         <!--begin::Description-->
-                                        <div class="text-muted fs-7">Set the article status.</div>
+                                        <div class="text-muted fs-7">Set the article category.</div>
                                         <!--end::Description-->
-                                        <!--begin::Datepicker-->
-                                        <div class="d-none mt-10">
-                                            <label for="kt_ecommerce_add_product_status_datepicker"
-                                                class="form-label">Select publishing date and time</label>
-                                            <input class="form-control" id="kt_ecommerce_add_product_status_datepicker"
-                                                placeholder="Pick date &amp; time" />
-                                        </div>
-                                        <!--end::Datepicker-->
+                                        <!--begin::Button-->
+                                        <a href="<?= site_url(); ?>/add-category"
+                                            class="btn btn-light-primary btn-sm mt-5">
+                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                                            <span class="svg-icon svg-icon-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none">
+                                                    <rect opacity="0.5" x="11" y="18" width="12" height="2" rx="1"
+                                                        transform="rotate(-90 11 18)" fill="currentColor" />
+                                                    <rect x="6" y="11" width="12" height="2" rx="1"
+                                                        fill="currentColor" />
+                                                </svg>
+                                            </span>
+                                            <!--end::Svg Icon-->Create new category
+                                        </a>
+                                        <!--end::Button-->
                                     </div>
                                     <!--end::Card body-->
                                 </div>
@@ -222,15 +226,18 @@
 
 <?= $this->section('script'); ?>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-trendline"></script>
-<script src="{{asset('app-assets/js/scripts/charts/index_frontend.js')}}"></script><script src="https://cdn.tiny.cloud/1/kslnuok238njqoqgytmv0c0v26swh1vyljtvhk5a4r0byita/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-<script src="https://cdn.tiny.cloud/1/kslnuok238njqoqgytmv0c0v26swh1vyljtvhk5a4r0byita/tinymce/5/jquery.tinymce.min.js" referrerpolicy="origin"></script>
+<script src="{{asset('app-assets/js/scripts/charts/index_frontend.js')}}"></script>
+<script src="https://cdn.tiny.cloud/1/kslnuok238njqoqgytmv0c0v26swh1vyljtvhk5a4r0byita/tinymce/5/tinymce.min.js"
+    referrerpolicy="origin"></script>
+<script src="https://cdn.tiny.cloud/1/kslnuok238njqoqgytmv0c0v26swh1vyljtvhk5a4r0byita/tinymce/5/jquery.tinymce.min.js"
+    referrerpolicy="origin"></script>
 <script>
-    $('textarea#tiny').tinymce({
-      height: 200,
-      menubar: false,
-      plugins: 'link',
-      toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | link',
-      default_link_target: '_blank'
-    });
-  </script>
+$('textarea#tiny').tinymce({
+    height: 200,
+    menubar: false,
+    plugins: 'link',
+    toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help | link',
+    default_link_target: '_blank'
+});
+</script>
 <?= $this->endSection(); ?>

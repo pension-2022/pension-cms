@@ -62,10 +62,11 @@
                             data-kt-check-target="#kt_ecommerce_products_table .form-check-input" value="1" />
                         #
                     </th>
-                    <th class="min-w-200px">Title</th>
-                    <th class="text-end min-w-100px">Thumbnail</th>
-                    <th class="text-end min-w-70px">Category</th>
-                    <th class="text-end min-w-100px">Author</th>
+                    <th class="min-w-200px">Article</th>
+                    <th class="text-end min-w-100px">Category</th>
+                    <th class="text-end min-w-70px">Author</th>
+                    <th class="text-end min-w-100px d-none"></th>
+                    <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px">Status</th>
                     <th class="text-end min-w-70px <?= (current_url() == site_url() . '/') ? 'd-none' : ''; ?>">Actions
                     </th>
@@ -75,25 +76,27 @@
             <!--end::Table head-->
             <!--begin::Table body-->
             <tbody class="fw-bold text-gray-600">
-                <?php foreach ($datarow as $datas) : ?>
+                <?php $i = 0 ?>
+                <?php foreach ($datarow as $datas) :  ?>
+                <?php $i++ ?>
                 <!--begin::Table row-->
                 <tr>
-                    <!--begin::Checkbox-->
+                    <!--begin::Number-->
                     <td>
-                        <div class="d-flex align-items-center w-50px">
-                            <div class="">
-                                <!--begin::Title-->
-                                <a href="<?= current_url(); ?>" class="text-gray-800 text-hover-primary fs-5 fw-bolder"
-                                    data-kt-ecommerce-product-filter="product_name"><?= $datas['i_id'] ?></a>
-                                <!--end::Title-->
-                            </div>
-                        </div>
+                        <input class="form-check-input d-none" type="checkbox" value="1" />
+                        <?= $i; ?>
                     </td>
-                    <!--end::Checkbox-->
-                    <!--begin::Category=-->
+                    <!--end::Number-->
+                    <!--begin::Article=-->
                     <td>
-                        <div class="d-flex align-items-center w-100px">
-                            <div class="">
+                        <div class="d-flex align-items-center w-300px">
+                            <!--begin::Thumbnail-->
+                            <a href="<?= current_url(); ?>" class="symbol symbol-50px">
+                                <span class="symbol-label"
+                                    style="background-image:url(<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>);"></span>
+                            </a>
+                            <!--end::Thumbnail-->
+                            <div class="ms-5">
                                 <!--begin::Title-->
                                 <a href="<?= current_url(); ?>" class="text-gray-800 text-hover-primary fs-5 fw-bolder"
                                     data-kt-ecommerce-product-filter="product_name"><?= $datas['n_title'] ?></a>
@@ -101,27 +104,23 @@
                             </div>
                         </div>
                     </td>
-                    <!--end::Category=-->
-                    <!--begin::SKU=-->
-                    <td class="text-end pe-0">
-                        <a href="<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>" target="blank">
-                            <img width="150px" class="img-thumbnail" src="<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>">
-                        </a>
-                    </td>
-                    <!--end::SKU=-->
-                    <!--begin::Qty=-->
+                    <!--end::Article=-->
+                    <!--begin::None=-->
+                    <td class="text-end pe-0 d-none"></td>
+                    <!--end::None=-->
+                    <!--begin::Category=-->
                     <td class="text-end pe-0" data-order="Pensiun">
                         <span class="fw-bolder ms-3"><?= $datas['i_categoryid'] ?></span>
                     </td>
-                    <!--end::Qty=-->
-                    <!--begin::Price=-->
+                    <!--end::Category=-->
+                    <!--begin::Author=-->
                     <td class="text-end pe-0">
                         <span class="fw-bolder text-dark"><?= $datas['i_adminid'] ?></span>
                     </td>
-                    <!--end::Price=-->
-                    <!--begin::Rating-->
+                    <!--end::Author=-->
+                    <!--begin::None-->
                     <td class="text-end pe-0 d-none" data-order="rating-5"></td>
-                    <!--end::Rating-->
+                    <!--end::None-->
                     <!--begin::Status=-->
                     <td class="text-end pe-0" data-order="Published">
                         <!--begin::Badges-->

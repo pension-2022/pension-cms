@@ -1,8 +1,16 @@
-<div data-kt-menu-trigger="click" class="menu-item menu-accordion <?=
-                                                                    (current_url() == site_url() . '/categories' ||
-                                                                        current_url() == site_url() . '/add-category' ||
-                                                                        current_url() == site_url() . '/edit-category'
-                                                                    ) ? 'show here' : ''; ?>">
+<div data-kt-menu-trigger="click" class="menu-item menu-accordion 
+<?php switch (current_url()) {
+    case site_url() . '/categories':
+    case site_url() . '/add-category':
+    case site_url() . '/edit-category':
+        echo 'show here';
+        break;
+
+    default:
+        # code...
+        break;
+} ?>
+">
     <span class="menu-link">
         <span class="menu-icon">
             <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm001.svg-->
@@ -28,29 +36,9 @@
         <span class="menu-arrow"></span>
     </span>
     <div class="menu-sub menu-sub-accordion">
-        <div class="menu-item <?= (current_url() == site_url() . '/categories') ? 'show here' : ''; ?>">
-            <a class="menu-link" href="<?= site_url('categories'); ?>">
-                <span class="menu-bullet">
-                    <span class="bullet bullet-dot"></span>
-                </span>
-                <span class="menu-title">Categories</span>
-            </a>
-        </div>
-        <div class="menu-item <?= (current_url() == site_url() . '/add-category') ? 'show here' : ''; ?>">
-            <a class="menu-link" href="<?= site_url('add-category'); ?>">
-                <span class="menu-bullet">
-                    <span class="bullet bullet-dot"></span>
-                </span>
-                <span class="menu-title">Add Category</span>
-            </a>
-        </div>
-        <div class="menu-item <?= (current_url() == site_url() . '/edit-category') ? 'show here' : ''; ?>">
-            <a class="menu-link" href="<?= site_url('edit-category'); ?>">
-                <span class="menu-bullet">
-                    <span class="bullet bullet-dot"></span>
-                </span>
-                <span class="menu-title">Edit Category</span>
-            </a>
-        </div>
+        <?php $items = 'components/navigation/items/' ?>
+        <?= $this->include($items . 'categories'); ?>
+        <?= $this->include($items . 'add-category'); ?>
+        <?= $this->include($items . 'edit-category'); ?>
     </div>
 </div>

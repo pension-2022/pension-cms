@@ -18,9 +18,17 @@
                 <div class="post d-flex flex-column-fluid" id="kt_post">
                     <!--begin::Container-->
                     <div id="kt_content_container" class="container-xxl">
-                        <!--begin::Category-->
-                        <?= $this->include('components/list/category'); ?>
-                        <!--end::Category-->
+                        <!--begin::Row-->
+                        <div class="row gy-5 g-xl-10">
+                            <!--begin::Col-->
+                            <div class="col-xl-12 mb-5 mb-xl-10">
+                                <!--begin::Table Widget 4-->
+                                <?= $this->include('components/list/category'); ?>
+                                <!--end::Table Widget 4-->
+                            </div>
+                            <!--end::Col-->
+                        </div>
+                        <!--end::Row-->
                     </div>
                     <!--end::Container-->
                 </div>

@@ -29,6 +29,9 @@
                     case site_url() . '/edit-category':
                         echo 'Edit Category';
                         break;
+                    case site_url() . '/authors':
+                        echo 'Authors';
+                        break;
 
                     default:
                         '';
