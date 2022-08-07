@@ -53,6 +53,7 @@
                 <?= $this->include('components/navigation/aside/article'); ?>
                 <?= $this->include('components/navigation/aside/category'); ?>
                 <?= $this->include('components/navigation/aside/author'); ?>
+                <?= $this->include('components/navigation/aside/logout'); ?>
             </div>
         </div>
         <!--end::Menu-->
