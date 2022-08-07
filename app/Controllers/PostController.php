@@ -47,7 +47,7 @@ class PostController extends BaseController
 
     public function register_author()
     {
-        $username = $this->request->getPost('username');
+        $username = 'admin';
         $password = $this->request->getPost('password');
         $email = $this->request->getPost('email');
         $additional_data = array(
@@ -59,5 +59,16 @@ class PostController extends BaseController
         $this->ionAuth->register($username, $password, $email, $additional_data, $group);
 
         return redirect()->to(base_url('authors'));
+    }
+
+    public function login(){
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+        
+        if($this->ionAuth->login($username, $password) == TRUE){
+            return redirect('/');
+        } else {
+            return redirect('sign-in');
+        }
     }
 }

@@ -113,6 +113,12 @@ $pages = [
         'link' => '/register-author',
         'controller' => 'PostController::register_author'
     ],  
+    // Begin Add Articles
+    [
+        'method' => 'post',
+        'link' => '/sign-in',
+        'controller' => 'PostController::login'
+    ],  
     // Begin Edit Articles
     [
         'method' => 'get',

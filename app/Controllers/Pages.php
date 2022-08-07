@@ -25,18 +25,23 @@ class Pages extends BaseController
 
     public function index()
     {
-        $sql = "select * from t_article where c_active = ?";
-        $query1 = $this->db->query($sql, 1)->getResultArray();
-        $sql = "select * from t_category";
-        $query2 = $this->db->query($sql, 1)->getResultArray();
-        $data = [
-            'title' => 'dPensiOn || Admin || Dashboard',
-            'bodyStyle' => $this->styleHeader,
-            'data' => $query2,
-            'datarow' => $query1
-        ];
-
-        return view($this->folder['dashboard'] . 'dashboard', $data);
+        if (!$this->ionAuth->loggedIn())
+        {
+            return redirect('sign-in');
+        } else {
+            $sql = "select * from t_article where c_active = ?";
+            $query1 = $this->db->query($sql, 1)->getResultArray();
+            $sql = "select * from t_category";
+            $query2 = $this->db->query($sql, 1)->getResultArray();
+            $data = [
+                'title' => 'dPensiOn || Admin || Dashboard',
+                'bodyStyle' => $this->styleHeader,
+                'data' => $query2,
+                'datarow' => $query1
+            ];
+    
+            return view($this->folder['dashboard'] . 'dashboard', $data);
+        }
     }
 
     public function categories()
