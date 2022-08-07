@@ -93,7 +93,7 @@
                             <!--begin::Thumbnail-->
                             <a href="<?= current_url(); ?>" class="symbol symbol-50px">
                                 <span class="symbol-label"
-                                    style="background-image:url(<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>);"></span>
+                                    style="background-image:url(<?= base_url() . "/../../uploads/photos/" . $datas['n_photo']; ?>);"></span>
                             </a>
                             <!--end::Thumbnail-->
                             <div class="ms-5">

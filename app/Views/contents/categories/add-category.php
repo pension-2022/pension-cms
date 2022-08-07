@@ -20,7 +20,7 @@
                     <div id="kt_content_container" class="container-xxl">
                         <form id="kt_ecommerce_add_category_form" class="form d-flex flex-column flex-lg-row"
                             data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/categories.html"
-                            action="<?= base_url() ?>/categories-save" method="POST">
+                            action="<?= site_url() ?>/categories-save" method="POST">
                             <!--begin::Aside column-->
                             <div class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10">
                                 <!--begin::Status-->
