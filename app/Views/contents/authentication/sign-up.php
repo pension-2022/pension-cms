@@ -38,9 +38,9 @@
                 <!--begin::Wrapper-->
                 <div class="w-lg-600px p-10 p-lg-15 mx-auto">
                     <!--begin::Form-->
-                    <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form">
+                    <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form"  action="<?= base_url() ?>/register-author" method="POST" >
                         <!--begin::Heading-->
-                        <div class="mb-10 text-center">
+                        <div class="mb-10 text-center d-none">
                             <!--begin::Title-->
                             <h1 class="text-dark mb-3">Create an Account</h1>
                             <!--end::Title-->
@@ -52,12 +52,12 @@
                         </div>
                         <!--end::Heading-->
                         <!--begin::Action-->
-                        <button type="button" class="btn btn-light-primary fw-bolder w-100 mb-10">
+                        <!-- <button type="button" class="btn btn-light-primary fw-bolder w-100 mb-10">
                             <img alt="Logo" src="<?= base_url(); ?>/assets/media/svg/brand-logos/google-icon.svg"
-                                class="h-20px me-3" />Sign in with Google</button>
+                                class="h-20px me-3" />Sign in with Google</button> -->
                         <!--end::Action-->
                         <!--begin::Separator-->
-                        <div class="d-flex align-items-center mb-10">
+                        <div class="d-flex align-items-center mb-10 d-none">
                             <div class="border-bottom border-gray-300 mw-50 w-100"></div>
                             <span class="fw-bold text-gray-400 fs-7 mx-2">OR</span>
                             <div class="border-bottom border-gray-300 mw-50 w-100"></div>
@@ -69,18 +69,24 @@
                             <div class="col-xl-6">
                                 <label class="form-label fw-bolder text-dark fs-6">First Name</label>
                                 <input class="form-control form-control-lg form-control-solid" type="text"
-                                    placeholder="" name="first-name" autocomplete="off" />
+                                    placeholder="" name="firstName" autocomplete="off" />
                             </div>
                             <!--end::Col-->
                             <!--begin::Col-->
                             <div class="col-xl-6">
                                 <label class="form-label fw-bolder text-dark fs-6">Last Name</label>
                                 <input class="form-control form-control-lg form-control-solid" type="text"
-                                    placeholder="" name="last-name" autocomplete="off" />
+                                    placeholder="" name="lastName" autocomplete="off" />
                             </div>
                             <!--end::Col-->
                         </div>
                         <!--end::Input group-->
+                        <!--begin::Input group-->
+                        <!-- <div class="fv-row mb-7">
+                            <label class="form-label fw-bolder text-dark fs-6">Username</label>
+                            <input class="form-control form-control-lg form-control-solid" type="text" placeholder=""
+                                name="username" autocomplete="off" />
+                        </div> -->
                         <!--begin::Input group-->
                         <div class="fv-row mb-7">
                             <label class="form-label fw-bolder text-dark fs-6">Email</label>
@@ -146,7 +152,7 @@
                                     <span class="indicator-label">Go Back</span>
                                 </button>
                             </a>
-                            <button type="button" class="btn btn-lg btn-primary ms-5">
+                            <button type="submit" class="btn btn-lg btn-primary ms-5">
                                 <span class="indicator-label">Submit</span>
                                 <span class="indicator-progress">Please wait...
                                     <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>

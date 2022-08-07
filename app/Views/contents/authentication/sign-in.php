@@ -39,7 +39,7 @@
                 <div class="w-lg-500px p-10 p-lg-15 mx-auto">
                     <!--begin::Form-->
                     <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form"
-                        data-kt-redirect-url="../../demo1/dist/index.html" action="#">
+                        data-kt-redirect-url="../../demo1/dist/index.html" action="<?= base_url() ?>/sign-in" method="POST">
                         <!--begin::Heading-->
                         <div class="text-center mb-10">
                             <!--begin::Title-->
@@ -59,7 +59,7 @@
                             <label class="form-label fs-6 fw-bolder text-dark">Email</label>
                             <!--end::Label-->
                             <!--begin::Input-->
-                            <input class="form-control form-control-lg form-control-solid" type="text" name="email"
+                            <input class="form-control form-control-lg form-control-solid" type="text" name="username"
                                 autocomplete="off" />
                             <!--end::Input-->
                         </div>
@@ -92,23 +92,23 @@
                             </button>
                             <!--end::Submit button-->
                             <!--begin::Separator-->
-                            <div class="text-center text-muted text-uppercase fw-bolder mb-5">or</div>
+                            <div class="text-center text-muted text-uppercase fw-bolder mb-5 d-none">or</div>
                             <!--end::Separator-->
                             <!--begin::Google link-->
                             <a href="<?= site_url(); ?>/sign-in"
-                                class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5">
+                                class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5 d-none">
                                 <img alt="Logo" src="<?= base_url(); ?>/assets/media/svg/brand-logos/google-icon.svg"
                                     class="h-20px me-3" />Continue with Google</a>
                             <!--end::Google link-->
                             <!--begin::Google link-->
                             <a href="<?= site_url(); ?>/sign-in"
-                                class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5">
+                                class="btn btn-flex flex-center btn-light btn-lg w-100 mb-5 d-none">
                                 <img alt="Logo" src="<?= base_url(); ?>/assets/media/svg/brand-logos/facebook-4.svg"
                                     class="h-20px me-3" />Continue with Facebook</a>
                             <!--end::Google link-->
                             <!--begin::Google link-->
                             <a href="<?= site_url(); ?>/sign-in"
-                                class="btn btn-flex flex-center btn-light btn-lg w-100">
+                                class="btn btn-flex flex-center btn-light btn-lg w-100 d-none">
                                 <img alt="Logo" src="<?= base_url(); ?>/assets/media/svg/brand-logos/apple-black.svg"
                                     class="h-20px me-3" />Continue with Apple</a>
                             <!--end::Google link-->

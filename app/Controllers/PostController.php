@@ -2,24 +2,16 @@
 
 namespace App\Controllers;
 
-use Config\Database;
-
 class PostController extends BaseController
 {
     private $db;
+    private $ionAuth;
 
     public function __construct()
     {
         $this->db = \Config\Database::connect();
+        $this->ionAuth = new \IonAuth\Libraries\IonAuth();
     }
-
-    private $styleHeader = 'header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px';
-
-    private $folder = [
-        'dashboard' => 'pages/dashboards/',
-        'categories' => 'pages/categories/',
-        'articles' => 'pages/articles/'
-    ];
 
     public function save_articles()
     {
@@ -50,6 +42,33 @@ class PostController extends BaseController
         ];
 
         $this->db->table('t_category')->insert($input);
-        return redirect('categories');
+        return redirect()->to(base_url('categories'));
+    }
+
+    public function register_author()
+    {
+        $username = 'admin';
+        $password = $this->request->getPost('password');
+        $email = $this->request->getPost('email');
+        $additional_data = array(
+            'first_name' => $this->request->getPost('firstName'),
+            'last_name' => $this->request->getPost('lastName'),
+        );
+        $group = array(2);
+
+        $this->ionAuth->register($username, $password, $email, $additional_data, $group);
+
+        return redirect()->to(base_url('authors'));
+    }
+
+    public function login(){
+        $username = $this->request->getPost('username');
+        $password = $this->request->getPost('password');
+        
+        if($this->ionAuth->login($username, $password) == TRUE){
+            return redirect('/');
+        } else {
+            return redirect('sign-in');
+        }
     }
 }

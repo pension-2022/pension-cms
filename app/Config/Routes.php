@@ -100,13 +100,25 @@ $pages = [
         'method' => 'post',
         'link' => '/article-save',
         'controller' => 'PostController::save_articles'
-    ],
+    ],  
     // Begin Add Articles
     [
         'method' => 'post',
         'link' => '/categories-save',
         'controller' => 'PostController::save_categories'
     ],
+    // Begin Add Articles
+    [
+        'method' => 'post',
+        'link' => '/register-author',
+        'controller' => 'PostController::register_author'
+    ],  
+    // Begin Add Articles
+    [
+        'method' => 'post',
+        'link' => '/sign-in',
+        'controller' => 'PostController::login'
+    ],  
     // Begin Edit Articles
     [
         'method' => 'get',
