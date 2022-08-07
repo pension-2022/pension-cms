@@ -110,12 +110,12 @@
                     <!--end::None=-->
                     <!--begin::Category=-->
                     <td class="text-end pe-0" data-order="Pensiun">
-                        <span class="fw-bolder ms-3"><?= $datas['i_categoryid'] ?></span>
+                        <span class="fw-bolder ms-3"><?= $datas['kategori'] ?></span>
                     </td>
                     <!--end::Category=-->
                     <!--begin::Author=-->
                     <td class="text-end pe-0">
-                        <span class="fw-bolder text-dark"><?= $datas['i_adminid'] ?></span>
+                        <span class="fw-bolder text-dark"><?= $datas['author'] ?></span>
                     </td>
                     <!--end::Author=-->
                     <!--begin::None-->
@@ -155,7 +155,7 @@
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
-                                <a href="<?= current_url(); ?>" class="menu-link px-3">Edit</a>
+                                <a href="<?= site_url(); ?>/edit-article/<?= $datas['i_id'] ?>" class="menu-link px-3">Edit</a>
                             </div>
                             <!--end::Menu item-->
                             <!--begin::Menu item-->

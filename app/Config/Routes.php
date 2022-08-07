@@ -97,6 +97,12 @@ $pages = [
     ],
     // Begin Add Articles
     [
+        'method' => 'get',
+        'link' => '/edit-article/(:num)',
+        'controller' => 'Pages::edit_article/$1'
+    ],
+    // Begin Add Articles
+    [
         'method' => 'post',
         'link' => '/article-save',
         'controller' => 'PostController::save_articles'
@@ -119,12 +125,6 @@ $pages = [
         'link' => '/sign-in',
         'controller' => 'PostController::login'
     ],  
-    // Begin Edit Articles
-    [
-        'method' => 'get',
-        'link' => '/edit-article',
-        'controller' => 'Pages::edit_article'
-    ],
     // Begin Users List
     [
         'method' => 'get',

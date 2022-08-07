@@ -34,6 +34,5 @@
         <?php $items = 'components/navigation/items/' ?>
         <?= $this->include($items . 'articles'); ?>
         <?= $this->include($items . 'add-article'); ?>
-        <?= $this->include($items . 'edit-article'); ?>
     </div>
 </div>

@@ -26,3 +26,90 @@ CRITICAL - 2022-08-07 09:17:35 -->  route cannot be found while reverse-routing.
 #6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
 #8 {main}
+CRITICAL - 2022-08-07 10:07:47 --> Call to a member function set() on null
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->login()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#5 {main}
+CRITICAL - 2022-08-07 10:09:12 --> Call to a member function set() on null
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->login()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#5 {main}
+CRITICAL - 2022-08-07 10:26:16 --> Undefined array key "c_active"
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\components\list\category.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\kamar\\...', 100)
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('components/list...', NULL, true)
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\contents\categories\categories.php(26): CodeIgniter\View\View->include('components/list...')
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('contents/catego...', NULL, true)
+#8 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\pages\categories\categories.php(9): CodeIgniter\View\View->include('contents/catego...')
+#9 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#10 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/categorie...', Array, true)
+#12 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(57): view('pages/categorie...', Array)
+#13 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->categories()
+#14 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#15 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#17 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#18 {main}
+CRITICAL - 2022-08-07 11:02:44 --> Undefined variable $id
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\contents\articles\edit-article.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\Users\\kamar\\...', 23)
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(424): CodeIgniter\View\View->render('contents/articl...', NULL, true)
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Views\pages\articles\edit-article.php(9): CodeIgniter\View\View->include('contents/articl...')
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(210): include('C:\\Users\\kamar\\...')
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Common.php(1089): CodeIgniter\View\View->render('pages/articles/...', Array, true)
+#8 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\Pages.php(138): view('pages/articles/...', Array)
+#9 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->edit_article('8')
+#10 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#11 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#14 {main}
+CRITICAL - 2022-08-07 11:28:06 --> Undefined array key "n_photos"
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\PostController.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\Users\\kamar\\...', 28)
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->save_articles()
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#6 {main}
+CRITICAL - 2022-08-07 11:28:23 --> The original file is not a valid file.
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\PostController.php(30): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/photos/', '1659889703_caba...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->save_articles()
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#7 {main}
+ERROR - 2022-08-07 11:29:46 --> Unknown column '1_id' in 'where clause'
+CRITICAL - 2022-08-07 11:29:46 --> Unknown column '1_id' in 'where clause'
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `t_artic...', 0)
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `t_artic...')
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `t_artic...')
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `t_artic...', Array, false)
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\app\Controllers\PostController.php(35): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->save_articles()
+#6 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#10 {main}
+CRITICAL - 2022-08-07 11:35:12 --> Call to undefined function App\Controllers\delete_files()
+#0 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\PostController->save_articles()
+#1 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#2 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\Users\kamar\code\retirement-articles\cms\pension-cms\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\Users\kamar\code\retirement-articles\cms\pension-cms\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\kamar\\...')
+#5 {main}

@@ -46,7 +46,7 @@ class Pages extends BaseController
 
     public function categories()
     {
-        $sql = "select * from t_category";
+        $sql = "select i_id, n_description, c_active from t_category";
         $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Categories',
@@ -82,7 +82,21 @@ class Pages extends BaseController
     public function articles()
     {
 
-        $sql = "select * from t_article where c_active = ?";
+        $sql = "select
+        ta.i_id,
+        ta.n_photo,
+        ta.n_title,
+        ta.c_active,
+        tc.n_description as kategori,
+        concat(us.first_name,' ',us.last_name) as author 
+        from
+            t_article ta
+        join users us on
+            (ta.i_adminid = us.id)
+        join t_category tc on
+            (ta.i_categoryid = tc.i_id)
+        where
+            ta.c_active = ?";
         $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Articles',
@@ -107,11 +121,17 @@ class Pages extends BaseController
         return view($this->folder['articles'] . 'add-article', $data);
     }
 
-    public function edit_article()
+    public function edit_article($id)
     {
+        $sql = "select * from t_category where c_active = ?";
+        $query = $this->db->query($sql, 1)->getResultArray();
+        $sql2 = "select * from t_article where i_id = ?";
+        $query2 = $this->db->query($sql2, $id)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Edit Article',
-            'bodyStyle' => $this->styleHeader
+            'bodyStyle' => $this->styleHeader,
+            'category' => $query,
+            'article' => $query2
         ];
 
 
