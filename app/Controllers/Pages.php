@@ -2,14 +2,14 @@
 
 namespace App\Controllers;
 
-use Config\Database;
-
 class Pages extends BaseController
 {
     private $db;
+    private $ionAuth;
 
     public function __construct()
     {
+        $this->ionAuth = new \IonAuth\Libraries\IonAuth();
         $this->db = \Config\Database::connect();
     }
 
