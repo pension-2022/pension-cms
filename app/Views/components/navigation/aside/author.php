@@ -19,6 +19,6 @@
     <div class="menu-sub menu-sub-accordion">
         <?php $items = 'components/navigation/items/' ?>
         <?= $this->include($items . 'authors'); ?>
-        <?= $this->include($items . 'add-author'); ?>
+        <?= $this->include($items . 'users'); ?>
     </div>
 </div>

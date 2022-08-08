@@ -148,7 +148,13 @@ $pages = [
         'method' => 'get',
         'link' => '/authors',
         'controller' => 'Pages::author_list'
-    ],
+    ], 
+    // Begin Users List
+    [
+        'method' => 'get',
+        'link' => '/users',
+        'controller' => 'Pages::users_list'
+    ]
 ];
 
 foreach ($pages as $p) {

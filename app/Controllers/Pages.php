@@ -33,10 +33,17 @@ class Pages extends BaseController
         {
             return redirect('sign-in');
         } else {
+            $selection = 'author';      
             if ($this->ionAuth->inGroup(3))
             {
                 $this->privilege = 1;
             }
+            $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+            us.email as email,
+            us.profile_photo as photo,
+            us.id as id,
+            (select count(*) from t_article where i_adminid = us.id) as articles
+            from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
             $sql = "select
                 ta.i_id,
                 ta.n_photo,
@@ -57,6 +64,7 @@ class Pages extends BaseController
             $sql3 = "select concat(us.first_name,' ',us.last_name) as fullName,
             us.email as email,
             DATE_FORMAT(us.created_date , '%d-%m-%Y') as joined,
+            us.profile_photo as photo,
             (select count(*) from t_article where i_adminid = us.id) as articles
             from users us join users_groups ug on us.id = ug.user_id 
             where ug.group_id = 2";
@@ -67,7 +75,9 @@ class Pages extends BaseController
                 'data' => $query2,
                 'datarow' => $query1,
                 'priv' => $this->privilege,
-                'author' => $query3
+                'author' => $query3,
+                'datauser' => $datauser,
+                'selection' => $selection
             ];
     
             return view($this->folder['dashboard'] . 'dashboard', $data);
@@ -84,14 +94,24 @@ class Pages extends BaseController
         if ($this->ionAuth->inGroup(3))
         {
             $this->privilege = 1;
+        } else {
+            return redirect('/');
         }
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $sql = "select i_id, n_description, c_active from t_category";
         $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Categories',
             'bodyStyle' => $this->styleHeader,
             'data' => $query,
-            'priv' => $this->privilege
+            'priv' => $this->privilege,
+            'datauser' => $datauser
         ];
 
         return view($this->folder['categories'] . 'categories', $data);
@@ -107,11 +127,21 @@ class Pages extends BaseController
         if ($this->ionAuth->inGroup(3))
         {
             $this->privilege = 1;
+        } else {
+            return redirect('/');
         }
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Add Category',
             'bodyStyle' => $this->styleHeader,
-            'priv' => $this->privilege
+            'priv' => $this->privilege,
+            'datauser' => $datauser
         ];
 
 
@@ -128,11 +158,22 @@ class Pages extends BaseController
         if ($this->ionAuth->inGroup(3))
         {
             $this->privilege = 1;
+        } else {
+            return redirect('/');
         }
+
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Edit Category',
             'bodyStyle' => $this->styleHeader,
-            'priv' => $this->privilege
+            'priv' => $this->privilege,
+            'datauser' => $datauser
         ];
 
 
@@ -185,11 +226,20 @@ class Pages extends BaseController
                 ta.i_adminid = ?";
             $query = $this->db->query($sql,  $this->session->get('id_user'))->getResultArray();
         }
+
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Articles',
             'bodyStyle' => $this->styleHeader,
             'datarow' => $query,
-            'priv' => $this->privilege
+            'priv' => $this->privilege,
+            'datauser' => $datauser
         ];
 
         return view($this->folder['articles'] . 'articles', $data);
@@ -208,13 +258,21 @@ class Pages extends BaseController
             $this->privilege = 1;
         }
 
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $sql = "select * from t_category where c_active = ?";
         $query = $this->db->query($sql, 1)->getResultArray();
         $data = [
             'title' => 'dPensiOn || Admin || Add Article',
             'bodyStyle' => $this->styleHeader,
             'category' => $query,
-            'priv' => $this->privilege
+            'priv' => $this->privilege,
+            'datauser' => $datauser
         ];
 
 
@@ -234,6 +292,13 @@ class Pages extends BaseController
             $this->privilege = 1;
         }
 
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $sql = "select * from t_category where c_active = ?";
         $query = $this->db->query($sql, 1)->getResultArray();
         $sql2 = "select * from t_article where i_id = ?";
@@ -243,7 +308,8 @@ class Pages extends BaseController
             'bodyStyle' => $this->styleHeader,
             'category' => $query,
             'article' => $query2,
-            'priv' => $this->privilege
+            'priv' => $this->privilege,
+            'datauser' => $datauser
         ];
 
 
@@ -259,13 +325,23 @@ class Pages extends BaseController
         if ($this->ionAuth->inGroup(3))
         {
             $this->privilege = 1;
+            $selection = 'author';
         } else {
-            return redirect('sign-in');
+            return redirect('/');
         }
 
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
         $sql = "select concat(us.first_name,' ',us.last_name) as fullName,
         us.email as email,
         DATE_FORMAT(us.created_date , '%d-%m-%Y') as joined,
+        us.profile_photo as photo,
+        us.is_approved as statusApproval,
         (select count(*) from t_article where i_adminid = us.id) as articles
         from users us join users_groups ug on us.id = ug.user_id 
         where ug.group_id = 2";
@@ -274,7 +350,52 @@ class Pages extends BaseController
             'title' => 'dPensiOn || Admin || Author List',
             'bodyStyle' => $this->styleHeader,
             'priv' => $this->privilege,
-            'author' => $query
+            'author' => $query,
+            'datauser' => $datauser,
+            'selection' => $selection
+        ];
+
+
+        return view($this->folder['authors'] . 'author-list', $data);
+    }
+
+    public function users_list()
+    {
+        if (!$this->ionAuth->loggedIn())
+        {
+        } 
+
+        if ($this->ionAuth->inGroup(3))
+        {
+            $this->privilege = 1;
+            $selection = 'user';
+        } else {
+            return redirect('/');
+        }
+
+        
+        $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        us.profile_photo as photo,
+        us.id as id,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
+        $sql = "select concat(us.first_name,' ',us.last_name) as fullName,
+        us.email as email,
+        DATE_FORMAT(us.created_date , '%d-%m-%Y') as joined,
+        us.profile_photo as photo,
+        us.is_approved as statusApproval,
+        (select count(*) from t_article where i_adminid = us.id) as articles
+        from users us join users_groups ug on us.id = ug.user_id 
+        where ug.group_id = 1";
+        $query = $this->db->query($sql)->getResultArray();
+        $data = [
+            'title' => 'dPensiOn || Admin || Author List',
+            'bodyStyle' => $this->styleHeader,
+            'priv' => $this->privilege,
+            'author' => $query,
+            'datauser' => $datauser,
+            'selection' => $selection
         ];
 
 

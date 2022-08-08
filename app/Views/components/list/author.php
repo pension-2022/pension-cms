@@ -28,8 +28,13 @@
                     <!--begin::Wrapper-->
                     <div class="me-3">
                         <!--begin::Icon-->
-                        <img src="<?= base_url(); ?>/assets/media/avatars/300-<?= $i + 1; ?>.jpg"
+                        <?php if($user['photo'] == null):  ?>
+                        <img src="<?= base_url(); ?>/assets/media/avatars/blank.png"
                             class="w-50px ms-n1 me-1" alt="" />
+                        <?php else: ?>
+                        <img src="<?= base_url(); ?>/assets/media/avatars/blank.png"
+                            class="w-50px ms-n1 me-1" alt="" />
+                        <?php endif; ?>
                         <!--end::Icon-->
                         <!--begin::Title-->
                         <a href="<?= site_url(); ?>"
