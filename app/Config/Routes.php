@@ -101,6 +101,12 @@ $pages = [
         'link' => '/edit-article/(:num)',
         'controller' => 'Pages::edit_article/$1'
     ],
+    //profile begin
+    [
+        'method' => 'get',
+        'link' => '/profile',
+        'controller' => 'Pages::profile'
+    ],
     // Begin Add Articles
     [
         'method' => 'post',

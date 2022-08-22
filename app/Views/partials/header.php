@@ -94,7 +94,7 @@
                         <!--end::Menu separator-->
                         <!--begin::Menu item-->
                         <div class="menu-item px-5">
-                            <a href="<?= base_url('account/overview'); ?>" class="menu-link px-5">My
+                            <a href="<?= base_url('profile'); ?>" class="menu-link px-5">My
                                 Profile</a>
                         </div>
                         <!--end::Menu item-->

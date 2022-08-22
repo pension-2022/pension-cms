@@ -22,6 +22,7 @@ class Pages extends BaseController
 
     private $folder = [
         'dashboard' => 'pages/dashboards/',
+        'profile' => 'pages/profile/',
         'categories' => 'pages/categories/',
         'articles' => 'pages/articles/',
         'authors' => 'pages/authors/'
@@ -81,6 +82,64 @@ class Pages extends BaseController
             ];
     
             return view($this->folder['dashboard'] . 'dashboard', $data);
+        }
+    }
+
+    public function profile()
+    {
+        if (!$this->ionAuth->loggedIn())
+        {
+            return redirect('sign-in');
+        } else {
+            $selection = 'author';      
+            if ($this->ionAuth->inGroup(3))
+            {
+                $this->privilege = 1;
+            }
+            $datauser = $this->db->query("select concat(us.first_name,' ',us.last_name) as fullName,
+            us.email as email,
+            us.profile_photo as photo,
+            us.id as id,
+            us.bio as bio,
+            (select count(*) from t_article where i_adminid = us.id) as articles
+            from users us where us.id = ?",$this->session->get('id_user'))->getResultArray();
+            $sql = "select
+                ta.i_id,
+                ta.n_photo,
+                ta.n_title,
+                ta.c_active,
+                tc.n_description as kategori,
+                DATE_FORMAT(ta.d_created_date, '%d-%m-%Y') as tanggal,
+                concat(us.first_name,' ',us.last_name) as author 
+                from
+                    t_article ta
+                join users us on
+                    (ta.i_adminid = us.id)
+                join t_category tc on
+                    (ta.i_categoryid = tc.i_id)";
+            $query1 = $this->db->query($sql)->getResultArray();
+            $sql = "select * from t_category";
+            $query2 = $this->db->query($sql, 1)->getResultArray();
+            $sql3 = "select concat(us.first_name,' ',us.last_name) as fullName,
+            us.email as email,
+            DATE_FORMAT(us.created_date , '%d-%m-%Y') as joined,
+            us.profile_photo as photo,
+            (select count(*) from t_article where i_adminid = us.id) as articles
+            from users us join users_groups ug on us.id = ug.user_id 
+            where ug.group_id = 2";
+            $query3 = $this->db->query($sql3)->getResultArray();
+            $data = [
+                'title' => 'dPensiOn || Admin || Dashboard',
+                'bodyStyle' => $this->styleHeader,
+                'data' => $query2,
+                'datarow' => $query1,
+                'priv' => $this->privilege,
+                'author' => $query3,
+                'datauser' => $datauser,
+                'selection' => $selection
+            ];
+    
+            return view($this->folder['profile'] . 'profile-detail', $data);
         }
     }
 
