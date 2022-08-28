@@ -10,30 +10,30 @@ class PostController extends BaseController
 {
     private $db;
     private $ionAuth;
-    private $session; 
+    private $session;
     use ResponseTrait;
 
     public function __construct()
     {
         $this->db = \Config\Database::connect();
         $this->ionAuth = new \IonAuth\Libraries\IonAuth();
-        $this->session = \Config\Services::session(); 
+        $this->session = \Config\Services::session();
         helper('filesystem');
     }
 
     public function save_articles()
     {
-        if($this->request->getPost('id') != null){
+        if ($this->request->getPost('id') != null) {
             $table =  $this->db->table('t_article');
             $table->set('n_title', $this->request->getPost('title'));
             $table->set('n_description', $this->request->getPost('desc'));
             $table->set('i_categoryid', $this->request->getPost('categoryId'));
             $sql2 = "select * from t_article where i_id = ?";
             $query2 = $this->db->query($sql2, $this->request->getPost('id'))->getResultArray();
-            foreach($query2 as $data){
-                if($data['n_photo'] != $this->request->getFile('photo')->getFilename() && $this->request->getFile('photo')->getFilename() != null){
+            foreach ($query2 as $data) {
+                if ($data['n_photo'] != $this->request->getFile('photo')->getFilename() && $this->request->getFile('photo')->getFilename() != null) {
                     $fileName = $this->request->getFile('photo')->getRandomName();
-                    delete_files(site_url().'uploads/photos/'.$data['n_photo']);
+                    delete_files(site_url() . 'uploads/photos/' . $data['n_photo']);
                     $this->request->getFile('photo')->move('uploads/photos/', $fileName);
                     $table->set('n_photo', $fileName);
                 }
@@ -59,7 +59,8 @@ class PostController extends BaseController
         return redirect('articles');
     }
 
-    public function delete_article($id){
+    public function delete_article($id)
+    {
         $table =  $this->db->table('t_article');
         $table->delete(['i_id' => $id]);
 
@@ -70,7 +71,8 @@ class PostController extends BaseController
         return $this->respond($response, 200);
     }
 
-    public function change_status($id, $status){
+    public function change_status($id, $status)
+    {
         $table =  $this->db->table('t_article');
         $table->set('c_active', ($status == 1) ? 0 : 1);
         $table->where('i_id', $id);
@@ -108,17 +110,18 @@ class PostController extends BaseController
 
         $this->ionAuth->register($username, $password, $email, $additional_data, $group);
 
-        return redirect()->to(base_url('authors'));
+        return redirect()->to(site_url('authors'));
     }
 
-    public function login(){
+    public function login()
+    {
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
-        
-        if($this->ionAuth->login($username, $password) == TRUE){
+
+        if ($this->ionAuth->login($username, $password) == TRUE) {
             $sql = "select * from users where email = ?";
             $query1 = $this->db->query($sql, $username)->getResultArray();
-            foreach($query1 as $data){
+            foreach ($query1 as $data) {
                 $newdata = [
                     'id_user'  => $data['id']
                 ];
@@ -130,7 +133,8 @@ class PostController extends BaseController
         }
     }
 
-    public function logout(){
+    public function logout()
+    {
         $this->ionAuth->logout();
         $response = [
             'success'   => TRUE

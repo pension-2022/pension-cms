@@ -1,0 +1,22 @@
+CRITICAL - 2022-08-08 04:54:50 --> IonAuth\Models\IonAuthModel::getUsersGroups(): Argument #1 ($id) must be of type int, null given, called in C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\benedmunds\codeigniter-ion-auth\Models\IonAuthModel.php on line 1580
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\benedmunds\codeigniter-ion-auth\Models\IonAuthModel.php(1580): IonAuth\Models\IonAuthModel->getUsersGroups(NULL)
+#1 [internal function]: IonAuth\Models\IonAuthModel->inGroup(Array)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Pages.php(259): IonAuth\Libraries\IonAuth->__call('inGroup', Array)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->author_list()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#9 {main}
+CRITICAL - 2022-08-08 08:42:18 --> IonAuth\Models\IonAuthModel::getUsersGroups(): Argument #1 ($id) must be of type int, null given, called in C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\benedmunds\codeigniter-ion-auth\Models\IonAuthModel.php on line 1580
+#0 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\benedmunds\codeigniter-ion-auth\Models\IonAuthModel.php(1580): IonAuth\Models\IonAuthModel->getUsersGroups(NULL)
+#1 [internal function]: IonAuth\Models\IonAuthModel->inGroup(Array)
+#2 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\benedmunds\codeigniter-ion-auth\Libraries\IonAuth.php(104): call_user_func_array(Array, Array)
+#3 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\app\Controllers\Pages.php(259): IonAuth\Libraries\IonAuth->__call('inGroup', Array)
+#4 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Pages->author_list()
+#5 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ASUS TUF\Desktop\web pensiun\cms\dpension_admin\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\Users\\ASUS T...')
+#9 {main}

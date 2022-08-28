@@ -56,7 +56,7 @@
                 </li>
                 <!--end::Item-->
                 <!--begin::Item-->
-                <li class="breadcrumb-item 
+                <li class="breadcrumb-item
                     <?php switch (current_url()) {
                         case site_url() . '/articles':
                         case site_url() . '/categories':
