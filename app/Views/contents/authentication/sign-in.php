@@ -14,13 +14,12 @@
                     </a>
                     <!--end::Logo-->
                     <!--begin::Title-->
-                    <h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #986923;">Welcome to Metronic</h1>
+                    <h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #986923;">
+                        Selamat Datang
+                        <br>
+                        di Dana Pensiun BRI
+                    </h1>
                     <!--end::Title-->
-                    <!--begin::Description-->
-                    <p class="fw-bold fs-2" style="color: #986923;">Discover Amazing Metronic
-                        <br />with great build tools
-                    </p>
-                    <!--end::Description-->
                 </div>
                 <!--end::Content-->
                 <!--begin::Illustration-->
@@ -39,7 +38,8 @@
                 <div class="w-lg-500px p-10 p-lg-15 mx-auto">
                     <!--begin::Form-->
                     <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form"
-                        data-kt-redirect-url="../../demo1/dist/index.html" action="<?= base_url() ?>/sign-in" method="POST">
+                        data-kt-redirect-url="../../demo1/dist/index.html" action="<?= base_url() ?>/sign-in"
+                        method="POST">
                         <!--begin::Heading-->
                         <div class="text-center mb-10">
                             <!--begin::Title-->
