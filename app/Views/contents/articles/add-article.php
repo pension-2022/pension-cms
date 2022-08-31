@@ -112,6 +112,7 @@
                                         <div class="text-muted fs-7">Set the article category.</div>
                                         <!--end::Description-->
                                         <!--begin::Button-->
+                                        <?php if($priv == 1) : ?>
                                         <a href="<?= site_url(); ?>/add-category"
                                             class="btn btn-light-primary btn-sm mt-5">
                                             <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
@@ -126,6 +127,7 @@
                                             </span>
                                             <!--end::Svg Icon-->Create new category
                                         </a>
+                                        <?php endif; ?>
                                         <!--end::Button-->
                                     </div>
                                     <!--end::Card body-->

@@ -130,7 +130,7 @@
                     <td class="text-end pe-0">
                         <span class="fw-bolder text-dark"><?= $datas['tanggal'] ?></span>
                     </td>
-                    <td class="text-end pe-0" data-order="Published">
+                    <td class="text-end pe-0" data-order="status">
                         <!--begin::Badges-->
                         <div class="badge badge-light-<?= ($datas['c_active'] == 1) ? 'success' : 'danger'; ?>">
                             <?= ($datas['c_active'] == 1) ? 'Published' : 'Inactive'; ?></div>
@@ -161,6 +161,7 @@
                                     class="menu-link px-3"><?= ($datas['c_active'] == 1) ? 'Inactivate' : 'Publish'; ?></a>
                             </div>
                             <!--end::Menu item-->
+
                             <!--begin::Menu item-->
                             <div class="menu-item px-3">
                                 <a href="<?= site_url(); ?>/edit-article/<?= $datas['i_id'] ?>"

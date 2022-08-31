@@ -51,9 +51,9 @@
                     </div>
                 </div>
                 <?= $this->include('components/navigation/aside/article'); ?>
-                <?= $this->include('components/navigation/aside/category'); ?>
                 <?php if ($priv == 1) :  ?>
-                <?= $this->include('components/navigation/aside/author'); ?>
+                    <?= $this->include('components/navigation/aside/category'); ?>
+                    <?= $this->include('components/navigation/aside/author'); ?>
                 <?php endif; ?>
             </div>
         </div>

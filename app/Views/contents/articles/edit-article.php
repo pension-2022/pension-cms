@@ -54,7 +54,9 @@
                                                 title="Change avatar">
                                                 <i class="bi bi-pencil-fill fs-7"></i>
                                                 <!--begin::Inputs-->
-                                                <input type="file" name="photo" value=<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?> accept=".png, .jpg, .jpeg" />
+                                                <input type="file" name="photo"
+                                                    value=<?= base_url() . "/uploads/photos/" . $datas['n_photo']; ?>
+                                                    accept=".png, .jpg, .jpeg" />
                                                 <!-- <input type="hidden" name="photo" /> -->
                                                 <!--end::Inputs-->
                                             </label>
@@ -105,11 +107,12 @@
                                             <option value=null disabled selected="selected">Select Category</option>
                                             <?php foreach ($category as $kategori) : ?>
                                             <?php if ($kategori['i_id'] == $datas['i_categoryid']) : ?>
-                                                <option value=<?= $kategori['i_id']; ?> selected="selected"><?= $kategori['n_description']; ?>
-                                                </option>
-                                            <?php else: ?>
-                                                <option value=<?= $kategori['i_id']; ?>><?= $kategori['n_description']; ?>
-                                                </option>
+                                            <option value=<?= $kategori['i_id']; ?> selected="selected">
+                                                <?= $kategori['n_description']; ?>
+                                            </option>
+                                            <?php else : ?>
+                                            <option value=<?= $kategori['i_id']; ?>><?= $kategori['n_description']; ?>
+                                            </option>
                                             <?php endif; ?>
                                             <?php endforeach; ?>
                                         </select>
@@ -166,11 +169,12 @@
                                                         <label class="required form-label">Article Title</label>
                                                         <!--end::Label-->
                                                         <!--begin::Input-->
-                                                        <input type="text" value=<?= $datas['n_title']; ?> name="title" class="form-control mb-2"
+                                                        <input type="text" value="<?= $datas['n_title']; ?>"
+                                                            name="title" class="form-control mb-2"
                                                             placeholder="Article title" />
-                                                        
-                                                        <input type="hidden" value=<?= $datas['i_id']; ?> name="id" class="form-control mb-2"
-                                                            placeholder="Article title" />
+
+                                                        <input type="hidden" value="<?= $datas['i_id']; ?>" name="id"
+                                                            class="form-control mb-2" placeholder="Article title" />
                                                         <!--end::Input-->
                                                         <!--begin::Description-->
                                                         <div class="text-muted fs-7">A title for article</div>

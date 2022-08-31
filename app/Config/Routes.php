@@ -101,6 +101,12 @@ $pages = [
         'link' => '/edit-article/(:num)',
         'controller' => 'Pages::edit_article/$1'
     ],
+    //profile begin
+    [
+        'method' => 'get',
+        'link' => '/profile',
+        'controller' => 'Pages::profile'
+    ],
     // Begin Add Articles
     [
         'method' => 'post',
@@ -148,7 +154,13 @@ $pages = [
         'method' => 'get',
         'link' => '/authors',
         'controller' => 'Pages::author_list'
-    ],
+    ], 
+    // Begin Users List
+    [
+        'method' => 'get',
+        'link' => '/users',
+        'controller' => 'Pages::users_list'
+    ]
 ];
 
 foreach ($pages as $p) {

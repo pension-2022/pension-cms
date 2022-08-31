@@ -5,7 +5,11 @@
         <div class="card-title">
             <!--begin::Title-->
             <h3 class="card-title align-items-start flex-column">
-                <span class="card-label fw-bolder text-gray-800">Author Lists</span>
+                <?php if($selection == 'author') :  ?>
+                <span class="card-label fw-bolder text-gray-800">Author List</span>
+                <?php else: ?>
+                <span class="card-label fw-bolder text-gray-800">User List</span>
+                <?php endif;  ?>
             </h3>
             <!--end::Title-->
         </div>
@@ -35,13 +39,21 @@
                     data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-product-filter="status">
                     <option></option>
                     <option value="all">All</option>
-                    <option value="Activated">Activated</option>
-                    <option value="Inactive">Inactive</option>
+                    <?php if($selection == 'author') :  ?>
+                    <option value="Active">Active</option>
+                    <option value="Blocked">Blocked</option>
+                    <?php else:  ?>
+                    <option value="New">New</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Approved">Approved</option>
+                    <?php endif;  ?>
                 </select>
                 <!--end::Select2-->
             </div>
             <!--begin::Add product-->
-            <a href="<?= current_url(); ?>" class="btn btn-sm btn-primary">Add Author</a>
+            <?php if($selection == 'author') :  ?>
+            <a href="<?= site_url('sign-up'); ?>" class="btn btn-sm btn-primary">Add Author</a>
+            <?php endif;  ?>
             <!--end::Add product-->
         </div>
         <!--end::Card toolbar-->
@@ -60,9 +72,16 @@
                             data-kt-check-target="#kt_ecommerce_products_table .form-check-input" value="1" />
                         #
                     </th>
+                    <?php if($selection == 'author') :  ?>
                     <th class="min-w-200px">Author</th>
                     <th class="text-end min-w-100px">Joined</th>
                     <th class="text-end min-w-70px">Created Article</th>
+                    <th class="text-end min-w-70px">Status</th>
+                    <?php else:  ?>
+                    <th class="min-w-200px">User</th>
+                    <th class="text-end min-w-100px">Register Date</th>
+                    <th class="text-end min-w-70px">Status</th>
+                    <?php endif;  ?>
                     <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px d-none"></th>
                     <th class="text-end min-w-100px">Email</th>
@@ -81,7 +100,7 @@
                 <tr>
                     <!--begin::Number-->
                     <td>
-                        <span class="fw-bolder"><?= $i + 1; ?></span>
+                        <span class="fw-bolder"><?= $i; ?></span>
                     </td>
                     <!--end::Number-->
                     <!--begin::Author=-->
@@ -89,8 +108,13 @@
                         <div class="d-flex align-items-center w-200px">
                             <!--begin::Thumbnail-->
                             <a href="<?= current_url(); ?>" class="symbol symbol-50px">
-                                <span class="symbol-label"
-                                    style="background-image:url(<?= base_url(); ?>/assets/media/avatars/300-<?= $i + 0; ?>.jpg);"></span>
+                                <?php if($user['photo'] == null):  ?>
+                                    <span class="symbol-label"
+                                    style="background-image:url(<?= base_url(); ?>/assets/media/avatars/blank.png);"></span>
+                                <?php else: ?>
+                                    <span class="symbol-label"
+                                    style="background-image:url(<?= base_url(); ?>/assets/media/avatars/blank.png);"></span>
+                                <?php endif; ?>
                             </a>
                             <!--end::Thumbnail-->
                             <div class="ms-5">
@@ -108,9 +132,25 @@
                     </td>
                     <!--end::Joined=-->
                     <!--begin::Created Article=-->
+                    
+                    <?php if($selection == 'author') :  ?>
                     <td class="text-end pe-0" data-order="<?= $user['articles'] ?>">
                         <span class="fw-bolder ms-3"><?= $user['articles'] ?> Article</span>
                     </td>
+                    <td class="text-end pe-0" data-order="<?= ($user['statusApproval'] == 1) ? 'Active' : 'Blocked'; ?>">
+                    <!--begin::Badges-->
+                    <div class="badge badge-light-<?= ($user['statusApproval'] == 1) ? 'info' : (($user['statusApproval'] == 2) ? 'danger' : 'success'); ?>">
+                        <?= ($user['statusApproval'] == 1) ? 'Active' : 'Blocked'; ?></div>
+                    <!--end::Badges-->
+                    </td>
+                    <?php else:  ?>
+                    <td class="text-end pe-0" data-order="<?= ($user['statusApproval'] == 1) ? 'Approved' : (($user['statusApproval'] == 2) ? 'Rejected' : 'New'); ?>">
+                    <!--begin::Badges-->
+                    <div class="badge badge-light-<?= ($user['statusApproval'] == 1) ? 'info' : (($user['statusApproval'] == 2) ? 'danger' : 'success'); ?>">
+                        <?= ($user['statusApproval'] == 1) ? 'Approved' : (($user['statusApproval'] == 2) ? 'Rejected' : 'New'); ?></div>
+                    <!--end::Badges-->
+                    </td>
+                    <?php endif;  ?>
                     <!--end::Created Article=-->
                     <!--begin::None=-->
                     <td class="text-end pe-0 d-none"></td>
@@ -146,21 +186,39 @@
                         <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4"
                             data-kt-menu="true">
                             <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <a href="<?= current_url(); ?>"
-                                    class="menu-link px-3"><?= ($i % 2 == 0) ? 'Inactivate' : 'Activate'; ?></a>
-                            </div>
+                            <?php if($selection == 'author') :  ?>
+                                    <div class="menu-item px-3">
+                                        <a href="<?= current_url(); ?>"
+                                            class="menu-link px-3"><?= ($user['statusApproval'] == 1) ? 'Block' : 'Approve'; ?></a>
+                                    </div>
+                            <?php else :  ?>
+                                <?php if($user['statusApproval'] == 0) :  ?>
+                                    <div class="menu-item px-3">
+                                        <a href="<?= current_url(); ?>"
+                                            class="menu-link px-3">Approve</a>
+                                    </div>
+                                    <div class="menu-item px-3">
+                                        <a href="<?= current_url(); ?>"
+                                            class="menu-link px-3">Reject</a>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="menu-item px-3">
+                                        <a href="<?= current_url(); ?>"
+                                            class="menu-link px-3"><?= ($user['statusApproval'] == 1) ? 'Block' : 'Approve'; ?></a>
+                                    </div>
+                                <?php endif;  ?>
+                            <?php endif;  ?>
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <a href="<?= current_url(); ?>" class="menu-link px-3">Edit</a>
-                            </div>
+                            <!-- <div class="menu-item px-3">
+                                <a href="" class="menu-link px-3">Edit</a>
+                            </div> -->
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
-                            <div class="menu-item px-3">
-                                <a href="<?= current_url(); ?>" class="menu-link px-3"
+                            <!-- <div class="menu-item px-3">
+                                <a href="" class="menu-link px-3"
                                     onclick="confirm('Sure to delete this category')">Delete</a>
-                            </div>
+                            </div> -->
                             <!--end::Menu item-->
                         </div>
                         <!--end::Menu-->
